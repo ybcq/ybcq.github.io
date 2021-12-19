@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+  <meta 
+    name="theme-color" 
+    content="#fff" 
+    id="theme-color">
+  <meta 
+    name="description" 
+    content="Hexo">
+  <link 
+    rel="icon" 
+    href="/img/Head.png">
+  <title>【新MOD】HearthSV内测组招募</title>
+  
+    
+      <meta 
+        property="og:title" 
+        content="【新MOD】HearthSV内测组招募">
+    
+    
+      <meta 
+        property="og:url" 
+        content="http://example.com/2020/06/29/%E3%80%90%E6%96%B0MOD%E3%80%91HearthSV%E5%86%85%E6%B5%8B%E7%BB%84%E6%8B%9B%E5%8B%9F/index.html">
+    
+    
+      <meta 
+        property="og:img" 
+        content="img/Head.png">
+    
+    
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2020-06-29">
+      <meta 
+        property="og:article:modified_time" 
+        content="2021-12-19">
+      <meta 
+        property="og:article:author" 
+        content="御坂初琴">
+      
+        
+          <meta 
+            property="og:article:tag" 
+            content="HearthSV">
+        
+      
+    
+  
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    function loadCSS(href, data, attr) {
+      var sheet = document.createElement('link');
+      sheet.ref = 'stylesheet';
+      sheet.href = href;
+      sheet.dataset[data] = attr;
+      document.head.appendChild(sheet);
+    }
+    function changeCSS(cssFile, data, attr) {
+      var oldlink = document.querySelector(data);
+      var newlink = document.createElement("link");
+      newlink.setAttribute("rel", "stylesheet");
+      newlink.setAttribute("href", cssFile);
+      newlink.dataset.prism = attr;
+      document.head.replaceChild(newlink, oldlink);
+    }
+  </script>
+  
+    
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+  </script>
+  
+    <script>
+      var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+        document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+      }
+    };
+    setDarkmode();
+    </script>
+  
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.js" as="script">
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+  <body>
+    <div class="wrapper">
+       
+      <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+        <img 
+          class="navbar-logo-img"
+          width="32"
+          height="32"
+          src="/img/Head.png" 
+          alt="blog logo">
+      
+      <span class="navbar-logo-dsc">御坂初琴软件屋</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+      <a 
+        href="/" 
+        class="navbar-menu-item">
+        
+          主页
+        
+      </a>
+    
+      <a 
+        href="/archives" 
+        class="navbar-menu-item">
+        
+          列表
+        
+      </a>
+    
+      <a 
+        href="/tags" 
+        class="navbar-menu-item">
+        
+          标签
+        
+      </a>
+    
+      <a 
+        href="/categories" 
+        class="navbar-menu-item">
+        
+          分类
+        
+      </a>
+    
+      <a 
+        target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" 
+        class="navbar-menu-item">
+        
+          B站
+        
+      </a>
+    
+      <a 
+        target="_blank" rel="noopener" href="http://www.ybcqrjw.cn/" 
+        class="navbar-menu-item">
+        
+          软件站
+        
+      </a>
+    
+      <a 
+        href="/links" 
+        class="navbar-menu-item">
+        
+          友链
+        
+      </a>
+    
+    <a 
+      class="navbar-menu-item darknavbar" 
+      id="dark">
+      <i class="iconfont icon-weather"></i>
+    </a>
+    <a 
+      class="navbar-menu-item searchnavbar" 
+      id="search">
+      <i 
+        class="iconfont icon-search" 
+        style="font-size: 1.2rem; font-weight: 400;">
+      </i>
+    </a>
+  </div>
+</nav> 
+      
+      <div 
+        id="local-search" 
+        style="display: none">
+        <input
+          class="navbar-menu-item"
+          id="search-input"
+          placeholder="请输入搜索内容..." />
+        <div id="search-content"></div>
+      </div>
+      
+      <div class="section-wrap">
+        <div class="container">
+          <div class="columns">
+            <main class="main-column">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      【新MOD】HearthSV内测组招募
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2020-06-29T14:42:07.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2020-06-29</span>
+    </time>
+    
+      <span class="dot"></span>
+      
+        <a 
+          href="/categories/%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6/" 
+          class="post-meta-link">
+          原创软件
+        </a>
+      
+    
+    
+      <span class="dot"></span>
+      <span>281 words</span>
+    
+  </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/HearthSV/" 
+            class="post-meta-link">
+            HearthSV
+          </a>
+        
+      </div>
+    </div>
+  
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <p><img src="https://static.iyingdi.cn/2020/06/29/0c72e5b8-59b7-4fde-954b-7e5eace6d246.png" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://static.iyingdi.cn/2020/06/29/0c72e5b8-59b7-4fde-954b-7e5eace6d246.png" class="lozad post-image"></p>
+<p>经历了 4 个月的修改和探索，HSMOD 的代码终于被我摸得差不多了。修改教程写了一部分，第一个 MOD 也进入了内测阶段。没错，今天就是内测群招募。</p>
+<p>游戏名《HearthSV 炉石乱斗影之诗》</p>
+<p>游戏引擎 HSMOD (Unity+C#)</p>
+<p>版本号 内测 0.96</p>
+<p><strong>内测群号 1129496793</strong></p>
+<hr>
+<p><em>游戏仅供交流 Unity 游戏设计和 C# 语言使用，如需完整体验，请体验原版《炉石传说》《秘境对决》《影之诗》。</em></p>
+<hr>
+<p>内测人员满足以下任一条件即可：</p>
+<p>1. 能认真阅读内测须知并严格遵守内容的玩家。</p>
+<p>2. 能保证不泄露游戏内容的遇到 BUG 心态不容易崩的游戏玩家。</p>
+<hr>
+<p>本 MOD 本身也不盈利，所以实在没啥能奖励内测组的。。。纯是为爱发电，大家体谅一下。以后我会尽可能的为大家提供优质的内容！</p>
+<hr>
+<p>下面是游戏展示：</p>
+<p><img src="https://static.iyingdi.cn/common/2020/06/24/6b2ae953-b2ff-4993-a389-946a0689f1a1.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://static.iyingdi.cn/common/2020/06/24/6b2ae953-b2ff-4993-a389-946a0689f1a1.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image"></p>
+<p>图标</p>
+<p><img src="https://static.iyingdi.cn/common/2020/06/24/df837696-061e-4b6a-a0c5-a5c51f529916.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://static.iyingdi.cn/common/2020/06/24/df837696-061e-4b6a-a0c5-a5c51f529916.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image"></p>
+<p>游戏启动器</p>
+<p><img src="https://static.iyingdi.cn/common/2020/06/24/5c77deab-34a4-4734-8806-ea5bde7f8045.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://static.iyingdi.cn/common/2020/06/24/5c77deab-34a4-4734-8806-ea5bde7f8045.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image">英雄选择界面</p>
+<p><img src="https://wspic.iyingdi.cn/common/2020/06/24/5e9566c2-f751-4123-97cd-14b92bff42a6.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://wspic.iyingdi.cn/common/2020/06/24/5e9566c2-f751-4123-97cd-14b92bff42a6.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image">死亡骑士</p>
+<p><img src="https://wspic.iyingdi.cn/common/2020/06/24/19ca9a22-8c15-4cda-b4b1-d0f9466899f9.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://wspic.iyingdi.cn/common/2020/06/24/19ca9a22-8c15-4cda-b4b1-d0f9466899f9.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image">武僧</p>
+<p><img src="https://wspic.iyingdi.cn/common/2020/06/24/4da83b6f-a874-4f4e-b8ce-8a640c7a37ed.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://wspic.iyingdi.cn/common/2020/06/24/4da83b6f-a874-4f4e-b8ce-8a640c7a37ed.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image">影之主战者</p>
+<p><img src="https://wspic.iyingdi.cn/common/2020/06/24/07f54668-5690-4ab2-bfec-2d0de2957288.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://wspic.iyingdi.cn/common/2020/06/24/07f54668-5690-4ab2-bfec-2d0de2957288.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image">秘境对决</p>
+<p><img src="https://wspic.iyingdi.cn/common/2020/06/24/9d6f40ae-d7e3-4ea9-a610-05e8197c15b1.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://wspic.iyingdi.cn/common/2020/06/24/9d6f40ae-d7e3-4ea9-a610-05e8197c15b1.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image">中立随从</p>
+<p><img src="https://wspic.iyingdi.cn/common/2020/06/24/467d3bc2-75f0-4898-8cac-b31b2e5e2a30.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" alt=" " srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://wspic.iyingdi.cn/common/2020/06/24/467d3bc2-75f0-4898-8cac-b31b2e5e2a30.png?x-oss-process=image/resize,w_720/format,jpg/watermark,image_Y29tbW9uL3dhdGVybWFyay5wbmc_eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsUF8yMw,t_70,g_se,x_20,y_15" class="lozad post-image">难度系统</p>
+
+  </div>
+  <div>
+    
+      <div 
+        class="post-note note-warning copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            御坂初琴
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="http://example.com/2020/06/29/%E3%80%90%E6%96%B0MOD%E3%80%91HearthSV%E5%86%85%E6%B5%8B%E7%BB%84%E6%8B%9B%E5%8B%9F/">
+            http://example.com/2020/06/29/%E3%80%90%E6%96%B0MOD%E3%80%91HearthSV%E5%86%85%E6%B5%8B%E7%BB%84%E6%8B%9B%E5%8B%9F/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="http://license.coscl.org.cn/MulanPSL">MulanPSL 1.0 协议</a>。转载请注明出处！</p>
+      </div>
+    
+  </div>
+</article>
+<div class="nav">
+  
+    <div class="nav-item-prev">
+      <a 
+        href="/2020/11/03/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%8A%9B%E7%A7%91%E7%A4%BA%E6%B3%A2%E5%99%A8%E7%BD%91%E7%BA%BF%E5%AD%98%E5%9B%BE/" 
+        class="nav-link">
+        <i class="iconfont icon-left nav-prev-icon"></i>
+        <div>
+          <div class="nav-label">Prev</div>
+          
+            <div class="nav-title">【原创软件】力科示波器网线存图 </div>
+          
+        </div>
+      </a>
+    </div>
+  
+  
+    <div class="nav-item-next">
+      <a 
+        href="/2020/06/29/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E5%A6%82%E4%BD%95%E7%94%A8Resource.Tune%E7%BB%99EXE%E6%B7%BB%E5%8A%A0%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">Next</div>
+          
+            <div class="nav-title">【原创教程】如何用Resource.Tune给EXE添加一张图片 </div>
+          
+        </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
+  
+</div>
+
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+
+</div></main>
+            <aside class="left-column">
+              
+              <div class="card card-author">
+                
+  <img 
+    src="img/Head.png" 
+    class="author-img"
+    width="88"
+    height="88"
+    alt="author avatar">
+
+<p class="author-name">御坂初琴</p>
+<p class="author-description">designed by theme-kaze</p>
+<div class="author-message">
+  <a 
+    class="author-posts-count" 
+    href="/archives">
+    <span>69</span>
+    <span>Posts</span>
+  </a>
+  <a 
+    class="author-categories-count" 
+    href="/categories">
+    <span>8</span>
+    <span>Categories</span>
+  </a>
+  <a 
+    class="author-tags-count" 
+    href="/tags">
+    <span>30</span>
+    <span>Tags</span>
+  </a>
+</div>
+
+  <div class="author-card-society">
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+  </div>
+
+              </div>
+               <div class="sticky-tablet">
+  
+  
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+
+      </div>
+    </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header">
+    <i 
+      class="iconfont icon-fenlei" 
+      style="padding-right: 2px;">
+    </i>Categories
+  </div>
+  <div class="categories-list">
+    
+      <a href="/categories/%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B/">
+        <div class="categories-list-item">
+          原创教程
+          <span class="categories-list-item-badge">16</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E4%B8%8D%E7%A7%91%E5%AD%A6%E7%90%86%E8%A7%82/">
+        <div class="categories-list-item">
+          不科学理观
+          <span class="categories-list-item-badge">4</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E7%8B%AC%E5%AE%B6%E4%BF%AE%E6%94%B9/">
+        <div class="categories-list-item">
+          独家修改
+          <span class="categories-list-item-badge">19</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/">
+        <div class="categories-list-item">
+          免费软件
+          <span class="categories-list-item-badge">9</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E7%BD%91%E7%AB%99%E5%A3%B0%E6%98%8E/">
+        <div class="categories-list-item">
+          网站声明
+          <span class="categories-list-item-badge">3</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E9%9F%B3%E4%B9%90/">
+        <div class="categories-list-item">
+          音乐
+          <span class="categories-list-item-badge">4</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6/">
+        <div class="categories-list-item">
+          原创软件
+          <span class="categories-list-item-badge">7</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E8%BD%AC%E8%BD%BD/">
+        <div class="categories-list-item">
+          转载
+          <span class="categories-list-item-badge">7</span>
+        </div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header">
+    <i 
+      class="iconfont icon-biaoqian" 
+      style="padding-right: 2px;">
+    </i>hot tags
+  </div>
+  <div class="tags-list">
+    
+      <a 
+        href="/tags/%E5%AE%89%E5%8D%93/" 
+        title="安卓">
+        <div class="tags-list-item">安卓</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%BD%AC%E8%BD%BD/" 
+        title="转载">
+        <div class="tags-list-item">转载</div>
+      </a>
+    
+      <a 
+        href="/tags/Windows/" 
+        title="Windows">
+        <div class="tags-list-item">Windows</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" 
+        title="浏览器">
+        <div class="tags-list-item">浏览器</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%9D%82%E8%B0%88/" 
+        title="杂谈">
+        <div class="tags-list-item">杂谈</div>
+      </a>
+    
+      <a 
+        href="/tags/%E9%9F%B3%E4%B9%90/" 
+        title="音乐">
+        <div class="tags-list-item">音乐</div>
+      </a>
+    
+      <a 
+        href="/tags/%E7%A9%BA%E9%97%B4/" 
+        title="空间">
+        <div class="tags-list-item">空间</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" 
+        title="解压缩">
+        <div class="tags-list-item">解压缩</div>
+      </a>
+    
+      <a 
+        href="/tags/arduino/" 
+        title="arduino">
+        <div class="tags-list-item">arduino</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%B8%B8%E6%88%8F/" 
+        title="游戏">
+        <div class="tags-list-item">游戏</div>
+      </a>
+    
+      <a 
+        href="/tags/Python/" 
+        title="Python">
+        <div class="tags-list-item">Python</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" 
+        title="自研系统">
+        <div class="tags-list-item">自研系统</div>
+      </a>
+    
+      <a 
+        href="/tags/aardio/" 
+        title="aardio">
+        <div class="tags-list-item">aardio</div>
+      </a>
+    
+      <a 
+        href="/tags/%E5%85%AC%E5%91%8A/" 
+        title="公告">
+        <div class="tags-list-item">公告</div>
+      </a>
+    
+      <a 
+        href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" 
+        title="生活技巧">
+        <div class="tags-list-item">生活技巧</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%B8%85%E7%90%86/" 
+        title="清理">
+        <div class="tags-list-item">清理</div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+            <aside class="right-column">
+              <div class="sticky-widescreen">
+  
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+
+    </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header">
+    <i 
+      class="iconfont icon-wenzhang_huaban" 
+      style="padding-right: 2px;">
+    </i>Recent Posts
+  </div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2021-01-15</div>
+        <a href="/2021/01/15/%E3%80%90%E7%89%B9%E6%AE%8A%E6%94%B6%E9%9B%86%E3%80%91%E9%B2%81%E5%A4%A7%E5%B8%88Android%E5%AE%89%E5%8D%93%E7%89%88%E7%9A%843%E4%B8%AA%E7%89%B9%E6%AE%8A%E7%89%88%E6%9C%AC/"><div class="recent-posts-item-content">【冷门收集】鲁大师Android安卓版的3个特殊版本</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2021-01-13</div>
+        <a href="/2021/01/13/%E3%80%90%E7%BD%91%E7%AB%99%E5%A3%B0%E6%98%8E%E3%80%91%E5%85%B3%E4%BA%8E%E4%B8%8B%E6%9E%B6%E7%BD%91%E7%AB%99%E9%83%A8%E5%88%86%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%A3%B0%E6%98%8E/"><div class="recent-posts-item-content">【网站声明】关于下架网站部分原创软件的声明</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2021-01-11</div>
+        <a href="/2021/01/11/%E3%80%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6%E3%80%91VB%20Decompiler%20Pro%20(VB%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7)%2010.1%20%E6%B1%89%E5%8C%96%E5%85%8D%E8%B4%B9%E7%89%88/"><div class="recent-posts-item-content">【免费软件】VB Decompiler Pro (VB反编译工具) 10.1 汉化免费版</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-11-03</div>
+        <a href="/2020/11/03/%E3%80%90%E6%95%B0%E7%A0%81%E6%95%99%E7%A8%8B%E3%80%91%E5%B0%8F%E7%B1%B3%E8%A7%A3%E9%94%81%E6%9C%BA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><div class="recent-posts-item-content">【数码教程】小米解锁机使用教程</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>
+          Copyright ©
+          
+            2020 -
+          
+          2021
+        </span>
+        &nbsp;
+        <a 
+          href="/" 
+          class="footer-link">
+          御坂初琴软件屋
+        </a>
+      </div>
+    </div>
+
+    
+      <div class="footer-dsc">
+        
+          Powered by
+          <a 
+            href="https://hexo.io/" 
+            class="footer-link" 
+            target="_blank" 
+            rel="nofollow noopener noreferrer">
+            &nbsp;Hexo
+          </a>
+        
+        
+          <span>&nbsp;|&nbsp;</span>
+        
+        
+          Theme -
+          <a 
+            href="https://github.com/theme-kaze" 
+            class="footer-link" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+            &nbsp;Kaze
+          </a>
+        
+      </div>
+    
+    
+    
+    
+</footer> 
+    
+  <a 
+    role="button" 
+    id="scrollbutton" 
+    class="basebutton" 
+    aria-label="回到顶部">
+    <i class="iconfont icon-arrowleft button-icon"></i>
+  </a>
+
+<a 
+  role="button" 
+  id="menubutton"
+  aria-label="menu button"
+  class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="popbutton" 
+  class="basebutton" 
+  aria-label="控制中心">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="darkbutton" 
+  class="basebutton darkwidget" 
+  aria-label="夜色模式">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="searchbutton" 
+  class="basebutton searchwidget" 
+  aria-label="搜索">
+  <i class="iconfont icon-search button-icon"></i>
+</a> 
+     
+     
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
+     
+     
+    <script src="/js/main.js"></script> 
+     
+    
+      <script>
+        var addLazyload = function () {
+          var observer = lozad('.lozad', {
+            load: function (el) {
+              el.srcset = el.getAttribute('data-src')
+            },
+            loaded: function (el) {
+              el.classList.add('loaded')
+            },
+          })
+          observer.observe()
+        }
+      </script>
+      <script>
+        loadScript('/js/lib/lozad.min.js', addLazyload)
+      </script>
+     
+    
+    
+      <script>
+        setTimeout(() => {localSearch("search.json")}, 0)
+      </script>
+    
+  </body>
+</html>

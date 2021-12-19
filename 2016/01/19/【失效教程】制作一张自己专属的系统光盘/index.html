@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+  <meta 
+    name="theme-color" 
+    content="#fff" 
+    id="theme-color">
+  <meta 
+    name="description" 
+    content="Hexo">
+  <link 
+    rel="icon" 
+    href="/img/Head.png">
+  <title>【失效教程】制作一张自己专属的系统光盘</title>
+  
+    
+      <meta 
+        property="og:title" 
+        content="【失效教程】制作一张自己专属的系统光盘">
+    
+    
+      <meta 
+        property="og:url" 
+        content="http://example.com/2016/01/19/%E3%80%90%E5%A4%B1%E6%95%88%E6%95%99%E7%A8%8B%E3%80%91%E5%88%B6%E4%BD%9C%E4%B8%80%E5%BC%A0%E8%87%AA%E5%B7%B1%E4%B8%93%E5%B1%9E%E7%9A%84%E7%B3%BB%E7%BB%9F%E5%85%89%E7%9B%98/index.html">
+    
+    
+      <meta 
+        property="og:img" 
+        content="img/Head.png">
+    
+    
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2016-01-19">
+      <meta 
+        property="og:article:modified_time" 
+        content="2021-12-19">
+      <meta 
+        property="og:article:author" 
+        content="御坂初琴">
+      
+        
+          <meta 
+            property="og:article:tag" 
+            content="Windows">
+        
+      
+    
+  
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    function loadCSS(href, data, attr) {
+      var sheet = document.createElement('link');
+      sheet.ref = 'stylesheet';
+      sheet.href = href;
+      sheet.dataset[data] = attr;
+      document.head.appendChild(sheet);
+    }
+    function changeCSS(cssFile, data, attr) {
+      var oldlink = document.querySelector(data);
+      var newlink = document.createElement("link");
+      newlink.setAttribute("rel", "stylesheet");
+      newlink.setAttribute("href", cssFile);
+      newlink.dataset.prism = attr;
+      document.head.replaceChild(newlink, oldlink);
+    }
+  </script>
+  
+    
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+  </script>
+  
+    <script>
+      var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+        document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+      }
+    };
+    setDarkmode();
+    </script>
+  
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.js" as="script">
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+  <body>
+    <div class="wrapper">
+       
+      <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+        <img 
+          class="navbar-logo-img"
+          width="32"
+          height="32"
+          src="/img/Head.png" 
+          alt="blog logo">
+      
+      <span class="navbar-logo-dsc">御坂初琴软件屋</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+      <a 
+        href="/" 
+        class="navbar-menu-item">
+        
+          主页
+        
+      </a>
+    
+      <a 
+        href="/archives" 
+        class="navbar-menu-item">
+        
+          列表
+        
+      </a>
+    
+      <a 
+        href="/tags" 
+        class="navbar-menu-item">
+        
+          标签
+        
+      </a>
+    
+      <a 
+        href="/categories" 
+        class="navbar-menu-item">
+        
+          分类
+        
+      </a>
+    
+      <a 
+        target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" 
+        class="navbar-menu-item">
+        
+          B站
+        
+      </a>
+    
+      <a 
+        target="_blank" rel="noopener" href="http://www.ybcqrjw.cn/" 
+        class="navbar-menu-item">
+        
+          软件站
+        
+      </a>
+    
+      <a 
+        href="/links" 
+        class="navbar-menu-item">
+        
+          友链
+        
+      </a>
+    
+    <a 
+      class="navbar-menu-item darknavbar" 
+      id="dark">
+      <i class="iconfont icon-weather"></i>
+    </a>
+    <a 
+      class="navbar-menu-item searchnavbar" 
+      id="search">
+      <i 
+        class="iconfont icon-search" 
+        style="font-size: 1.2rem; font-weight: 400;">
+      </i>
+    </a>
+  </div>
+</nav> 
+      
+      <div 
+        id="local-search" 
+        style="display: none">
+        <input
+          class="navbar-menu-item"
+          id="search-input"
+          placeholder="请输入搜索内容..." />
+        <div id="search-content"></div>
+      </div>
+      
+      <div class="section-wrap">
+        <div class="container">
+          <div class="columns">
+            <main class="main-column">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      【失效教程】制作一张自己专属的系统光盘
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2016-01-19T10:31:57.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2016-01-19</span>
+    </time>
+    
+      <span class="dot"></span>
+      
+        <a 
+          href="/categories/%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B/" 
+          class="post-meta-link">
+          原创教程
+        </a>
+      
+    
+    
+      <span class="dot"></span>
+      <span>2.3k words</span>
+    
+  </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/Windows/" 
+            class="post-meta-link">
+            Windows
+          </a>
+        
+      </div>
+    </div>
+  
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <p>很多人电脑坏了也不愿意重做系统，因为重做系统需要重新安装软件，这是一个很浪费时间的操作。那么可不可以制作一张只属于自己的专用系统光盘，当系统安装好之后常用的软件就已经直接安装好了呢？这篇教程将教您<strong>制作一张自己专属的系统光盘</strong>。</p>
+<p>教程可以参考：个人制作 XP 系统万能 Ghost 镜像教程</p>
+<p><a target="_blank" rel="noopener" href="http://wenku.baidu.com/view/37a01b3a783e0912a2162ae2.html">http://wenku.baidu.com/view/37a01b3a783e0912a2162ae2.html</a></p>
+<p>当然也可以看如下我写的教程（以 XP 为例，其他大同小异）：</p>
+<p>必要工具及下载地址：</p>
+<p>1. 比较新的 Ghost 系统盘（10 元一张的盗版盘，注：必须是盗版盘）</p>
+<p>2. 一张空 DVD 光盘</p>
+<p>3. 带有刻录功能的电脑</p>
+<p>4.XP updater：<a target="_blank" rel="noopener" href="http://dl.xp.lisect.com/2015/05/31/UpdaterSetup-CHS-1.3.0.3.exe">http://dl.xp.lisect.com/2015/05/31/UpdaterSetup-CHS-1.3.0.3.exe</a></p>
+<p>5. 魔方清理大师：<a target="_blank" rel="noopener" href="http://mofang.ruanmei.com/">http://mofang.ruanmei.com/</a></p>
+<p>\6. Sysprep：<a target="_blank" rel="noopener" href="http://www.xz7.com/dir/21314.html">http://www.xz7.com/dir/21314.html</a></p>
+<p>7.UltraISO：<a target="_blank" rel="noopener" href="http://cn.ultraiso.net/">http://cn.ultraiso.net/</a></p>
+<p>8. 光盘刻录大师：<a target="_blank" rel="noopener" href="http://www.17rd.com/">http://www.17rd.com/</a></p>
+<p><strong>一、安装 XP 系统</strong></p>
+<p>**1.**<strong> 安装全新的 XP 系统</strong></p>
+<p>首先去系统之家下载一份新版的 XP 系统，安装，或者使用 Ghost 系统盘安装。这样可以免去激活和打补丁的过程。并且后边会用到。</p>
+<p>当然，如果不想重做系统，可以使用正在使用的系统，但是请确保系统功能的完整性，不要过度精简。</p>
+<p>**2.**<strong> 安装最新系统补丁</strong></p>
+<p>XP 的原版补丁可以打到 2014 年 4 月份，之后的补丁通过正常方法是无法下载的。但是我们可以使用其他方法来进行下载安装。这里推荐一个软件叫做<strong> XP updater</strong>。</p>
+<p>XP updater 下载地址 1：<a target="_blank" rel="noopener" href="http://dl.xp.lisect.com/2015/05/31/UpdaterSetup-CHS-1.3.0.3.exe">http://dl.xp.lisect.com/2015/05/31/UpdaterSetup-CHS-1.3.0.3.exe</a></p>
+<p>XP updater 下载地址 2：<a target="_blank" rel="noopener" href="http://sourceforge.net/projects/xpupdater/files/">http://sourceforge.net/projects/xpupdater/files/</a></p>
+<p>使用方法非常简单，双击打开获取，点击 [按预设修复] 等待就可以了。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165449775.png" alt="image-20211219165449775" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165449775.png" class="lozad post-image"></p>
+<p>**3.**<strong> 安装软件</strong></p>
+<p>安装你要保留在系统里的，希望在重新制作系统之后能自动安装的软件，包括常用软件，工程软件，<strong>驱动程序</strong>，运行库等。</p>
+<p>软件的总大小的值应满足以下<strong>任意一个条件</strong>：</p>
+<p>1. 原版系统镜像大小 + 软件安装包大小总和 &lt; 4.0G</p>
+<p>2. 安装以后的 C 盘占用大小 &lt; 9.0G</p>
+<p>如果不满足以上条件，请使用更加小巧的同类软件或者精简版软件。</p>
+<p>**4.**<strong> 精简系统大小</strong></p>
+<p>我们需要精简系统的大小，减小系统总大小以保证能写入一张 4.3G 的 DVD 光盘。</p>
+<p>\1. 关闭电源管理的休眠功能</p>
+<p>点桌面右键–属性–屏幕保护 — 电源–高级。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165500656.png" alt="image-20211219165500656" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165500656.png" class="lozad post-image"></p>
+<p>这时在 C 盘根目录下的页面文件 hiberfil.sys 会自动删除，大小为你的内存容量。</p>
+<p>\2. 关闭系统还原和自动在线更新功能</p>
+<p>点我的电脑 — 属性 — 系统还原和自动更新。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165510836.png" alt="image-20211219165510836" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165510836.png" class="lozad post-image"></p>
+<p>\3. 删除备用的动态链接库（dll 文件）</p>
+<p>用 SFC 命令可以把 C:\Windows\System\Dellcache 目录内的文件予以删除以释放空间。删除全部文件的命令是 sfc.exe/purgecache，也可以手工删除。</p>
+<p>\4. 减小虚拟内存大小</p>
+<p>未验证是否有效，但是可以试试：进入虚拟内存设置，将分页大小设置为自动或者设置在其他磁盘上。</p>
+<p>\5. 删除临时文件</p>
+<p>使用任意一款清理软件清理系统临时文件和缓存文件。</p>
+<p>**5.**<strong> 杀毒</strong></p>
+<p>用随便的杀毒软件进行一次系统扫描以保证系统中没有病毒。</p>
+<p>注：如果不想在其他电脑中使用这个镜像，无需进行下列步骤：</p>
+<p><strong>（注：第 6 步仅在你想在除了你正在使用的电脑以外的电脑使用你的安装光盘时才进行，否则谨慎进行！）</strong></p>
+<p>**6.**<strong> 卸载和修改硬件驱动程序（以下内容引自网友 @心梦 ）</strong></p>
+<p>打开 “设备管理器”（单击 “我的电脑”→“属性”→“硬件”→“设备管理器”，然后依次序卸载 “网络界面卡”、“通用串行总线控制器”、“声音，视频和游戏控制器”、“监视器”、“显示卡”。具体做法是：在某种硬件名称上单击鼠标右键，选择 “卸载” 就行了（图 3）。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165529054.png" alt="image-20211219165529054" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165529054.png" class="lozad post-image"></p>
+<p>​                               图 3</p>
+<p>如果系统要求重新启动，应选 “否”，切勿启动！因为一旦重新启动，系统会重新扫描硬件，刚才所做的改动会全部消失。</p>
+<p>接下来，还应在 “设备管理器” 列表中右击 “计算机” 项目下的 “ACPI Uniprocessor PC” 子项，在随后出现的功能菜单中选 “更新驱动程序” 一项（图 4）；在随后出现的对话框中点击 “从列表上或指定位置安装”（图 5），然后点 “下一步” 按钮；接着点选 “不要搜索，我要自己选择要安装的驱动程序”（图 6），再点 “下一步” 按钮；进入 “显示兼容硬件” 页面后，把型号改为 “Standard PC”（图 7）。继续点 “下一步” 按钮，最后点 “完成” 按钮结束修改。之后电脑会提示重新启动电脑，同样不要启动，点 “否” 即可。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165538600.png" alt="image-20211219165538600" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165538600.png" class="lozad post-image"></p>
+<p>图 4</p>
+<p><a target="_blank" rel="noopener" href="http://album.sina.com.cn/pic/001MqWMFzy6YHbIqAzu78"><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165547302.png" alt="image-20211219165547302" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165547302.png" class="lozad post-image"></a></p>
+<p>图 5</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165600104.png" alt="image-20211219165600104" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165600104.png" class="lozad post-image"></p>
+<p>图 6</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165607975.png" alt="image-20211219165607975" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165607975.png" class="lozad post-image"></p>
+<p>图 7</p>
+<p>修改完 ACPI 属性后，还应调整 “IDE ATA/ATAPI 控制器” 为 “标准双通道 PCI IDE 控制器”。方法与修改 ACPI 属性一样，记住也不要重新启动电脑（图 8）。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165618283.png" alt="image-20211219165618283" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165618283.png" class="lozad post-image"></p>
+<p>图 8</p>
+<p>PS：创建系统自动应答文件，在任何时候都可以，或者自己编辑也可以，不过有一些步骤切不可弄错，那就是卸载和更改硬件驱动之后电脑不可重新启动，也就是说，从卸载驱动和重新封装要一气呵成。</p>
+<p>至此，一个 “干净” 的 XP 就精简完成了。</p>
+<p>** 二、**<strong> 封装系统</strong></p>
+<p>我们使用 Sysprep 进行封装。</p>
+<p><strong>1. 解压 Sysprep</strong></p>
+<p>系统重新封装工具在 WindowsXP 原版安装光盘中已自带（但盗版光盘中并没有）。位置是安装光盘的 (X:\SUPPORT\TOOLS\DEPLOY.CAB) 文件，如果没有请到如下地址下载：</p>
+<p>Sysprep 下载地址：<a target="_blank" rel="noopener" href="http://www.xz7.com/dir/21314.html">http://www.xz7.com/dir/21314.html</a></p>
+<p>接下去我们一步步开始使用这个工具；我们用先在 C 盘根目录下建一个名为 Sysprep 的文件夹，并将 DEPLOY.CAB 压缩包文件用 Winrar 解压缩到 C:\Sysprep</p>
+<p>**2.**<strong> 创建系统自动应答文件</strong></p>
+<p>打开 C:\sysprep\setupmgr.exe 文件→下一步→创建新文件→下一步→选择 Sysprep 安装→下一步→选择自己的系统→下一步→是，完全自动安装→下一步→进入安装管理界面。</p>
+<p>在安装管理界面中，只有几个内容是有填写要求的，其他内容按自己喜好填写然后<strong>下一步</strong>。</p>
+<p>\1. 产品密钥</p>
+<p>XP 系统产品密钥：</p>
+<p>MRX3F-47B9T-2487J-KWKMF-RPWBY (工行版) 可用（强推此号)<br>
+ QC986-27D34-6M3TY-JJXP9-TBGMD (台湾交大学生版) 可用<br>
+ CM3HY-26VYW-6JRYC-X66GX-JVY2D 可用<br>
+ DP7CM-PD6MC-6BKXT-M8JJ6-RPXGJ 可用<br>
+ F4297-RCWJP-P482C-YY23Y-XH8W3 可装不可升级</p>
+<p>\2. 时区</p>
+<p>选择 **（+8）北京，重庆 **</p>
+<p>\3. 语言</p>
+<p>选择<strong>中文（简体）</strong></p>
+<p>最后来到这个界面，点击确定。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165630121.png" alt="image-20211219165630121" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165630121.png" class="lozad post-image"></p>
+<p><strong>注：<strong><strong>这个文件的文件名一定要 sysprep.inf, 所在目录一定要在 c:\sysprep 目录下</strong></strong>。</strong></p>
+<p>**3.**<strong> 系统封装</strong></p>
+<p>打开 c:\sysprep\sysprep.exe，确定，进入系统封装界面。</p>
+<p><img src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165638114.png" alt="image-20211219165638114" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="E:%5CYBCQBlog%5Csource_posts%5Cres%5Cimage-20211219165638114.png" class="lozad post-image"></p>
+<p>下边四个选项选择前三个即可。</p>
+<p>点击重新封装，约半分钟以后系统自动关机。</p>
+<p>** 三、**<strong> 制作 GHO 镜像</strong></p>
+<p>插入一张 Ghost 版的系统光盘，进入 WinPE 微型系统，进入 Ghost，把 C 盘克隆成一个 GHO 镜像，镜像文件名称：WINXPSP3，保存到除 C 盘以外的盘。压缩级别选择（best）。</p>
+<p>Ghost 的使用教程可以参考</p>
+<p><a target="_blank" rel="noopener" href="http://wenku.baidu.com/view/3a94f73a580216fc700afd13.html">http://wenku.baidu.com/view/3a94f73a580216fc700afd13.html</a></p>
+<p>** 四、**<strong> 制作系统光盘</strong></p>
+<p>我们使用 UltraISO 制作系统光盘。</p>
+<p>\1. 我们正常打开电脑，初次安装需要大约 10 分钟时间。</p>
+<p>\2. 插入 Ghost 系统光盘</p>
+<p>\3. 打开 UltraISO</p>
+<p>\4. 点击工具→制作光盘映像文件→在输出映像文件的位置选择保存的位置和文件夹名。点击制作，等待大约 10 分钟，点击完成。</p>
+<p>\5. 点击文件→打开→选择刚才刚刚制作的文件。</p>
+<p>5. 点击操作→添加文件→选择 D 盘的 WIXPSP3.GHO</p>
+<p>6. 点击覆盖</p>
+<p>7. 点击文件→保存，等待大约 10 分钟，系统镜像制作完成。</p>
+<p>8. 使用光盘刻录软件进行刻录，其中刻录速度宜选择慢速（x2.0）。</p>
+<p>光盘刻录软件使用教程：</p>
+<p><a target="_blank" rel="noopener" href="http://wenku.baidu.com/view/57ee59eb998fcc22bcd10dc8.html">http://wenku.baidu.com/view/57ee59eb998fcc22bcd10dc8.html</a></p>
+<p>至此，一张系统光盘就制作完成了。</p>
+<p>** 五、**<strong> 常见问题解答</strong></p>
+<p>\1. 重新封装时提示 “在试图更新的注册表时出错，无法继续”</p>
+<p>在 C:\Windows\ 中新建一个空文件夹，命名为 Repair，即可解决（感谢网友 @赤脚汉 提供解决方法）。</p>
+<p>\2. 封装后安装系统时提示缺少文件 “c_20127.nls”</p>
+<p>在 sysprep 生成自动应答文件后，打开 sysprep.inf，删除如下行：</p>
+<p><strong>InstallFilesPath=C:\sysprep\i386</strong></p>
+<p>即可解决（感谢热心网友提供解决方法）。</p>
+
+  </div>
+  <div>
+    
+      <div 
+        class="post-note note-warning copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            御坂初琴
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="http://example.com/2016/01/19/%E3%80%90%E5%A4%B1%E6%95%88%E6%95%99%E7%A8%8B%E3%80%91%E5%88%B6%E4%BD%9C%E4%B8%80%E5%BC%A0%E8%87%AA%E5%B7%B1%E4%B8%93%E5%B1%9E%E7%9A%84%E7%B3%BB%E7%BB%9F%E5%85%89%E7%9B%98/">
+            http://example.com/2016/01/19/%E3%80%90%E5%A4%B1%E6%95%88%E6%95%99%E7%A8%8B%E3%80%91%E5%88%B6%E4%BD%9C%E4%B8%80%E5%BC%A0%E8%87%AA%E5%B7%B1%E4%B8%93%E5%B1%9E%E7%9A%84%E7%B3%BB%E7%BB%9F%E5%85%89%E7%9B%98/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="http://license.coscl.org.cn/MulanPSL">MulanPSL 1.0 协议</a>。转载请注明出处！</p>
+      </div>
+    
+  </div>
+</article>
+<div class="nav">
+  
+    <div class="nav-item-prev">
+      <a 
+        href="/2018/03/06/%E3%80%90%E8%BD%AC%E8%BD%BD%E7%BE%8E%E6%96%87%E3%80%91%E7%BB%99%E4%BD%A0%E4%B8%80%E4%B8%AA%E5%88%98%E6%98%93%E9%98%B3%E5%8F%88%E5%A6%82%E4%BD%95%EF%BC%9F/" 
+        class="nav-link">
+        <i class="iconfont icon-left nav-prev-icon"></i>
+        <div>
+          <div class="nav-label">Prev</div>
+          
+            <div class="nav-title">【转载美文】给你一个刘易阳又如何？ </div>
+          
+        </div>
+      </a>
+    </div>
+  
+  
+    <div class="nav-item-next">
+      <a 
+        href="/2014/05/02/%E3%80%90%E8%BD%AC%E8%BD%BD%E7%BE%8E%E6%96%87%E3%80%91%E8%AF%81%E6%98%8E%E4%BD%A0%E5%96%9C%E6%AC%A2%E5%A5%B9%EF%BC%88%E4%BB%96%EF%BC%89%E7%9A%84%E5%8D%81%E4%B8%83%E6%9D%A1%E8%AF%81%E6%8D%AE%EF%BC%8C%E4%B8%8D%E8%A6%81%E4%B8%8D%E6%89%BF%E8%AE%A4/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">Next</div>
+          
+            <div class="nav-title">【转载美文】证明你喜欢她（他）的十七条证据，不要不承认 </div>
+          
+        </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
+  
+</div>
+
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+
+</div></main>
+            <aside class="left-column">
+              
+              <div class="card card-author">
+                
+  <img 
+    src="img/Head.png" 
+    class="author-img"
+    width="88"
+    height="88"
+    alt="author avatar">
+
+<p class="author-name">御坂初琴</p>
+<p class="author-description">designed by theme-kaze</p>
+<div class="author-message">
+  <a 
+    class="author-posts-count" 
+    href="/archives">
+    <span>69</span>
+    <span>Posts</span>
+  </a>
+  <a 
+    class="author-categories-count" 
+    href="/categories">
+    <span>8</span>
+    <span>Categories</span>
+  </a>
+  <a 
+    class="author-tags-count" 
+    href="/tags">
+    <span>30</span>
+    <span>Tags</span>
+  </a>
+</div>
+
+  <div class="author-card-society">
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+      <div class="author-card-society-icon">
+        <a href="function link() { [native code] }">
+          <i class="iconfont  society-icon"></i>
+        </a>
+      </div>
+    
+  </div>
+
+              </div>
+               <div class="sticky-tablet">
+  
+  
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+
+      </div>
+    </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header">
+    <i 
+      class="iconfont icon-fenlei" 
+      style="padding-right: 2px;">
+    </i>Categories
+  </div>
+  <div class="categories-list">
+    
+      <a href="/categories/%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B/">
+        <div class="categories-list-item">
+          原创教程
+          <span class="categories-list-item-badge">16</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E4%B8%8D%E7%A7%91%E5%AD%A6%E7%90%86%E8%A7%82/">
+        <div class="categories-list-item">
+          不科学理观
+          <span class="categories-list-item-badge">4</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E7%8B%AC%E5%AE%B6%E4%BF%AE%E6%94%B9/">
+        <div class="categories-list-item">
+          独家修改
+          <span class="categories-list-item-badge">19</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6/">
+        <div class="categories-list-item">
+          免费软件
+          <span class="categories-list-item-badge">9</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E7%BD%91%E7%AB%99%E5%A3%B0%E6%98%8E/">
+        <div class="categories-list-item">
+          网站声明
+          <span class="categories-list-item-badge">3</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E9%9F%B3%E4%B9%90/">
+        <div class="categories-list-item">
+          音乐
+          <span class="categories-list-item-badge">4</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6/">
+        <div class="categories-list-item">
+          原创软件
+          <span class="categories-list-item-badge">7</span>
+        </div>
+      </a>
+    
+      <a href="/categories/%E8%BD%AC%E8%BD%BD/">
+        <div class="categories-list-item">
+          转载
+          <span class="categories-list-item-badge">7</span>
+        </div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header">
+    <i 
+      class="iconfont icon-biaoqian" 
+      style="padding-right: 2px;">
+    </i>hot tags
+  </div>
+  <div class="tags-list">
+    
+      <a 
+        href="/tags/%E5%AE%89%E5%8D%93/" 
+        title="安卓">
+        <div class="tags-list-item">安卓</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%BD%AC%E8%BD%BD/" 
+        title="转载">
+        <div class="tags-list-item">转载</div>
+      </a>
+    
+      <a 
+        href="/tags/Windows/" 
+        title="Windows">
+        <div class="tags-list-item">Windows</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" 
+        title="浏览器">
+        <div class="tags-list-item">浏览器</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%9D%82%E8%B0%88/" 
+        title="杂谈">
+        <div class="tags-list-item">杂谈</div>
+      </a>
+    
+      <a 
+        href="/tags/%E9%9F%B3%E4%B9%90/" 
+        title="音乐">
+        <div class="tags-list-item">音乐</div>
+      </a>
+    
+      <a 
+        href="/tags/%E7%A9%BA%E9%97%B4/" 
+        title="空间">
+        <div class="tags-list-item">空间</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" 
+        title="解压缩">
+        <div class="tags-list-item">解压缩</div>
+      </a>
+    
+      <a 
+        href="/tags/arduino/" 
+        title="arduino">
+        <div class="tags-list-item">arduino</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%B8%B8%E6%88%8F/" 
+        title="游戏">
+        <div class="tags-list-item">游戏</div>
+      </a>
+    
+      <a 
+        href="/tags/Python/" 
+        title="Python">
+        <div class="tags-list-item">Python</div>
+      </a>
+    
+      <a 
+        href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" 
+        title="自研系统">
+        <div class="tags-list-item">自研系统</div>
+      </a>
+    
+      <a 
+        href="/tags/aardio/" 
+        title="aardio">
+        <div class="tags-list-item">aardio</div>
+      </a>
+    
+      <a 
+        href="/tags/%E5%85%AC%E5%91%8A/" 
+        title="公告">
+        <div class="tags-list-item">公告</div>
+      </a>
+    
+      <a 
+        href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" 
+        title="生活技巧">
+        <div class="tags-list-item">生活技巧</div>
+      </a>
+    
+      <a 
+        href="/tags/%E6%B8%85%E7%90%86/" 
+        title="清理">
+        <div class="tags-list-item">清理</div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+            <aside class="right-column">
+              <div class="sticky-widescreen">
+  
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+
+    </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header">
+    <i 
+      class="iconfont icon-wenzhang_huaban" 
+      style="padding-right: 2px;">
+    </i>Recent Posts
+  </div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2021-01-15</div>
+        <a href="/2021/01/15/%E3%80%90%E7%89%B9%E6%AE%8A%E6%94%B6%E9%9B%86%E3%80%91%E9%B2%81%E5%A4%A7%E5%B8%88Android%E5%AE%89%E5%8D%93%E7%89%88%E7%9A%843%E4%B8%AA%E7%89%B9%E6%AE%8A%E7%89%88%E6%9C%AC/"><div class="recent-posts-item-content">【冷门收集】鲁大师Android安卓版的3个特殊版本</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2021-01-13</div>
+        <a href="/2021/01/13/%E3%80%90%E7%BD%91%E7%AB%99%E5%A3%B0%E6%98%8E%E3%80%91%E5%85%B3%E4%BA%8E%E4%B8%8B%E6%9E%B6%E7%BD%91%E7%AB%99%E9%83%A8%E5%88%86%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%A3%B0%E6%98%8E/"><div class="recent-posts-item-content">【网站声明】关于下架网站部分原创软件的声明</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2021-01-11</div>
+        <a href="/2021/01/11/%E3%80%90%E5%85%8D%E8%B4%B9%E8%BD%AF%E4%BB%B6%E3%80%91VB%20Decompiler%20Pro%20(VB%E5%8F%8D%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7)%2010.1%20%E6%B1%89%E5%8C%96%E5%85%8D%E8%B4%B9%E7%89%88/"><div class="recent-posts-item-content">【免费软件】VB Decompiler Pro (VB反编译工具) 10.1 汉化免费版</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-11-03</div>
+        <a href="/2020/11/03/%E3%80%90%E6%95%B0%E7%A0%81%E6%95%99%E7%A8%8B%E3%80%91%E5%B0%8F%E7%B1%B3%E8%A7%A3%E9%94%81%E6%9C%BA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><div class="recent-posts-item-content">【数码教程】小米解锁机使用教程</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>
+          Copyright ©
+          
+            2020 -
+          
+          2021
+        </span>
+        &nbsp;
+        <a 
+          href="/" 
+          class="footer-link">
+          御坂初琴软件屋
+        </a>
+      </div>
+    </div>
+
+    
+      <div class="footer-dsc">
+        
+          Powered by
+          <a 
+            href="https://hexo.io/" 
+            class="footer-link" 
+            target="_blank" 
+            rel="nofollow noopener noreferrer">
+            &nbsp;Hexo
+          </a>
+        
+        
+          <span>&nbsp;|&nbsp;</span>
+        
+        
+          Theme -
+          <a 
+            href="https://github.com/theme-kaze" 
+            class="footer-link" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+            &nbsp;Kaze
+          </a>
+        
+      </div>
+    
+    
+    
+    
+</footer> 
+    
+  <a 
+    role="button" 
+    id="scrollbutton" 
+    class="basebutton" 
+    aria-label="回到顶部">
+    <i class="iconfont icon-arrowleft button-icon"></i>
+  </a>
+
+<a 
+  role="button" 
+  id="menubutton"
+  aria-label="menu button"
+  class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="popbutton" 
+  class="basebutton" 
+  aria-label="控制中心">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="darkbutton" 
+  class="basebutton darkwidget" 
+  aria-label="夜色模式">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="searchbutton" 
+  class="basebutton searchwidget" 
+  aria-label="搜索">
+  <i class="iconfont icon-search button-icon"></i>
+</a> 
+     
+     
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
+     
+     
+    <script src="/js/main.js"></script> 
+     
+    
+      <script>
+        var addLazyload = function () {
+          var observer = lozad('.lozad', {
+            load: function (el) {
+              el.srcset = el.getAttribute('data-src')
+            },
+            loaded: function (el) {
+              el.classList.add('loaded')
+            },
+          })
+          observer.observe()
+        }
+      </script>
+      <script>
+        loadScript('/js/lib/lozad.min.js', addLazyload)
+      </script>
+     
+    
+    
+      <script>
+        setTimeout(() => {localSearch("search.json")}, 0)
+      </script>
+    
+  </body>
+</html>
