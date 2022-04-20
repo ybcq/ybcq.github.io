@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【体验教程】华为移动应用引擎一日体验报告及简单改造 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="最近华为发布了华为移动应用引擎。我也是第一时间下载了一份体验了一天，今天写一个体验报告。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【体验教程】华为移动应用引擎一日体验报告及简单改造">
+<meta property="og:url" content="http://ybcq.gitee.io/2021/09/13/%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="最近华为发布了华为移动应用引擎。我也是第一时间下载了一份体验了一天，今天写一个体验报告。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C1f68be85c6a5a4bd212a4e7981205a544dde36ec.jpg@942w_498h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cabce7d218e7ba9b3aa21f3aadfe22aa9c21c84ba.png@942w_531h_progressive.webp">
+<meta property="og:image" content="e:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cimage-20220420200100133.png">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cbeeddcbe92d8554f0b5283e60e9d8dcd08b60dbf.png@942w_531h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C6e767c498fd20e7c7739433d0cc85dc458373107.png@942w_531h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Ccb8b27589a717a4f7c21e04aecb771545eca8a96.png@942w_581h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cb8ae4354091d6c1f077b6a45224e4e700c58fc52.png@942w_296h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C885e9534e88d6b43fa3456b9530b4ece45a1430b.png@942w_327h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C2570c4b3dac5d3cb969f945890883c41c60733e8.jpg@942w_629h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Ca30c457a7af4cf6837a620577217f302f05f775d.jpg@942w_635h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C58125a6a84df787a8cc43daccbc93bc72cf89c82.jpg@942w_425h_progressive.webp">
+<meta property="article:published_time" content="2021-09-13T05:14:07.000Z">
+<meta property="article:modified_time" content="2022-04-20T12:02:16.940Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="安卓">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C1f68be85c6a5a4bd212a4e7981205a544dde36ec.jpg@942w_498h_progressive.webp">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1650458749454">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1650458749454">
+    <link rel="stylesheet" href="/css/style.css?v=1650458749454">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>94</div>
+        <div><span>Tags</span>38</div>
+        <div><span>Categories</span>16</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://ln17371551.icoc.bz/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://gzming.ysepan.com/" target="_blank" mdui-tooltip="{content: 'Symbian'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验图文/">体验图文</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">9</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">25</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">8</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/开箱图文/">开箱图文</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">19</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/笔记/">笔记</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞猜想/">脑洞猜想</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源搜集/">资源搜集</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.67px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 18.33px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.67px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 15px;">小米</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 11.67px;">手机</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 15px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 16.67px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 16.67px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 13.33px;">游戏</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 13.33px;">空间</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 13.33px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 13.33px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 18.33px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 15px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+              <img data-fancybox="gallery" src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" alt="【体验教程】华为移动应用引擎一日体验报告及简单改造" loading="lazy">
+              <h1>【体验教程】华为移动应用引擎一日体验报告及简单改造</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年09月13日</a>
+</div>
+
+      <p>最近华为发布了华为移动应用引擎。我也是第一时间下载了一份体验了一天，今天写一个体验报告。</p>
+<p>可以说，华为移动应用引擎虽然实现方法上还是模拟器，但是，其目的很明显不是和蓝叠、雷电一样普通的安卓模拟器。</p>
+<p>它的目的更像是已经被废弃的 Adobe Air，提供一种让 apk 像 exe 一样，在 win 上直接运行的感觉。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C1f68be85c6a5a4bd212a4e7981205a544dde36ec.jpg@942w_498h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>估计 00 后都不知道这个了<br>
+所以，如果大家像其他模拟器一样使用，先打开模拟器，然后从模拟器的启动器去启动 apk，那就完全误解了这个引擎的目的，还不如去用其他成熟的模拟器。</p>
+<p>换言之，与讨论启动器相比，更有值得探讨的事情是，如何让 apk 体验上更像 win 原生支持的程序，这也是 Windows11 正在做的事。</p>
+<p>那么到底现在移动应用引擎都做到了什么呢？</p>
+<p>首先是每个软件独立窗口。这个是原生化的第一步也是最重要的一步。被关在模拟器窗口里的应用怎么都不会有原生的感觉。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cabce7d218e7ba9b3aa21f3aadfe22aa9c21c84ba.png@942w_531h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>左：普通模拟器，右：华为移动应用引擎<br>
+目前，独立窗口的 apk 已经支持基本的 Win 窗口操作，包括：</p>
+<p>从桌面图标直接启动（而非从模拟器启动器启动），最大化最小化，窗口大小可调</p>
+<p>贴边自动分屏（未完全实现）</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cimage-20220420200100133.png" alt="image-20220420200100133" data-caption="image-20220420200100133" loading="lazy"></p>
+<p>自动双份屏 四分屏<br>
+使用系统键盘输入</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cbeeddcbe92d8554f0b5283e60e9d8dcd08b60dbf.png@942w_531h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>使用系统键盘输入<br>
+独立任务栏图标和 Alt-Tab 切换。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C6e767c498fd20e7c7739433d0cc85dc458373107.png@942w_531h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>支持 Win10 的多任务界面</p>
+<p>沿着让 apk 更 exe 化的思路，目前我说两个可用的简单折腾：</p>
+<p>1. 让移动引擎和 Windows 共用一个盘符</p>
+<p>文件互通是让 apk 原生化的重要一步。这个功能可以让一个文件在 exe 和 apk 顺序打开时更加方便。</p>
+<p>比如说，我在 a.exe 里编辑了文件 x.png，然后需要在 b.apk 中进一步编辑，然后再用 a.exe 中继续编辑。这时候如果用传统的传送方法，就会非常麻烦。</p>
+<p>目前引擎提供了共享的文件夹，但是路径太深不够方便。</p>
+<p>这里提供两个方法：</p>
+<p>一个是把路径改浅，或者单独分出一个盘符给虚拟机。位置在右上 4 个点→文件助手→修改。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Ccb8b27589a717a4f7c21e04aecb771545eca8a96.png@942w_581h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>修改共享路径<br>
+另一个是把现在的共享文件夹虚拟成一个盘符。我个人比较推荐第二种方法。</p>
+<p>方法很简单，只需要在 CMD 中敲入 subst 盘符 路径，即可虚拟共享目录到一个磁盘。</p>
+<p>以我自己的电脑为例：</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Cb8ae4354091d6c1f077b6a45224e4e700c58fc52.png@942w_296h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>简单的命令<br>
+虚拟完的效果：</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C885e9534e88d6b43fa3456b9530b4ece45a1430b.png@942w_327h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>生成与移动引擎共用的 H 盘<br>
+这样，只要我在 H 盘内操作，所有的文件操作就会共享给移动引擎，其中的文件移动引擎也可以直接打开。</p>
+<p>该思路已提交给华为开发，由他们考虑是否合并到移动引擎的功能中。</p>
+<p>2. 任意应用安装和桌面快捷方式</p>
+<p>任意应用安装，需要打开移动引擎的开发者模式。方法是：</p>
+<p>任务管理器里结束名为 Huawei MobileApp Engine 的进程。</p>
+<p>打开 C:\Program Files\MobileAppEngine\MobileAppEngine.lnk 进入引擎后台桌面。</p>
+<p>进入设置→系统→关于手机→点击版本号 7 次，开启开发者模式。</p>
+<p>后退点击开发人员选项→开启 USB 调试并关闭监控 ADB 安装应用。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C2570c4b3dac5d3cb969f945890883c41c60733e8.jpg@942w_629h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>开发人员选项<br>
+然后其实使用 adb 命令就可以安装 apk 了，但是和 exe 安装包操作手感完全不一致，更像是 linux 的命令行安装的感觉。</p>
+<p>所以我选择使用 apkinstaller 安装，可以图形化安装任意 apk 到移动引擎。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5Ca30c457a7af4cf6837a620577217f302f05f775d.jpg@942w_635h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>Apk 安装器<br>
+安装后应用会自动生成桌面图标，不需要手动生成图标，非常方便。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0%5C58125a6a84df787a8cc43daccbc93bc72cf89c82.jpg@942w_425h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>桌面图标自动生成</p>
+<h2 id="补充排坑"><a class="markdownIt-Anchor" href="#补充排坑">#</a> 补充排坑</h2>
+<p>简单给大家排两个坑：</p>
+<ol>
+<li>
+<p>文件共享文件夹只支持英文文件名的文件和目录，否则无法正常共享。如果功能失效了，就检查一下里面有没有中文名的文件和目录</p>
+</li>
+<li>
+<p>移动应用引擎的优点就是，平时并不需要打开模拟器的主界面。但是有时候我们需要在使用应用的同时开一下主界面，这时候只需要使用 AnLink 和其他任意一款多屏协同软件直接连接那个名为 System 的虚拟机就行</p>
+</li>
+<li>
+<p>1.6 版本不支持 ADB 安装应用，只能先拷贝到共享文件夹然后用 ES 文件管理器安装。同时升级过程有概率不保留上个版本的应用，请各位慎重升级。我已回退到 1.1 版本</p>
+</li>
+</ol>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
+<p>虽然华为移动引擎尚不完美，还存在很多问题，但是不得不说，它总体的思路和目标很不错，而且更接近 Win11 想要实现的 apk 效果。</p>
+<p>期待华为移动引擎更加完美的未来！</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="http://ybcq.gitee.io/2021/09/13/%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0/" title="http:&#x2F;&#x2F;ybcq.gitee.io&#x2F;2021&#x2F;09&#x2F;13&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;ybcq.gitee.io&#x2F;2021&#x2F;09&#x2F;13&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E6%95%99%E7%A8%8B%E3%80%91%E5%8D%8E%E4%B8%BA%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B/">原创教程</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%AE%89%E5%8D%93/" rel="tag">安卓</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1650458749455"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>

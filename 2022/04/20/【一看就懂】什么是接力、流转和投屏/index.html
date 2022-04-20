@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【一看就懂】什么是接力、流转和投屏 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="接力、流转和投屏是大家讨论多设备协同办公时常提到的三个词。这几天在逛B站时发现还是有很多小伙伴搞不懂三者之间的区别，那么今天我就给大家简单科普一下这三个概念。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【一看就懂】什么是接力、流转和投屏">
+<meta property="og:url" content="http://ybcq.gitee.io/2022/04/20/%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="接力、流转和投屏是大家讨论多设备协同办公时常提到的三个词。这几天在逛B站时发现还是有很多小伙伴搞不懂三者之间的区别，那么今天我就给大家简单科普一下这三个概念。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C44c6173ef1743769f1807c4be7aac33b87c4837e.png@911w_854h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5Cc57d50933ce838bd2bfc0816655d65cdeeac2f3e.png@942w_471h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C94bac117062742db4b20beb2b9aede72a438c79d.png@942w_593h_progressive.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C55f081b565a6d972899703c7f2c371f015eabf16.jpg@942w_566h_progressive-16504538459367.webp">
+<meta property="og:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C85f9cc7388b8a416ea3ca6dd2ac12ab407013884.jpg@942w_471h_progressive.webp">
+<meta property="article:published_time" content="2022-04-20T11:21:55.249Z">
+<meta property="article:modified_time" content="2022-04-20T11:26:23.587Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="安卓">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C44c6173ef1743769f1807c4be7aac33b87c4837e.png@911w_854h_progressive.webp">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1650458749435">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1650458749435">
+    <link rel="stylesheet" href="/css/style.css?v=1650458749435">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>94</div>
+        <div><span>Tags</span>38</div>
+        <div><span>Categories</span>16</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://ln17371551.icoc.bz/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://gzming.ysepan.com/" target="_blank" mdui-tooltip="{content: 'Symbian'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验图文/">体验图文</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">9</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">25</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">8</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/开箱图文/">开箱图文</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">19</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/笔记/">笔记</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞猜想/">脑洞猜想</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源搜集/">资源搜集</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.67px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 18.33px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.67px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 15px;">小米</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 11.67px;">手机</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 15px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 16.67px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 16.67px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 13.33px;">游戏</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 13.33px;">空间</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 13.33px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 13.33px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 18.33px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 15px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+              <img data-fancybox="gallery" src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" alt="【一看就懂】什么是接力、流转和投屏" loading="lazy">
+              <h1>【一看就懂】什么是接力、流转和投屏</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年04月20日</a>
+</div>
+
+      <p>接力、流转和投屏是大家讨论多设备协同办公时常提到的三个词。这几天在逛 B 站时发现还是有很多小伙伴搞不懂三者之间的区别，那么今天我就给大家简单科普一下这三个概念。</p>
+<p>注意：</p>
+<p>1. 本文为了让大家好理解，使用了一些浅显易懂的替代词代替专业词汇。不严谨，但是容易理解。</p>
+<p>2. 本文中的接力，流转和投屏都是狭义概念。由于现在很多 KOL 已经把这三个词混着用了，所以从他们的角度讲，这三个词没法区分。</p>
+<p>3. 本文中几乎没提到 OPPO 是因为不了解。</p>
+<p>4. 本期视频中的所有素材可以在<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mi4y12727">这个链接</a>中看到视频版，更直观。</p>
+<hr>
+<h2 id="接力"><a class="markdownIt-Anchor" href="#接力">#</a> 接力</h2>
+<p>接力指的是 A，B 两个设备都有 APP，A 使用该 APP 后，可以通过极简单的操作，比如点击托盘栏对应的图标，让 A 当前 APP 的状态转移到 B 设备上相同的 APP。</p>
+<p>以下图为例，在 iPhone 上使用 Safari 浏览网页，在 iPad 的 Dock 栏上会出现对应的图标，点击对应的图标即可唤醒 iPad 上的 Safari 继续浏览刚才的网页。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C44c6173ef1743769f1807c4be7aac33b87c4837e.png@911w_854h_progressive.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>苹果的应用接力演示<br>
+相似的操作在华为和小米上都能实现。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5Cc57d50933ce838bd2bfc0816655d65cdeeac2f3e.png@942w_471h_progressive.webp" alt="img" data-caption="img" loading="lazy"> 小米的哔哩哔哩应用接力演示<br>
+ A，B 两个设备不一定必须是同平台设备。比如这次的 VIVO 的原子套件，就是每个支持的应用都分别做了 PC 版，HD 版和手机版三个版本。再比如 Safari 也支持从 iOS 平台向 MacOS 平台接力。</p>
+<p>接力的优点：</p>
+<p>应用完全运行在对应设备上，当接力后，每个设备都可以独立使用，无需原设备常驻在网络。</p>
+<p>接力的缺点：</p>
+<p>需要厂商主动适配，是一种被动适配方案。</p>
+<p>设备厂商给应用厂商留下接口，应用厂商自己去根据接口进行适配。</p>
+<p>由于这个原因，即使是号称生态最好的苹果，也只有 20 几个应用支持接力。</p>
+<p>而且两个设备间接力时能传递过去的信息极其有限，不见得能百分之百还原之前的应用状态。</p>
+<p>比如知乎 APP 的接力，就只能接力过去当前你在看哪个答案，但是编辑一半的回复不会被接力过去。</p>
+<p>目前支持接力的品牌：</p>
+<p>【苹果】支持 iPhone、iPad 和 MacOS 之间，有 20 多个应用支持。其中，iPhone 和 iPad 之间接力的应用支持较多，和 Mac 之间支持的应用较少。</p>
+<p>苹果所有支持接力的应用列表：</p>
+<p>自家应用：短信、电话、FaceTime、通讯录、Safari 浏览器、备忘录、苹果办公三件套；</p>
+<p>第三方应用：知乎、微博、微信读书、WPS、豆瓣、夸克浏览器、Alook 浏览器、爱奇艺、PDF Expert、Chrome 浏览器、Notability、Firefox 浏览器、EuDic、每日英语听力、marginnote3、goodnotes。</p>
+<p>【华为 / 小米】支持手机和平板之间，有 10 多个应用支持，大多数都是自家应用和影音应用，比如短信、电话、笔记、浏览器、B 站、腾讯视频等。</p>
+<p>【VIVO】支持手机、平板和 Windows 之间，仅支持自家的 5 个原子套件。</p>
+<p>【三星 / 联想】支持手机、平板之间，仅有小于 5 个应用且都是自家应用，包括笔记和浏览器。</p>
+<hr>
+<h2 id="流转"><a class="markdownIt-Anchor" href="#流转">#</a> 流转</h2>
+<p>流转指的是 A，B 两个设备只有 A 有 APP，A 使用该 APP 后，可以通过极简单的操作，比如点击托盘栏的图标，让 A 上的 APP 的显示元素 (而非屏幕内容本身) 转移到 B 设备，从而 B 设备可以无缝使用到 A 设备上该 APP 的当前状态。</p>
+<p>再次强调，流转并不是把屏幕内容本身传递过去，而是把 APP 的把显示元素传递过去，类似于串流。</p>
+<p>由于传递的不是屏幕内容本身，被流转的应用都能完美的支持目标设备的屏幕大小。而且，原设备的屏幕也会被释放，可以使用其他 APP，也可以同时流转多个应用。</p>
+<p>举个例子，在一台华为手机上运行百度云 APP，然后流转到另一台没有安装百度云 APP 的平板上，你会发现，百度云 APP 的当前状态被完美保留，同时也自动适配了屏幕比例和平行视界，右侧的手机界面也被释放。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C94bac117062742db4b20beb2b9aede72a438c79d.png@942w_593h_progressive.webp" alt="img" data-caption="img" loading="lazy"> 华为的应用流转演示<br>
+<img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C55f081b565a6d972899703c7f2c371f015eabf16.jpg@942w_566h_progressive-16504538459367.webp" alt="img" data-caption="img" loading="lazy"></p>
+<p>王者荣耀流转后也是自动适配屏幕布局<br>
+流转是接力的同位替代和强力补足。它的优势在于，只要硬件厂商实现了这个功能，即使软件厂商不做适配，也会支持非常多的应用。</p>
+<p>缺点是，由于被流转的 APP 实际还是运行在原设备上，所以原设备并不能被完全释放或者断开网络。</p>
+<p>目前支持流转的品牌：</p>
+<p>【华为】支持电脑、手机、平板之间相互流转，支持超多应用，适配好。</p>
+<p>【小米】支持手机流转到平板，手机流转到电脑，相较与华为的流转，流转后支持平行视界的应用数量少很多。</p>
+<hr>
+<h2 id="投屏"><a class="markdownIt-Anchor" href="#投屏">#</a> 投屏</h2>
+<p>投屏，顾名思义，就是把屏幕上显示内容投过去。这个过程不会对屏幕内容有任何修改，所以既不能保证屏幕适配，也不能释放原设备的任何部分，包括屏幕。同时，当 A 设备投屏到 B 设备时，A 设备不能干其他事情。</p>
+<p>投屏是流转的下位替代功能，虽然它看起来也可以实现跨设备无缝切换。相比于流转，手机不可释放，延迟高，适配差，不能多应用同时流转，都是投屏本身的缺点，也是投屏和流转的区别。</p>
+<p><img data-fancybox="gallery" src="E:%5CYBCQBlog%5Csource_posts%5C%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F%5C85f9cc7388b8a416ea3ca6dd2ac12ab407013884.jpg@942w_471h_progressive.webp" alt="img" data-caption="img" loading="lazy"> 投屏后因为不适配上下有大黑边<br>
+官方支持投屏厂商：</p>
+<p>【苹果】支持 iPhone 和 Mac 之间，仅投屏。无附加功能，比如文件从一个设备的应用 A 拖拽到另一个设备的投屏窗口的应用 B (以下简称 “文件拖拽”) 等，(例：从 iPhone 投屏到 Mac 的窗口中选中一张图片，直接拖拽到 Mac 的 iWork 中自动插入。该功能华为小米都可以实现）。</p>
+<p>【华为】不支持流转的应用大多支持投屏。支持 “文件拖拽” 等一系列附加功能。</p>
+<p>【小米】MIUI12.5 以前的 MIUI For Pad，MIUI+ PC 版 (介于流转和投屏之间)。支持 “文件拖拽” 等一系列附加功能。</p>
+<p>【OPPO】手机和平板之间，附加功能未知。</p>
+<p>【三星 / 联想】手机、平板、电脑之间。支持简单的 “文件拖拽” 操作。</p>
+<p>除此之外，安卓侧都支持第三方投屏软件，可以把任意安卓设备投屏到电脑，并且实现简单的文件传送等操作。比如常用的安连，联想的 Lenovo One Lite。</p>
+<p>最后再简单说几句 “多屏协同”。无论是接力，还是流转和投屏，都只是多屏协同的一部分。</p>
+<p>多屏协同本身是以 “多设备之间高效无缝办公” 为目的。</p>
+<p>所以多屏协同还包含了诸如方便的文件传输，剪贴板共享，以及前文提到的跨设备拖拽到应用等功能。</p>
+<p>换言之，不是说只投个屏，就能叫 “多屏协同”。</p>
+<p>除此之外，云同步也是多屏协同办公的重要组成部分，比如 OneNote，WPS 云文档，腾讯文档等一系列协同办公 APP。</p>
+<p>华为智慧屏，三星的 dex 模式，苹果的副屏模式，曾经老罗的 TNT，也是多屏协同办公的另一种形式，这个有空会细说。</p>
+<p>接力，流转和投屏，这三个功能不是 “非此即彼” 的关系，而是 “相互补充” 的关系。在这方面，我个人比较倾向于华为的综合方案，即：</p>
+<p>1. 能接力时优先接力</p>
+<p>2. 不能接力时优先流转</p>
+<p>3. 不能流转时还能投屏</p>
+<p>相比之下，苹果生态的仅接力模式需要全程等厂家适配，太过被动，这么多年了也仅支持为数不多的软件；联想和 OPPO 的仅投屏模式太过简单，也不够方便；小米虽然啥都做了但是又都没做到好用。</p>
+<p>以上就是本期专栏的全部内容了，如果有帮助到你多了解一点点数码，或者对内容有不同的观点，欢迎在评论区讨论。</p>
+<p>我是御坂初琴，一个追求极致的系统功能性的数码爱好者。下期专栏再见。</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="http://ybcq.gitee.io/2022/04/20/%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F/" title="http:&#x2F;&#x2F;ybcq.gitee.io&#x2F;2022&#x2F;04&#x2F;20&#x2F;%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;ybcq.gitee.io&#x2F;2022&#x2F;04&#x2F;20&#x2F;%E3%80%90%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82%E3%80%91%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8A%9B%E3%80%81%E6%B5%81%E8%BD%AC%E5%92%8C%E6%8A%95%E5%B1%8F&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B/">原创教程</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%AE%89%E5%8D%93/" rel="tag">安卓</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1650458749435"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
