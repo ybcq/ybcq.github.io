@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【体验报告】UOS一日体验报告及排坑日记 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="在数码爱好者都在热火朝天的升级Windows11的时候，我选择了拥抱一款国产linux发行版： 统信UOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【体验报告】UOS一日体验报告及排坑日记">
+<meta property="og:url" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="在数码爱好者都在热火朝天的升级Windows11的时候，我选择了拥抱一款国产linux发行版： 统信UOS">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/6155767ca9d585f891182717da03c6315d50822d.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/7340ce45932c73be253d580a3f9b4aed8da91a8e.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/8f4524c8a82f3a843e945775b941920f364ac59e.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/461e45f1ac3fd45145b93d5ebba6c16c107b264b.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/9013a439bcafb59e85b768523eb6a11a219cf578.jpg@942w_315h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/58fed1b84425ffa93b6a668c45482ef5da089f2f.jpg@843w_1494h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/37315d748ae0b92a6b28bc84b3ccbdcb3fe84bbf.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/32be756307ffadf0eadb7a8e4db01f45f9ca6dcb.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/3457d927b9cbef1f90b6a885a9ddfa454291fc76.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/f1daf67370687b1462c67195dda20a495c19ca22.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/982383ea98cea95c560d9d49e856be27dd3c96c9.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/8f569254fa1e105e7e3c78b8986f7a9b47be65d5.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/c867638acf9761a445bfd28df91c42b4aa6b4bb2.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/article/8140221cdef463de8e0045d58c28d2c52242eca8.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/8140221cdef463de8e0045d58c28d2c52242eca8.jpg@942w_530h_progressive-165046654606715.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/af76525a2f13d629ef415dba4dec3ad38e8f984b.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/e40143b6ec44f23ac112e8a20c0c7423e44f3e49.png@843w_1475h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/cca7898c7765febf96ae08f9618ff36597be4003.jpg@942w_530h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/6dacbb69883e97f073afd1a84b02e29da0e33774.jpg@942w_530h_progressive.webp">
+<meta property="article:published_time" content="2021-10-10T02:10:07.000Z">
+<meta property="article:modified_time" content="2022-04-26T12:11:01.030Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/6155767ca9d585f891182717da03c6315d50822d.jpg@942w_530h_progressive.webp">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1651054191440">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1651054191440">
+    <link rel="stylesheet" href="/css/style.css?v=1651054191440">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>109</div>
+        <div><span>Tags</span>43</div>
+        <div><span>Categories</span>19</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://gzming.ysepan.com/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://www.coolapk.com/u/7399818" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:ybcq.github.io" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=kVN01Wkg" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://ybcqsoft.lofter.com/" target="_blank" mdui-tooltip="{content: '老福特'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验图文/">体验图文</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验日记/">体验日记</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">9</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">29</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">8</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/开箱图文/">开箱图文</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/游戏攻略/">游戏攻略</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/炉石瞎想/">炉石瞎想</a>
+          <span class="category-list-count">6</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">19</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/笔记/">笔记</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞猜想/">脑洞猜想</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源搜集/">资源搜集</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.43px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 18.57px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.43px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 15.71px;">小米</a> <a href="/tags/%E5%B9%B3%E6%9D%BF/" style="font-size: 12.86px;">平板</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 11.43px;">手机</a> <a href="/tags/%E6%89%8B%E8%A1%A8/" style="font-size: 10px;">手表</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 14.29px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15.71px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15.71px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 14.29px;">游戏</a> <a href="/tags/%E7%82%89%E7%9F%B3/" style="font-size: 17.14px;">炉石</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 10px;">电脑</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 12.86px;">空间</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 14.29px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 12.86px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 18.57px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 14.29px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+              <img data-fancybox="gallery" src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" alt="【体验报告】UOS一日体验报告及排坑日记" loading="lazy">
+              <h1>【体验报告】UOS一日体验报告及排坑日记</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年10月10日</a>
+</div>
+
+      <p>在数码爱好者都在热火朝天的升级 Windows11 的时候，我选择了拥抱一款国产 linux 发行版： 统信 UOS。</p>
+<p>这里做一个简单的体验报告，并分享一些使用过程中遇到的坑，以及简易排坑方法。</p>
+<h2 id="1安装篇"><a class="markdownIt-Anchor" href="#1安装篇">#</a> 1. 安装篇</h2>
+<p>系统安装过程 2 个坑</p>
+<p>(1) 截止到 2021 年 10 月 10 日，UOS 体验工具和云旗 OS 助手都不能一键安装和 Windows 共存的 UOS 体验版系统了，大家不要浪费时间尝试</p>
+<p>(2) UOS 手动安装时，需要至少选择 3 个分区，EFI，BOOT，SWAP。缺少其中任意一个分区可能导致安装过程卡在 50% 或者 63% 的位置</p>
+<h2 id="2系统篇"><a class="markdownIt-Anchor" href="#2系统篇">#</a> 2. 系统篇</h2>
+<p>美观度，满分。我个人非常喜欢 UOS 20 目前的设计语言，兼顾了美观和高效。提供了两种菜单模式，个人比较喜欢简洁模式。</p>
+<p><img data-fancybox="gallery" src="6155767ca9d585f891182717da03c6315d50822d.jpg@942w_530h_progressive.webp" alt="简洁模式" data-caption="简洁模式" loading="lazy"></p>
+<p>简洁模式<br>
+<img data-fancybox="gallery" src="7340ce45932c73be253d580a3f9b4aed8da91a8e.jpg@942w_530h_progressive.webp" alt="高效模式" data-caption="高效模式" loading="lazy"></p>
+<p>高效模式<br>
+流畅度高，在我的电脑上，流畅度排序是 Win10 LTSC&gt;UOS20&gt;Win11。</p>
+<p>资源占用很恐怖的低。在微信以 wine 容器运行的时候，CPU 占用依旧会降低到 10% 左右。</p>
+<p><img data-fancybox="gallery" src="8f4524c8a82f3a843e945775b941920f364ac59e.jpg@942w_530h_progressive.webp" alt="超低的系统占用" data-caption="超低的系统占用" loading="lazy"></p>
+<p>超低的系统占用<br>
+文件管理方便简洁高效。支持 SMB 映射，支持和手机联动。使用 UOS 助手可以快速实现安卓手机和电脑的文件传输。</p>
+<p><img data-fancybox="gallery" src="461e45f1ac3fd45145b93d5ebba6c16c107b264b.jpg@942w_530h_progressive.webp" alt="手机助手，用来传文件和文字" data-caption="手机助手，用来传文件和文字" loading="lazy"></p>
+<p>手机助手，用来传文件和文字</p>
+<h2 id="3软件适配篇"><a class="markdownIt-Anchor" href="#3软件适配篇">#</a> 3. 软件适配篇</h2>
+<p>自带了 wine 和 uengine，可以兼容一部分 windows 程序和安卓应用。</p>
+<p>安装任意安卓应用方法：</p>
+<p>使用一款叫 uengine.runner 的软件可以安装任意安卓安装包到电脑。</p>
+<p><img data-fancybox="gallery" src="9013a439bcafb59e85b768523eb6a11a219cf578.jpg@942w_315h_progressive.webp" alt="apk安装工具" data-caption="apk安装工具" loading="lazy"></p>
+<p>apk 安装工具<br>
+使用一段叫 start_uengine_UI_V2.sh 的脚本可以在桌面上创建安卓模拟器的设置的快捷方式。在其中的显示中选择大，并把字号也调大即可。</p>
+<p><img data-fancybox="gallery" src="58fed1b84425ffa93b6a668c45482ef5da089f2f.jpg@843w_1494h_progressive.webp" alt="安卓模拟器的设置界面" data-caption="安卓模拟器的设置界面" loading="lazy"></p>
+<p>安卓模拟器的设置界面<br>
+目前 exe 文件无法双击直接调用 wine 运行，这和中兴的新支点系统，以及 Deepin 社区版有较大区别。</p>
+<h2 id="4软件推荐篇"><a class="markdownIt-Anchor" href="#4软件推荐篇">#</a> 4. 软件推荐篇</h2>
+<h3 id="1沟通篇"><a class="markdownIt-Anchor" href="#1沟通篇">#</a> (1) 沟通篇</h3>
+<p>QQ 和微信都有 wine 版本，目前使用并没有发现 BUG。</p>
+<p>钉钉有，不知道什么版本。</p>
+<p><img data-fancybox="gallery" src="37315d748ae0b92a6b28bc84b3ccbdcb3fe84bbf.jpg@942w_530h_progressive.webp" alt="钉钉，有人需要" data-caption="钉钉，有人需要" loading="lazy"></p>
+<p>钉钉，有人需要</p>
+<h3 id="2办公篇"><a class="markdownIt-Anchor" href="#2办公篇">#</a> (2) 办公篇</h3>
+<p>WPS 三件套在 Linux 上的适配非常完美，体验也很好。</p>
+<p>脑图方面，有 Xmind，有兼容版的 MindMaster。</p>
+<p><img data-fancybox="gallery" src="32be756307ffadf0eadb7a8e4db01f45f9ca6dcb.jpg@942w_530h_progressive.webp" alt="MindMaster" data-caption="MindMaster" loading="lazy"></p>
+<p>MindMaster<br>
+ 其他办公需求暂未实验。</p>
+<h3 id="3专业篇"><a class="markdownIt-Anchor" href="#3专业篇">#</a> (3) 专业篇</h3>
+<p>Krita 依旧是最好用的修图软件 (我个人不喜欢 GIMP)。</p>
+<p><img data-fancybox="gallery" src="3457d927b9cbef1f90b6a885a9ddfa454291fc76.jpg@942w_530h_progressive.webp" alt="Krita，我推荐过好多次了" data-caption="Krita，我推荐过好多次了" loading="lazy"></p>
+<p>Krita，我推荐过好多次了<br>
+ Krita 的汉化方法：在桌面上打开终端，敲入 sudo apt install krita-l10n</p>
+<p>CAD 专业绘图，中望 CAD 已经原生支持 linux 了，性能大幅提升。还有浩辰 CAD 等其他一众选择：</p>
+<p><img data-fancybox="gallery" src="f1daf67370687b1462c67195dda20a495c19ca22.jpg@942w_530h_progressive.webp" alt="中望兼容性更好" data-caption="中望兼容性更好" loading="lazy"></p>
+<p>中望兼容性更好<br>
+ EDA 软件，立创 EDA，兼容 Altium Designer，是学生阶段使用的 EDA 工程软件：</p>
+<p><img data-fancybox="gallery" src="982383ea98cea95c560d9d49e856be27dd3c96c9.jpg@942w_530h_progressive.webp" alt="研究生时没少用这玩意" data-caption="研究生时没少用这玩意" loading="lazy"></p>
+<p>研究生时没少用这玩意<br>
+ Cadence，专业级别的原理图和 EDA 设计软件。很多大公司的工程软件。这里就不附图了。</p>
+<p>音频剪辑：Audacity，简单好用的音频剪辑软件。支持 VST 插件。</p>
+<p><img data-fancybox="gallery" src="8f569254fa1e105e7e3c78b8986f7a9b47be65d5.jpg@942w_530h_progressive.webp" alt="Audacity" data-caption="Audacity" loading="lazy"></p>
+<p>Audacity<br>
+ 视频剪辑：Openshot/Shotcut，自由的剪辑工具。支持 3D 对象，和复杂动画。</p>
+<p><img data-fancybox="gallery" src="c867638acf9761a445bfd28df91c42b4aa6b4bb2.jpg@942w_530h_progressive.webp" alt="OpenShot，好用还免费，在公司我就用这个" data-caption="OpenShot，好用还免费，在公司我就用这个" loading="lazy"></p>
+<p><img data-fancybox="gallery" src="https://i0.hdslb.com/bfs/article/8140221cdef463de8e0045d58c28d2c52242eca8.jpg@942w_530h_progressive.webp" alt="img" data-caption="img" loading="lazy">OpenShot，好用还免费，在公司我就用这个</p>
+<p><img data-fancybox="gallery" src="8140221cdef463de8e0045d58c28d2c52242eca8.jpg@942w_530h_progressive-165046654606715.webp" alt="Shotcut，功能更多，支持硬件加速" data-caption="Shotcut，功能更多，支持硬件加速" loading="lazy"></p>
+<p>Shotcut，功能更多，支持硬件加速</p>
+<h3 id="4影音娱乐"><a class="markdownIt-Anchor" href="#4影音娱乐">#</a> (4) 影音娱乐</h3>
+<p>Kodi 依旧是最好用的本地影音娱乐中心，支持本地电影，电视，游戏等功能</p>
+<p><img data-fancybox="gallery" src="af76525a2f13d629ef415dba4dec3ad38e8f984b.jpg@942w_530h_progressive.webp" alt="Kodi功能非常丰富" data-caption="Kodi功能非常丰富" loading="lazy"></p>
+<p>Kodi 功能非常丰富<br>
+哔哩哔哩，腾讯视频，爱奇艺等可以安装安卓平板版或者 TV 版</p>
+<p><img data-fancybox="gallery" src="e40143b6ec44f23ac112e8a20c0c7423e44f3e49.png@843w_1475h_progressive.webp" alt="哔哩哔哩" data-caption="哔哩哔哩" loading="lazy"></p>
+<p>哔哩哔哩<br>
+网易云和 QQ 音乐都有原生版，没有任何广告，非常好用。酷狗音乐只有 wine 版</p>
+<p><img data-fancybox="gallery" src="cca7898c7765febf96ae08f9618ff36597be4003.jpg@942w_530h_progressive.webp" alt="QQ音乐" data-caption="QQ音乐" loading="lazy"></p>
+<p>QQ 音乐</p>
+<h3 id="5游戏篇"><a class="markdownIt-Anchor" href="#5游戏篇">#</a> (5) 游戏篇</h3>
+<p>原生 linux 游戏商店 Steam，内有大量游戏可玩。多玩单机有利于提升一个人的游戏品味。</p>
+<p><img data-fancybox="gallery" src="6dacbb69883e97f073afd1a84b02e29da0e33774.jpg@942w_530h_progressive.webp" alt="Steam" data-caption="Steam" loading="lazy"></p>
+<p>Steam<br>
+ 安卓兼容的游戏测试了指尖帝国和命运之戒，两个都不能正常运行。</p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
+<p>兼容手机软件是操作系统快速扩充生态的一条捷径。Deepin，UOS，中标麒麟等一众系统在 2018 年起，陆续加入了集成的安卓虚拟机，而苹果 MAC 也在去年加入了对 iOS 的兼容。无论是华为移动应用引擎，还是 Win11 兼容安卓软件，这都是必然，也是一次顺应时代的改变。</p>
+<p>而 UOS，作为 Deepin 的商用版，其稳定性有了更好的保证，而功能性又有 Deepin 撑腰，自然会成为国产 linux 发行版中最好用的一个。</p>
+<p>linux 作为开源免费系统，我们有能力做到对其代码的完全理解和自主可控。而基于 linux 的桌面系统，一直处于全球 linux 讨论的热门地位。</p>
+<p>如果想做成一款面向普通人使用的系统，那就一定要抛弃工程师的傲气以及对 linux 的 “优越感”，丢掉 “不用命令行还叫用 linux 吗” 这种无聊的想法。不断优化交互体验，降低入门门槛。无需悲观的认为 linux 的图形化之路不会成功，毕竟 windows 也是从当年的命令行系统发展成现在这个样子。而我个人认为，在用户交互这一方面，Deepin 和 UOS 确实做到了优秀的品质，不愧曾是 linux 系统热度榜榜首。</p>
+<p>整个 1 天的试用过程中，仅遇到 2,3 款软件需要命令行安装。</p>
+<p>UOS 现在最大的问题依旧是扩大生态。我认为有 3 个方向可以考虑：</p>
+<p>1. 鼓励国内软件厂商使用 python go java 来开发类似 Krita 一样适用于全平台的应用软件，逐渐放弃使用.net 一类仅面向 windows 平台的编程语言。这将会极大的丰富 linux 的原生软件；</p>
+<p>2. 鼓励国内厂商开发面向平板的 HD 软件，并大量兼容到 UOS；</p>
+<p>3. 鼓励国内厂商开发国产的专业工程软件，对抗国外相关软件的垄断优势。</p>
+<p>最后，对于 UOS 使用中遇到的问题，可以在 UOS 和 Deepin 的论坛寻找提问。大部分问题很容易找到答案。</p>
+<p>本月出差，会全程使用此笔记本。一个月以后，我会考虑再更新一月体验报告。</p>
+<p>各位可以先点关注，我们下篇图文再见。</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="https://ybcq.github.io/2021/10/10/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0/" title="https:&#x2F;&#x2F;ybcq.github.io&#x2F;2021&#x2F;10&#x2F;10&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;ybcq.github.io&#x2F;2021&#x2F;10&#x2F;10&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91UOS%E4%B8%80%E6%97%A5%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E5%8F%8A%E6%8E%92%E5%9D%91%E6%97%A5%E8%AE%B0&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E4%BD%93%E9%AA%8C%E6%97%A5%E8%AE%B0/">体验日记</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Linux/" rel="tag">Linux</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1651054191441"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>

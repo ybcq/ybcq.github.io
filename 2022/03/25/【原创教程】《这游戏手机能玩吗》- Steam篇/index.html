@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【原创教程】《这游戏手机能玩吗》- Steam篇 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="众所周知，题目是当代小学生最常问的问题之一。像iOS平台，大家只需要在一个AppStore搜索就能快速得出结论。但是在安卓平台，我们如何才能找到这些游戏呢？又有哪些经典的Steam游戏被移植到手机上了呢？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【原创教程】《这游戏手机能玩吗》- Steam篇">
+<meta property="og:url" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="众所周知，题目是当代小学生最常问的问题之一。像iOS平台，大家只需要在一个AppStore搜索就能快速得出结论。但是在安卓平台，我们如何才能找到这些游戏呢？又有哪些经典的Steam游戏被移植到手机上了呢？">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/63a3ebacfeae71935bd861f36f8a3a7e34a2dcfe.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/125b9ae43ce340716fb2baf87098d9c1644500c7.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/090bf48bf0428fb1cf6d2794a28ce74906a054a1.jpg@759w_1350h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/fec2b9e971913edcc8a1c27e4924020e1d5d71dd.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/45dbf4b7a769f47c8bf5c3f1f501f9b2f50165fb.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/e3ba6995fa0224a0dc7305b0c3551014d9ec3a5f.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/59bf90d07f32d783ca3dab03ce8a3910db065916.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/589f1d48fd395cdf47540d91130524e1270bcc0d.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/483b59182e2fe33ed10ab7b536320e0e4293d1b9.jpg@942w_471h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/3c81c8bb8b2069fb0583caf7c3a09f0aa01d3ffb.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/c2b37f3b67be0c5fdc95ebb38b7bf6b8d0fdc9b1.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/89171e1718860b6e2e5fe9063df1130a418d5597.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/1da0b4f7c2c1ee6c299dfc8c180211491787658e.jpg@942w_1674h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/3772bfbe2943bb20061ef98fbc2b7e27cab736d6.jpg@942w_1844h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/4c82ba6cc834f83788ec6d4b791053e7078aa909.jpg@942w_531h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/2e4cb2a0db363a858b2e6d080379bef2a1b33786.jpg@942w_494h_progressive.webp">
+<meta property="og:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/f8b8a4fe549e10dfa3e6203bfa2017096cb6b12a.jpg@942w_531h_progressive.webp">
+<meta property="article:published_time" content="2022-03-25T02:07:07.000Z">
+<meta property="article:modified_time" content="2022-04-26T12:16:32.011Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="游戏">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/63a3ebacfeae71935bd861f36f8a3a7e34a2dcfe.jpg@942w_531h_progressive.webp">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1651054191428">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1651054191428">
+    <link rel="stylesheet" href="/css/style.css?v=1651054191428">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>109</div>
+        <div><span>Tags</span>43</div>
+        <div><span>Categories</span>19</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://gzming.ysepan.com/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://www.coolapk.com/u/7399818" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:ybcq.github.io" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=kVN01Wkg" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://ybcqsoft.lofter.com/" target="_blank" mdui-tooltip="{content: '老福特'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验图文/">体验图文</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验日记/">体验日记</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">9</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">29</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">8</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/开箱图文/">开箱图文</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/游戏攻略/">游戏攻略</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/炉石瞎想/">炉石瞎想</a>
+          <span class="category-list-count">6</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">19</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/笔记/">笔记</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞猜想/">脑洞猜想</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源搜集/">资源搜集</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.43px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 18.57px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.43px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 15.71px;">小米</a> <a href="/tags/%E5%B9%B3%E6%9D%BF/" style="font-size: 12.86px;">平板</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 11.43px;">手机</a> <a href="/tags/%E6%89%8B%E8%A1%A8/" style="font-size: 10px;">手表</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 14.29px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15.71px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15.71px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 14.29px;">游戏</a> <a href="/tags/%E7%82%89%E7%9F%B3/" style="font-size: 17.14px;">炉石</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 10px;">电脑</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 12.86px;">空间</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 14.29px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 12.86px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 18.57px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 14.29px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+              <img data-fancybox="gallery" src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" alt="【原创教程】《这游戏手机能玩吗》- Steam篇" loading="lazy">
+              <h1>【原创教程】《这游戏手机能玩吗》- Steam篇</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年03月25日</a>
+</div>
+
+      <p>好久没更专栏了，更一期。</p>
+<p>众所周知，题目是当代小学生最常问的问题之一。像 iOS 平台，大家只需要在一个 AppStore 搜索就能快速得出结论。但是在安卓平台，我们如何才能找到这些游戏呢？又有哪些经典的 Steam 游戏被移植到手机上了呢？</p>
+<p>这期专栏我们就来简单说几个，抛砖引玉，更多游戏大家自己寻找。</p>
+<p>注意：</p>
+<p>1. 本期专栏不讨论云游戏</p>
+<p>2. 本期专栏不讨论 Windows 模拟器</p>
+<p>3. 本期专栏不讨论挂羊头卖狗肉的游戏</p>
+<hr>
+<h2 id="生存篇"><a class="markdownIt-Anchor" href="#生存篇">#</a> 生存篇</h2>
+<h3 id="饥荒"><a class="markdownIt-Anchor" href="#饥荒">#</a> 饥荒</h3>
+<p>生存游戏中的经典作品，也是出了名的新手噩梦系列，在这个光怪陆离的岛上，收集各种资源并制作生存道具，让你能活得更久。</p>
+<p><img data-fancybox="gallery" src="63a3ebacfeae71935bd861f36f8a3a7e34a2dcfe.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>或许活下去就有希望</p>
+<h3 id="方舟生存进化"><a class="markdownIt-Anchor" href="#方舟生存进化">#</a> 方舟：生存进化</h3>
+<p>支持联机的生存游戏，这是一个拥有 80 多种独特恐龙和各色原始生物的庞大视界。在这个以侏罗纪时代为背景的世界中，你可以和其他玩家一起组建部落，携手建立起生存者的聚集地。</p>
+<p><img data-fancybox="gallery" src="125b9ae43ce340716fb2baf87098d9c1644500c7.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>方舟将至，灾难驱离</p>
+<h3 id="黎明杀机"><a class="markdownIt-Anchor" href="#黎明杀机">#</a> 黎明杀机</h3>
+<p>正版的黎明杀机移植游戏，不是第五人格哦！</p>
+<p><img data-fancybox="gallery" src="090bf48bf0428fb1cf6d2794a28ce74906a054a1.jpg@759w_1350h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>这玩意是不是也可以算生存类</p>
+<hr>
+<h2 id="运动篇"><a class="markdownIt-Anchor" href="#运动篇">#</a> 运动篇</h2>
+<h3 id="nba2k20nba2019"><a class="markdownIt-Anchor" href="#nba2k20nba2019">#</a> NBA2K20/NBA2019</h3>
+<p>体育类游戏我就不大擅长介绍了，总之，还原度很高，挺不错的。</p>
+<p><img data-fancybox="gallery" src="fec2b9e971913edcc8a1c27e4924020e1d5d71dd.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>下个赛季你单防杜兰特</p>
+<hr>
+<h2 id="开放世界篇"><a class="markdownIt-Anchor" href="#开放世界篇">#</a> 开放世界篇</h2>
+<h3 id="gta全系列"><a class="markdownIt-Anchor" href="#gta全系列">#</a> GTA 全系列</h3>
+<p>罪恶都市，自由城，圣安地列斯，血战唐人街。这些经典的版本都有移植版。最好配合手柄玩，更能有在 PC 上的体验。</p>
+<p><img data-fancybox="gallery" src="45dbf4b7a769f47c8bf5c3f1f501f9b2f50165fb.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>原汁原味</p>
+<h3 id="火力全开"><a class="markdownIt-Anchor" href="#火力全开">#</a> 火力全开</h3>
+<p>当年作为 GTA 系列的竞品，非常优秀的开放世界游戏</p>
+<p><img data-fancybox="gallery" src="e3ba6995fa0224a0dc7305b0c3551014d9ec3a5f.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<hr>
+<h2 id="策略篇"><a class="markdownIt-Anchor" href="#策略篇">#</a> 策略篇</h2>
+<h3 id="文明6"><a class="markdownIt-Anchor" href="#文明6">#</a> 文明 6</h3>
+<p>真正的时间杀手蟹，一不小心一周就过去了。玩家可以自由打造和调整自己的文明。或昌盛或衰败，只在你的每一个决策。</p>
+<p><img data-fancybox="gallery" src="59bf90d07f32d783ca3dab03ce8a3910db065916.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>时间杀手蟹 战吼：消灭一周时间</p>
+<h3 id="红曰"><a class="markdownIt-Anchor" href="#红曰">#</a> 红曰</h3>
+<p>全网最像红色警戒的游戏，没啥太多介绍的。战役模式非常不错，但是没有遭遇战模式。</p>
+<p><img data-fancybox="gallery" src="589f1d48fd395cdf47540d91130524e1270bcc0d.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>你猜游戏名我打得对不对</p>
+<hr>
+<h2 id="其他篇"><a class="markdownIt-Anchor" href="#其他篇">#</a> 其他篇</h2>
+<h3 id="桥梁建筑师"><a class="markdownIt-Anchor" href="#桥梁建筑师">#</a> 桥梁建筑师</h3>
+<p>正常人：物理考试；</p>
+<p>当官人：和珅模拟器；</p>
+<p>学霸人：变形金刚生成器；</p>
+<p><img data-fancybox="gallery" src="483b59182e2fe33ed10ab7b536320e0e4293d1b9.jpg@942w_471h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>和珅来咯<br>
+在我们之间</p>
+<p>又称太空人狼人杀。各平台主播经常玩，不需要太多介绍了。</p>
+<p><img data-fancybox="gallery" src="3c81c8bb8b2069fb0583caf7c3a09f0aa01d3ffb.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>“我忘了关麦了”</p>
+<h3 id="模拟山羊"><a class="markdownIt-Anchor" href="#模拟山羊">#</a> 模拟山羊</h3>
+<p>一直想不明白这个游戏的意义何在，总之，你将扮演一只破坏力极强的山羊，爽就完事儿了！</p>
+<p><img data-fancybox="gallery" src="c2b37f3b67be0c5fdc95ebb38b7bf6b8d0fdc9b1.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>模拟 XX 是一个挺大的系列</p>
+<h3 id="fate"><a class="markdownIt-Anchor" href="#fate">#</a> Fate！</h3>
+<p>我是二次元我快乐！Saber YYDS！</p>
+<p><img data-fancybox="gallery" src="89171e1718860b6e2e5fe9063df1130a418d5597.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>没有人会拒绝 Saber 小姐姐</p>
+<h3 id="最终幻想全集"><a class="markdownIt-Anchor" href="#最终幻想全集">#</a> 最终幻想全集</h3>
+<p>目前有 1，2，3，4，5，6，7，8，9，15 的移植版，包括前几部的像素版和后面的伪 3D 版。这是我今年主要准备拿下的游戏了！</p>
+<p><img data-fancybox="gallery" src="1da0b4f7c2c1ee6c299dfc8c180211491787658e.jpg@942w_1674h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>够我玩一年</p>
+<hr>
+<h2 id="主机掌机篇"><a class="markdownIt-Anchor" href="#主机掌机篇">#</a> 主机掌机篇</h2>
+<p>安卓原生支持大量掌机和手机模拟器，包括但不限于以下这些。</p>
+<p><img data-fancybox="gallery" src="3772bfbe2943bb20061ef98fbc2b7e27cab736d6.jpg@942w_1844h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>支持的大部分模拟器<br>
+而且这些模拟器原生适配了手柄，游戏手感大幅度上升。只要你的手机性能够用，你甚至可以使用 NS 模拟器玩 Switch 游戏！</p>
+<p><img data-fancybox="gallery" src="4c82ba6cc834f83788ec6d4b791053e7078aa909.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>NS 手柄</p>
+<p><img data-fancybox="gallery" src="2e4cb2a0db363a858b2e6d080379bef2a1b33786.jpg@942w_494h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>普通手柄玩刺客信条</p>
+<p><img data-fancybox="gallery" src="f8b8a4fe549e10dfa3e6203bfa2017096cb6b12a.jpg@942w_531h_progressive.webp" alt="" data-caption="" loading="lazy"></p>
+<p>小米手柄玩魔禁</p>
+<p>本文中提到的游戏仅仅是 Steam 移植大作的冰山一角。据不完全统计，目前各平台共有近百个 Steam 移植游戏。正版游戏请到 Taptap 下载，试玩版游戏请到 3 楼 / 7723 / 八门神器下载。</p>
+<p>以上游戏适用于手机和平板，且平板配合手柄体验更好。</p>
+<h5 id="重要如果在大于安卓10的版本上出现闪退等则需要配合vmos-pro使用"><a class="markdownIt-Anchor" href="#重要如果在大于安卓10的版本上出现闪退等则需要配合vmos-pro使用">#</a> 重要！如果在大于安卓 10 的版本上出现闪退等，则需要配合 VMOS Pro 使用。</h5>
+<p>那么本期专栏就到这里，我是御坂初琴，每期一个冷门安卓小技巧，我们下期专栏见。</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="https://ybcq.github.io/2022/03/25/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87/" title="https:&#x2F;&#x2F;ybcq.github.io&#x2F;2022&#x2F;03&#x2F;25&#x2F;%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;ybcq.github.io&#x2F;2022&#x2F;03&#x2F;25&#x2F;%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91%E3%80%8A%E8%BF%99%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9C%BA%E8%83%BD%E7%8E%A9%E5%90%97%E3%80%8B-%20Steam%E7%AF%87&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B/">原创教程</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1651054191429"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
