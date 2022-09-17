@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【体验报告】从MIUI到Flyme的得与失 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/img/Head.png" type="image/png" />
+    <meta name="description" content="书接上文。上回书讲到，我发现自己花了1天装修完了的ArrowOS功能上还没有定制版系统好用，当主力机系统太吃力，所以心生退意，于是在K30S的两个移植版系统ColorOS12和#Flyme9#.3之间犹豫了一下，最终还是决定上了Flyme的车。那么经过了1周的体验，我们今天就来聊一聊，#MIUI13# 和 #Flyme# 在一些具体的设计细节上有哪些区别。 ❤️观前提示本文依旧从普通人视角去体验两">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【体验报告】从MIUI到Flyme的得与失">
+<meta property="og:url" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="书接上文。上回书讲到，我发现自己花了1天装修完了的ArrowOS功能上还没有定制版系统好用，当主力机系统太吃力，所以心生退意，于是在K30S的两个移植版系统ColorOS12和#Flyme9#.3之间犹豫了一下，最终还是决定上了Flyme的车。那么经过了1周的体验，我们今天就来聊一聊，#MIUI13# 和 #Flyme# 在一些具体的设计细节上有哪些区别。 ❤️观前提示本文依旧从普通人视角去体验两">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_0b91eec0_2580_9693_79@1809x2020.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_da447d1a_2580_9697_320@1080x2400.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_30d1f5ee_2580_9699_13@1809x2020.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_0d75b9ae_2580_9704_490@1080x2400.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_16206737_2580_9714_304@2400x1080.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_2bbabc18_2580_9718_769@1080x2400.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_22a22944_2580_972_582@1080x2400.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_08dff1a8_2580_9726_237@1080x2400.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_69363a99_2580_9731_106@1080x2400.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_4fdabfcb_2584_042_866@2400x1080.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_c11d8531_2584_0424_434@1080x2456.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_c9138cd0_2584_0434_462@1080x2400.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_4860b904_2584_0441_51@1080x2400.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_641b696e_2584_0447_332@1809x2020.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_5624165d_2584_0455_231@1809x2020.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_32b1ee97_2584_0462_744@1080x2456.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_3f245e5e_2584_0469_787@1080x2456.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_bf865fdc_2584_0474_502@497x365.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_d7ebe86c_2586_896_26@1080x2456.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_32b75f24_2586_8963_144@1080x2456.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_a45e4d93_2586_8968_484@1080x2456.png.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_22cf8f1e_2586_897_132@1080x2456.png.m.jpg">
+<meta property="article:published_time" content="2022-09-02T05:02:07.000Z">
+<meta property="article:modified_time" content="2022-09-17T05:03:17.192Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="Flyme">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/7399818_0b91eec0_2580_9693_79@1809x2020.png.m.jpg">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1663407324194">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1663407324194">
+    <link rel="stylesheet" href="/css/style.css?v=1663407324194">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>122</div>
+        <div><span>Tags</span>47</div>
+        <div><span>Categories</span>15</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://gzming.ysepan.com/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://www.coolapk.com/u/7399818" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:ybcq.github.io" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=kVN01Wkg" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://ybcqsoft.lofter.com/" target="_blank" mdui-tooltip="{content: '老福特'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">17</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">11</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">31</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">8</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/数据统计/">数据统计</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/炉石瞎想/">炉石瞎想</a>
+          <span class="category-list-count">6</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">20</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站公告/">网站公告</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞笔记/">脑洞笔记</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/MIUI/" style="font-size: 10px;">MIUI</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.25px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 17.5px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.25px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%AE%89%E5%8D%93%E5%B9%B3%E6%9D%BF/" style="font-size: 10px;">安卓平板</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 18.75px;">小米</a> <a href="/tags/%E5%B9%B3%E6%9D%BF/" style="font-size: 13.75px;">平板</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 13.75px;">手机</a> <a href="/tags/%E6%89%8B%E8%A1%A8/" style="font-size: 10px;">手表</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 13.75px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 13.75px;">游戏</a> <a href="/tags/%E7%82%89%E7%9F%B3/" style="font-size: 16.25px;">炉石</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 10px;">电脑</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 12.5px;">空间</a> <a href="/tags/%E7%B1%BB%E5%8E%9F%E7%94%9F/" style="font-size: 10px;">类原生</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 13.75px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 12.5px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 17.5px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 13.75px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 24.305555555555554%;"> 
+              <img data-fancybox="gallery" src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg" alt="【体验报告】从MIUI到Flyme的得与失" loading="lazy">
+              <h1>【体验报告】从MIUI到Flyme的得与失</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年09月02日</a>
+</div>
+
+      <p>书接上文。上回书讲到，我发现自己花了1天装修完了的ArrowOS功能上还没有定制版系统好用，当主力机系统太吃力，所以心生退意，于是在K30S的两个移植版系统ColorOS12和<a target="_blank" rel="noopener" href="https://www.coolapk.com/t/Flyme9?type=12">#Flyme9#</a>.3之间犹豫了一下，最终还是决定上了Flyme的车。<br>那么经过了1周的体验，我们今天就来聊一聊，<a target="_blank" rel="noopener" href="https://www.coolapk.com/t/MIUI13?type=12">#MIUI13#</a> 和 <a target="_blank" rel="noopener" href="https://www.coolapk.com/t/Flyme?type=12">#Flyme#</a> 在一些具体的设计细节上有哪些区别。</p>
+<p>❤️观前提示<br>本文依旧从普通人视角去体验两个系统：<br>不涉及到ROOT，Magisk，Xposed，ADB等操作！<br>不涉及到ROOT，Magisk，Xposed，ADB等操作！<br>不涉及到ROOT，Magisk，Xposed，ADB等操作！<br>另：由于体验时间较短，而且使用的是移植包，很可能有一些功能被去除了，所以如果有哪里遗漏了一些内容，请在下方补充！<br>对比版本：<br>MIUI13.1.22，Flyme9.3.0.0A</p>
+<p><img data-fancybox="gallery" src="7399818_0b91eec0_2580_9693_79@1809x2020.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>对比系统</p>
+<p>❤安全与权限<br>安全和权限管理方面，Flyme比MIUI更强：<br>1.Flyme支持设置APP只读取部分图片，这个功能整整领先了官方版Android13两个大版本。同时也支持设置APP只读取部分文件夹。<br>相比之下，MIUI13的相册管理只有简单的禁止访问相册和禁止访问社交APP文件功能，只能说比其他定制版安卓更强，但是与Flyme相比缺失逊色了很多。</p>
+<p><img data-fancybox="gallery" src="7399818_da447d1a_2580_9697_320@1080x2400.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>安卓13才上的功能</p>
+<p><img data-fancybox="gallery" src="7399818_30d1f5ee_2580_9699_13@1809x2020.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>区别还是很大的</p>
+<p>2.Flyme的敏感权限通知比MIUI支持得更多，应用申请敏感权限时通知方式也比MIUI更优雅。<br>3.支持一键全部设为空白通行证。我给小米提过类似的建议，但是没被采纳。结果Flyme早就做了。</p>
+<p><img data-fancybox="gallery" src="7399818_0d75b9ae_2580_9704_490@1080x2400.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>一键全部设置为空白通行证</p>
+<p>❤小窗与通知<br>小窗与通知部分，Flyme总体来讲比MIUI做得更好。<br>首先我们来说说小窗<br>Flyme的小窗是真正的智能小窗，它把小窗做到了无感级别的方便。<br>很多人一定会说：“小窗有什么用，我一年都用不了几回”，完全是因为你手里的厂商根本没有把小窗的逻辑做到实用。<br>举个最简单的例子：<br>当你在横屏看视频或者打游戏时，有一个分享界面，这时候你点击了分享按钮。<br>如果是一般的手机，这时候会弹出一个全屏的QQ或者微信，你需要把手机竖起来，分享，然后再横过来，然后再继续玩。当然也有可能不能直接继续玩，某品牌手机就直接把游戏杀掉了。<br>但是在Flyme上不是这样。<br>当你在横屏状态下点击分享，Flyme会直接弹出一个竖屏的小窗，你在上边选好群聊，点击分享，然后小窗会自动关闭，你继续看你的视频，玩你的游戏。</p>
+<p><img data-fancybox="gallery" src="7399818_16206737_2580_9714_304@2400x1080.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>如果是动图，可能更明显一些</p>
+<p>没有了旋转手机，没有了全屏覆盖，更不用提心吊胆游戏被杀掉。它来了，分享后它就走了，这才是真正的方便。<br>当然除了这种被动小窗，Flyme的主动小窗也非常的方便，你只需要从两侧轻轻上推，就可以唤醒小窗列表。如果直接推到图标的位置，就会唤醒对应应用的小窗。<br>没有MIUI碍眼的放到哪里都不合适的小竖条，非常的优雅。<br>还是小窗。Flyme的小窗支持在下方显示最近的联系人列表。这意味着，你可以快速在几个最近的联系人中方便的切换，属实海王必备。</p>
+<p><img data-fancybox="gallery" src="7399818_2bbabc18_2580_9718_769@1080x2400.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>最近的联系人列表</p>
+<p>还是小窗，Flyme的小窗支持把小窗贴边，变成一个竖条，用时再拉出来。这个和iOS的视频小窗有些相似。但是这个挂的是全功能APP，和iOS那种仅能放视频的小窗功能完全不是一个级别。</p>
+<p><img data-fancybox="gallery" src="7399818_22a22944_2580_972_582@1080x2400.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>右上角，小窗贴边隐藏</p>
+<p>综上，Flyme是把小窗玩到极致的系统，它的小窗真正做到了无感融合到系统中，你在不知不觉间，就已经体验到它的便捷了。</p>
+<p>除此之外，Flyme把通知栏玩得也很溜。<br>Flyme的通知不仅支持咱们常见的横条通知，还可以直接在通知栏显示通知内容。这种体验比横条通知简洁。</p>
+<p><img data-fancybox="gallery" src="7399818_08dff1a8_2580_9726_237@1080x2400.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>顶部的通知栏通知</p>
+<p>即使是过了很久的消息，Flyme也支持下拉通知栏以小窗模式打开。对比之下，MIUI只能在弹出通知的一会下拉通知打开。一旦通知消失，你就只能自己主动呼出小窗了。这个功能我也在MIUI论坛里提过建议，依旧未采纳。</p>
+<p><img data-fancybox="gallery" src="7399818_69363a99_2580_9731_106@1080x2400.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>无论何时都能小窗回复</p>
+<p>游戏模式下，Flyme的通知更加方便，它可以以弹幕形式显示通知，无感且不会对游戏过程造成任何影响。</p>
+<p><img data-fancybox="gallery" src="7399818_4fdabfcb_2584_042_866@2400x1080.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>弹幕通知</p>
+<p>当然，MIUI在通知方面也有一个独特的优势，就是可以切换为通知为原生模式。在原生模式下，MIUI可以支持微信和QQ的MessageStyle风格的气泡会话，很强大。</p>
+<p><img data-fancybox="gallery" src="7399818_c11d8531_2584_0424_434@1080x2456.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>气泡会话</p>
+<p>❤其他<br>其他方面，BUG的数量上，不排除是我用的是移植版的问题，总体体验下来Flyme的硬性BUG确实比MIUI多一点，但是并没有很大的区别。</p>
+<p>剩下都是一些自带应用的区别。<br>Flyme优势部分：<br>1.Flyme相册中的截图文件夹，图片预览手机的比例，更容易找到截图。而MIUI的截屏文件夹内依旧显示为方形，不太方便。</p>
+<p><img data-fancybox="gallery" src="7399818_c9138cd0_2584_0434_462@1080x2400.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>截图显示为手机比例</p>
+<p>2.自带了工具箱，包含了一些常用功能</p>
+<p><img data-fancybox="gallery" src="7399818_4860b904_2584_0441_51@1080x2400.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>魅族工具箱</p>
+<p>MIUI优势部分：<br>1.支持更全能的自动任务。相比之下，Flyme只支持定时开启省电模式和定时开启勿扰模式。</p>
+<p><img data-fancybox="gallery" src="7399818_641b696e_2584_0447_332@1809x2020.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>完全不是一个级别的条件设置</p>
+<p>2.主题全免费<br>3.小米计算器支持的换算内容比Flyme自带的更多</p>
+<p><img data-fancybox="gallery" src="7399818_5624165d_2584_0455_231@1809x2020.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>更多的功能</p>
+<p>4.每次我都会说的，右下角剪贴板管理，对于码字党妥妥的福利</p>
+<p><img data-fancybox="gallery" src="7399818_32b1ee97_2584_0462_744@1080x2456.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>快捷剪贴板</p>
+<p>5.三指长按区域截屏，可以随手画一个区域进行截屏</p>
+<p><img data-fancybox="gallery" src="7399818_3f245e5e_2584_0469_787@1080x2456.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>区域截屏</p>
+<p>6.相册支持直接把图片变正，这个学生党如果经常拍黑板的话，必备</p>
+<p><img data-fancybox="gallery" src="7399818_bf865fdc_2584_0474_502@497x365.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>一键图片变正，这个视频演示更直观</p>
+<p>7.支持一键识别视频BGM和自动生成屏幕字幕</p>
+<p><img data-fancybox="gallery" src="7399818_d7ebe86c_2586_896_26@1080x2456.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>视频工具箱</p>
+<p>8.支持桌面长按直接分享APP</p>
+<p><img data-fancybox="gallery" src="7399818_32b75f24_2586_8963_144@1080x2456.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>很少用到但是方便</p>
+<p>9.支持系统分身，一部手机当两部用</p>
+<p><img data-fancybox="gallery" src="7399818_a45e4d93_2586_8968_484@1080x2456.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>单持党隔离部分应用</p>
+<p>10.有系统一键关闭广告开关</p>
+<p><img data-fancybox="gallery" src="7399818_22cf8f1e_2586_897_132@1080x2456.png.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>虽然关不全，但是总比没有强</p>
+<p>❤结论<br>Flyme无论从安全性还是小窗的便捷程度，都比MIUI做得更好。它充分证明了，一个功能有没有用，关键在于它够不够方便，够不够智能。<br>但是，在某些系统功能和系统自带软件上，Flyme依旧有一定的进步空间。<br>文中有很多功能没有提及，比如全应用都可以双开等等，主要是因为这些是两个系统都有的。作为国内定制功能最多的两个系统，他们也许才是我这种什么也不想动就想获得最方便的系统功能的懒人的首选。<br>也希望Flyme和MIUI能开发出更多方便好用的新功能，造福他的使用者们。<br>这期图文依旧会做成视频发布在B站，给想了解的小伙伴做一个视频版的演示。不过最近由于一直在准备婚礼，所以视频可能会很久才能发出来，大家尽请期待！</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="https://ybcq.github.io/2022/09/02/%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1/" title="https:&#x2F;&#x2F;ybcq.github.io&#x2F;2022&#x2F;09&#x2F;02&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;ybcq.github.io&#x2F;2022&#x2F;09&#x2F;02&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E3%80%91%E4%BB%8EMIUI%E5%88%B0Flyme%E7%9A%84%E5%BE%97%E4%B8%8E%E5%A4%B1&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A/">体验报告</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Flyme/" rel="tag">Flyme</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1663407324201"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
