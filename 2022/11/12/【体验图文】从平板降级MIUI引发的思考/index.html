@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【体验图文】从平板降级MIUI引发的思考 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/img/Head.png" type="image/png" />
+    <meta name="description" content="恰逢前几天平板送去扩容，需要清空数据，就顺便降了个级。那么今天不妨说说，从安卓12版的MIUI降级到安卓11版的MIUI后，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【体验图文】从平板降级MIUI引发的思考">
+<meta property="og:url" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="恰逢前几天平板送去扩容，需要清空数据，就顺便降了个级。那么今天不妨说说，从安卓12版的MIUI降级到安卓11版的MIUI后，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_f82e4aea_4637_0949_932@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_09234abb_4637_0957_378@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_4b20087b_4637_0967_950@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_a866241a_4637_0976_554@2558x1599.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_0e1aba13_4637_0979_254@1280x800.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_dd963b92_4637_0981_416@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_5b9cffcf_4637_0989_835@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_cf811d57_4637_0994_194@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_61adacce_4637_0998_779@1920x1200.jpeg.m.jpg">
+<meta property="article:published_time" content="2022-11-12T12:21:52.000Z">
+<meta property="article:modified_time" content="2022-11-26T10:50:37.672Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="小米平板">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/20814897_f82e4aea_4637_0949_932@2560x1600.jpeg.m.jpg">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1676174392469">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1676174392469">
+    <link rel="stylesheet" href="/css/style.css?v=1676174392469">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>127</div>
+        <div><span>Tags</span>48</div>
+        <div><span>Categories</span>16</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://gzming.ysepan.com/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://www.coolapk.com/u/7399818" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:ybcq.github.io" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=kVN01Wkg" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://ybcqsoft.lofter.com/" target="_blank" mdui-tooltip="{content: '老福特'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验图文/">体验图文</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">17</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">11</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">34</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">9</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/数据统计/">数据统计</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/炉石瞎想/">炉石瞎想</a>
+          <span class="category-list-count">6</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">20</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站公告/">网站公告</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞笔记/">脑洞笔记</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/MIUI/" style="font-size: 11.25px;">MIUI</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.25px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 17.5px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.25px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%AE%89%E5%8D%93%E5%B9%B3%E6%9D%BF/" style="font-size: 10px;">安卓平板</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 18.75px;">小米</a> <a href="/tags/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF/" style="font-size: 12.5px;">小米平板</a> <a href="/tags/%E5%B9%B3%E6%9D%BF/" style="font-size: 13.75px;">平板</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 13.75px;">手机</a> <a href="/tags/%E6%89%8B%E8%A1%A8/" style="font-size: 10px;">手表</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 13.75px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 13.75px;">游戏</a> <a href="/tags/%E7%82%89%E7%9F%B3/" style="font-size: 16.25px;">炉石</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 10px;">电脑</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 12.5px;">空间</a> <a href="/tags/%E7%B1%BB%E5%8E%9F%E7%94%9F/" style="font-size: 10px;">类原生</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 13.75px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 12.5px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 17.5px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 13.75px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2023 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 24.305555555555554%;"> 
+              <img data-fancybox="gallery" src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg" alt="【体验图文】从平板降级MIUI引发的思考" loading="lazy">
+              <h1>【体验图文】从平板降级MIUI引发的思考</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年11月12日</a>
+</div>
+
+      <p>恰逢前几天平板送去扩容，需要清空数据，就顺便降了个级。那么今天不妨说说，从安卓 12 版的 MIUI 降级到安卓 11 版的 MIUI 后， <a target="_blank" rel="noopener" href="https://www.coolapk.com/t/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF5Pro?type=12">#小米平板 5Pro#</a> 获得了哪些更好的体验。</p>
+<p>观前提示<br>
+ 1. 我的平板因为扩了 16G 内存，所以以下体验不代表 6G 内存和 8G 内存同样适用。如果你的平板只有 6G 或 8G 内存，由于安卓 12 版的 MIUI 对内存优化更好，所以可能会更流畅。<br>
+2. 我的平板的主要用途是接键盘码字和接手柄打游戏，没有手写笔需求。安卓 12 版的 MIUI 对手写笔延迟有了很大的优化，还更新了全屏手写的功能，如果有手写笔建议升级安卓 12。</p>
+<p>降级有哪些提升？<br>
+目前降级获得的提升主要是 4 点。</p>
+<p>1. 更好的横屏应用体验<br>
+仅对于 MIUI 来说，安卓 11 版的应用的横屏体验远好于安卓 12 版的应用。<br>
+事实上，所谓已适配安卓 12 的应用列表在安卓 11 的 MIUI 上显示的效果几乎完全一致。<br>
+不仅如此，更多应用可以在安卓 11 的 MIUI 上正常横屏。<br>
+回到安卓 11 版以后，我又可以横屏下正常使用闲鱼，淘特等等应用。这个对于日常横屏使用的用户至关重要。<br>
+微信，之家，知乎，贴吧的体验也上升了一大截，该大的空间大，该小的空间小。</p>
+<p><img data-fancybox="gallery" src="20814897_f82e4aea_4637_0949_932@2560x1600.jpeg.m.jpg" alt="回归舒适" data-caption="回归舒适" loading="lazy"></p>
+<p>回归舒适</p>
+<p><img data-fancybox="gallery" src="20814897_09234abb_4637_0957_378@2560x1600.jpeg.m.jpg" alt="体验完美" data-caption="体验完美" loading="lazy"></p>
+<p>体验完美</p>
+<p><img data-fancybox="gallery" src="20814897_4b20087b_4637_0967_950@2560x1600.jpeg.m.jpg" alt="近似适配" data-caption="近似适配" loading="lazy"></p>
+<p>近似适配</p>
+<p>对于键盘党，更好的横屏体验完全可以称作第一优势。这个文末还会再细说。</p>
+<p>2. 没有数量限制的小窗模式<br>
+众所周知，平板模式下小窗限制在两个，之前 6G 内存时尚且合理，升级了 16G 以后就过于保守了。<br>
+而安卓 11 的 PC 模式下，理论上可以开 5 个小窗，且小窗都是前台运行，配合大内存非常方便。</p>
+<p><img data-fancybox="gallery" src="20814897_a866241a_4637_0976_554@2558x1599.jpeg.m.jpg" alt="5个小窗" data-caption="5个小窗" loading="lazy"></p>
+<p>5 个小窗</p>
+<p>如果解锁了平板，更可以实现在平板模式下多小窗，而且和安卓 12 版 MIUI 小窗贴边后墓碑不同，安卓 11 版 MIUI 的小窗只能挂角，但是能保证全部前台运行。</p>
+<p>3. 更舒适的横竖屏桌面<br>
+不会因为横屏再竖屏再横屏，桌面图标就会乱成一团了。<br>
+至于小部件，目前应用厂商适配小部件的程度还很低，大多是装饰作用。用安卓原生小组件也能接受。</p>
+<p>4. 更智能的接力<br>
+ B 站，WPS 终于可以正常接力了。其他 APP 恢复到什么程度还不知道，但是这个是实打实的让我开心了一下。</p>
+<p>总结：<br>
+再次强调，我降级能获得体验提升的前提是，我不使用手写笔，且大多时候平板横屏使用。以上体验仅代表个人体验，如有不同，建议评论。<br>
+我玩机的宗旨是不将就，不妥协。我只追求我手中的设备始终是功能最好的版本。</p>
+<p>从第一个安卓 12 内测版本至今，我已经用了安卓 12 版本 MIUI 半年了，一直没有回退是需要清空数据。这次正好清空数据，就回退了。<br>
+安卓 12 版本的 MIUI 没适配好，那我就等它适配好了再升。如果已经试过体验明显下降，还升级，那可就太像某个啥都可以妥协的品牌的用户了。<br>
+以上说的 4 点内容，在安卓 12 版本的 MIUI 上，1 可以通过刷强制横屏模块勉强解决，但是体验很差，比如下图是强制横屏下的淘特。</p>
+<p><img data-fancybox="gallery" src="20814897_0e1aba13_4637_0979_254@1280x800.jpeg.m.jpg" alt="淘特ON安卓12MIUI" data-caption="淘特ON安卓12MIUI" loading="lazy"></p>
+<p>淘特 ON 安卓 12MIUI</p>
+<p><img data-fancybox="gallery" src="20814897_dd963b92_4637_0981_416@2560x1600.jpeg.m.jpg" alt="勉强能用的淘特ON安卓11" data-caption="勉强能用的淘特ON安卓11" loading="lazy"></p>
+<p>勉强能用的淘特 ON 安卓 11</p>
+<p>2 可以通过刷小窗模块解决，但是问题缺点前文已经提到。3 可以通过强制降级桌面版本解决。4 听说最新的内测版已经修复了。</p>
+<p>最后是题外话。<br>
+不知道为什么，最近兴起了一股风，说是安卓 12 / 安卓 12L 推动了应用厂商适配安卓平板。我觉得这观点挺离谱。<br>
+首先，近期这一个月，确实有很多应用适配了安卓平板。但是这其中，只有微信和酷安使用的是安卓 12 的平行视界接口，其他的大部分都是自己重新画了个界面。比如 QQ，抖音，等等。<br>
+前文提到了，对于适配了平行视界的应用，无论它适配的是哪个版本，那它们的显示效果几乎是一致的。比如这个无头像老哥一怒之下做的应用集里的大部分应用。</p>
+<p>[<a target="_blank" rel="noopener" href="https://www.coolapk.com/album/40695192">链接] 推荐应用集：小米平板 5pro</a></p>
+<p>以酷安举个🌰，适配了安卓 12 平行视界接口的界面，和适配了安卓 11 的 MIUI 平行视界接口的界面，两者几乎没有明显区别。</p>
+<p><img data-fancybox="gallery" src="20814897_5b9cffcf_4637_0989_835@2560x1600.jpeg.m.jpg" alt="你能说出这是安卓12下的酷安还是安卓11下的酷安吗？" data-caption="你能说出这是安卓12下的酷安还是安卓11下的酷安吗？" loading="lazy"></p>
+<p>你能说出这是安卓 12 下的酷安还是安卓 11 下的酷安吗？</p>
+<p>甚至很多应用，在基于安卓 11 的 MIUI 的平行视界中，适配得更舒服，比如前文提到的微信，贴吧，闲鱼，淘特。再比如知乎。</p>
+<p><img data-fancybox="gallery" src="20814897_cf811d57_4637_0994_194@2560x1600.jpeg.m.jpg" alt="知乎On安卓11" data-caption="知乎On安卓11" loading="lazy"></p>
+<p>而对于重新画了界面的应用，无论是哪个版本的安卓，它的显示效果都完全一致。比如下图，请说出它运行在安卓哪个版本的机器上。</p>
+<p><img data-fancybox="gallery" src="20814897_61adacce_4637_0998_779@1920x1200.jpeg.m.jpg" alt="请快速说出它在的安卓版本" data-caption="请快速说出它在的安卓版本" loading="lazy"></p>
+<p>请快速说出它在的安卓版本</p>
+<p>所以只要略做比较，我们就不难看出，根本没法得出类似于 “安卓 12 推动了厂商适配安卓平板应用” 这样的结论。<br>
+那么为什么安卓厂商突然一窝蜂的开始适配安卓平板了呢？</p>
+<p>是市场足够大了。</p>
+<p>然而，这个大市场构成很复杂，里边既有安卓 13，安卓 12 的大牌平板，也有安卓 7.1 的山寨平板，安卓 9 的教育平板。如何做到一口吃下这个蛋糕，最简单的方法是，“哪代平行视界接口都不用，自己重新绘制界面”。大部分厂商都是这么做的。<br>
+只是，这个适配的时间恰好赶上了 MIUI For Pad 升级基于安卓 12 正式版，三星平板升级安卓 12L，这就让某些人有了 “安卓 12 推动厂商适配安卓平板” 的神奇观点。<br>
+综上，在我看来，与其说 “安卓 12 推动了厂商适配安卓平板”，不如说：</p>
+<p>“足够大的市场推动了厂商适配安卓平板，恰巧在安卓 12 的时间”。</p>
+<p>我是御坂初琴。我们下期图文再见。</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="https://ybcq.github.io/2022/11/12/%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/" title="https:&#x2F;&#x2F;ybcq.github.io&#x2F;2022&#x2F;11&#x2F;12&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;ybcq.github.io&#x2F;2022&#x2F;11&#x2F;12&#x2F;%E3%80%90%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87%E3%80%91%E4%BB%8E%E5%B9%B3%E6%9D%BF%E9%99%8D%E7%BA%A7MIUI%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E4%BD%93%E9%AA%8C%E5%9B%BE%E6%96%87/">体验图文</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF/" rel="tag">小米平板</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1676174392470"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>

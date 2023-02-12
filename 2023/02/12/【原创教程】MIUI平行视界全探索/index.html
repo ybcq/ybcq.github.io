@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【原创教程】MIUI平行视界全探索 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/img/Head.png" type="image/png" />
+    <meta name="description" content="MIUI平行视界全探索">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【原创教程】MIUI平行视界全探索">
+<meta property="og:url" content="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="MIUI平行视界全探索">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/image-20230212114621811.png">
+<meta property="og:image" content="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/image-20230212114759354.png">
+<meta property="og:image" content="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/image-20230212115043851.png">
+<meta property="article:published_time" content="2023-02-12T03:45:07.000Z">
+<meta property="article:modified_time" content="2023-02-12T03:59:06.623Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="MIUI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/image-20230212114621811.png">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1676174392455">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1676174392455">
+    <link rel="stylesheet" href="/css/style.css?v=1676174392455">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>127</div>
+        <div><span>Tags</span>48</div>
+        <div><span>Categories</span>16</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://gzming.ysepan.com/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://www.coolapk.com/u/7399818" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:ybcq.github.io" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=kVN01Wkg" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://ybcqsoft.lofter.com/" target="_blank" mdui-tooltip="{content: '老福特'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验图文/">体验图文</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">17</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">11</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">34</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">9</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/数据统计/">数据统计</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/炉石瞎想/">炉石瞎想</a>
+          <span class="category-list-count">6</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">20</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站公告/">网站公告</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞笔记/">脑洞笔记</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/MIUI/" style="font-size: 11.25px;">MIUI</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.25px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 17.5px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.25px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%AE%89%E5%8D%93%E5%B9%B3%E6%9D%BF/" style="font-size: 10px;">安卓平板</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 18.75px;">小米</a> <a href="/tags/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF/" style="font-size: 12.5px;">小米平板</a> <a href="/tags/%E5%B9%B3%E6%9D%BF/" style="font-size: 13.75px;">平板</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 13.75px;">手机</a> <a href="/tags/%E6%89%8B%E8%A1%A8/" style="font-size: 10px;">手表</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 13.75px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 13.75px;">游戏</a> <a href="/tags/%E7%82%89%E7%9F%B3/" style="font-size: 16.25px;">炉石</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 10px;">电脑</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 12.5px;">空间</a> <a href="/tags/%E7%B1%BB%E5%8E%9F%E7%94%9F/" style="font-size: 10px;">类原生</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 13.75px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 12.5px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 17.5px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 13.75px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2023 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 24.305555555555554%;"> 
+              <img data-fancybox="gallery" src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg" alt="【原创教程】MIUI平行视界全探索" loading="lazy">
+              <h1>【原创教程】MIUI平行视界全探索</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2023年02月12日</a>
+</div>
+
+      <p><strong>查看如何打包到 ROM 包的请直接跳转到第 4 章</strong></p>
+<h2 id="1miui的平行视界概述"><a class="markdownIt-Anchor" href="#1miui的平行视界概述">#</a> <strong>1.MIUI 的平行视界概述</strong></h2>
+<p>MIUI 的平行视界分为两个时代，基于安卓 11 的魔窗版时代和基于安卓 12 / 安卓 13 的官改时代。</p>
+<p>所谓魔窗版时代，MIUI 的平行视界使用了 magicWindows 方案，该方案同样用在了安卓 10，安卓 11 和安卓 12 版的鸿蒙，ColorOS 以及 OriginOS 上。魔窗方案的优点是，即使应用厂商什么都不做，依旧可以实现两种预设模式的平行视界逻辑。对于应用厂商来说，这是最方便的。</p>
+<p>所谓官改版时代，MIUI 使用了安卓 12L 的 embedding Windows 方案。官方方案的特点是，厂商必须主动适配，自己写配置文件才能实现平行视界。</p>
+<p>小米过于相信谷歌的号召力，而事实上根本没几家 APP 适配官方方案，所以无奈之下，小米只能亲自下场，替常见的 APP 写配置文件，并增加一些默认的窗口逻辑。这种在官方接口上自己再修改补全的方案，我称之为官改方案。</p>
+<p>关于魔窗方案和官方方案的更多区别，我将会在接下来的时间制作一期视频，通过视频的方式进行更直观的演示。读者可以关注我的 B 站账号。</p>
+<h2 id="2魔窗版的实现方法"><a class="markdownIt-Anchor" href="#2魔窗版的实现方法">#</a> <strong>2. 魔窗版的实现方法</strong></h2>
+<p>魔窗版的平行视界由系统中的两个文件进行控制，分别是应用列表的 magic_window_setting_config.xml，和配置应用横屏属性的 magicWindowFeature_magic_window_application_list.xml 。</p>
+<p>这里我们简单解析一下两个文件的内容。</p>
+<p>应用列表位置 <u>/data/system/users/0/magic_window_setting_config.xml</u>：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;com.yjs.android&quot;</span> <span class="attr">miuiMagicWinEnabled</span>=<span class="string">&quot;true&quot;</span> <span class="attr">miuiDialogShown</span>=<span class="string">&quot;false&quot;</span> <span class="attr">miuiDragMode</span>=<span class="string">&quot;0&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;com.kwai.thanos&quot;</span> <span class="attr">miuiMagicWinEnabled</span>=<span class="string">&quot;true&quot;</span> <span class="attr">miuiDialogShown</span>=<span class="string">&quot;false&quot;</span> <span class="attr">miuiDragMode</span>=<span class="string">&quot;0&quot;</span> /&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>参数详解：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name=<span class="string">&quot;&quot;</span> <span class="comment">//应用包名</span></span><br><span class="line">miuiMagicWinEnabled=<span class="string">&quot;true&quot;</span> <span class="comment">//是否开启魔窗模式。推荐为&quot;true&quot;</span></span><br><span class="line">miuiDialogShown=<span class="string">&quot;false&quot;</span> <span class="comment">//是否开启魔窗适配对话框。推荐为&quot;false&quot;</span></span><br><span class="line">miuiDragMode=<span class="string">&quot;0&quot;</span> <span class="comment">//是否支持分屏窗口拖拽，亲测无效。推荐为&quot;0&quot;</span></span><br></pre></td></tr></table></figure>
+<p>魔窗适配对话框长这样：</p>
+<p><img data-fancybox="gallery" src="image-20230212114621811.png" alt="image-20230212114621811" data-caption="image-20230212114621811" loading="lazy"></p>
+<p>应用配置位置 <u>/data/system/magicWindowFeature_magic_window_application_list.xml</u></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">window_mode</span>=<span class="string">&quot;1&quot;</span> <span class="attr">support_multi_resume</span>=<span class="string">&quot;false&quot;</span> <span class="attr">support_fullscreen_video</span>=<span class="string">&quot;true&quot;</span> <span class="attr">support_camera_preview</span>=<span class="string">&quot;true&quot;</span> <span class="attr">is_scaled</span>=<span class="string">&quot;true&quot;</span> <span class="attr">need_relaunch</span>=<span class="string">&quot;false&quot;</span> <span class="attr">default_setting</span>=<span class="string">&quot;&quot;</span> <span class="attr">is_dragable</span>=<span class="string">&quot;false&quot;</span> <span class="attr">is_left_window_one_third</span>=<span class="string">&quot;&quot;</span> <span class="attr">notch_adapt</span>=<span class="string">&quot;false&quot;</span> <span class="attr">version</span>=<span class="string">&quot;8.0.9&quot;</span> <span class="attr">home</span>=<span class="string">&quot;&quot;</span> <span class="attr">name</span>=<span class="string">&quot;com.tencent.mm&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">window_mode</span>=<span class="string">&quot;2&quot;</span> <span class="attr">support_multi_resume</span>=<span class="string">&quot;false&quot;</span> <span class="attr">support_fullscreen_video</span>=<span class="string">&quot;true&quot;</span> <span class="attr">support_camera_preview</span>=<span class="string">&quot;true&quot;</span> <span class="attr">is_scaled</span>=<span class="string">&quot;true&quot;</span> <span class="attr">need_relaunch</span>=<span class="string">&quot;false&quot;</span> <span class="attr">default_setting</span>=<span class="string">&quot;&quot;</span> <span class="attr">is_dragable</span>=<span class="string">&quot;true&quot;</span> <span class="attr">is_left_window_one_third</span>=<span class="string">&quot;&quot;</span> <span class="attr">notch_adapt</span>=<span class="string">&quot;false&quot;</span> <span class="attr">version</span>=<span class="string">&quot;&quot;</span> <span class="attr">home</span>=<span class="string">&quot;&quot;</span> <span class="attr">name</span>=<span class="string">&quot;com.xunmeng.pinduoduo&quot;</span> /&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>这里的参数就需要详解一下了：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">window_mode=<span class="string">&quot;1&quot;</span> <span class="comment">//理论上1为普通模式，即主页始终在左侧，2为购物模式，即左侧不断被新产生的右侧界面覆盖，4为全屏拉伸模式，-1为先纵向全屏拉伸然后再旋转到横向，0为信箱模式。但是实际测试发现1和2区别不大，推荐为2，大部分应用都能设置为平行视界</span></span><br><span class="line">support_multi_resume=<span class="string">&quot;false&quot;</span> <span class="comment">//保持左右窗口都处于活动状态，适合两侧窗口需要同时播放视频的应用。推荐为&quot;false&quot;，减小内存占用</span></span><br><span class="line">support_fullscreen_video=<span class="string">&quot;true&quot;</span> <span class="comment">//播放视频时全屏。推荐为&quot;true&quot;</span></span><br><span class="line">support_camera_preview=<span class="string">&quot;true&quot;</span> <span class="comment">//拍照时全屏。推荐为&quot;true&quot;</span></span><br><span class="line">is_scaled=<span class="string">&quot;true&quot;</span> <span class="comment">//重绘界面大小。亲测效果一般，如果图标过大或者过小时可以改一下试试</span></span><br><span class="line">need_relaunch=<span class="string">&quot;false&quot;</span> <span class="comment">//在调整页面大小时重新加载窗口，亲测无效。推荐为&quot;false&quot;，或者在调整左右大小后界面变形时选为&quot;true&quot;</span></span><br><span class="line">default_setting=<span class="string">&quot;&quot;</span> <span class="comment">//无用属性。推荐为&quot;&quot;</span></span><br><span class="line">is_dragable=<span class="string">&quot;false&quot;</span> <span class="comment">//重要属性，是否支持左右大小调节。需要每个应用测试能否支持该功能，以及调节后界面是否变形。</span></span><br><span class="line">is_left_window_one_third=<span class="string">&quot;&quot;</span> <span class="comment">//左半屏是否为整个屏幕的1/3大小，亲测无效。推荐为&quot;&quot;</span></span><br><span class="line">version=<span class="string">&quot;&quot;</span> <span class="comment">//支持的软件版本。推荐为&quot;&quot;</span></span><br><span class="line">home=<span class="string">&quot;&quot;</span> <span class="comment">//应用主页，需要填写activity。推荐不填，默认为&quot;&quot;</span></span><br><span class="line">name=<span class="string">&quot;&quot;</span> <span class="comment">//应用包名</span></span><br></pre></td></tr></table></figure>
+<p>所以，添加自定义的软件，以及修改已有软件的配置，只需要先在 magic_window_setting_config.xml 中添加一行声明，然后再在 magicWindowFeature_magic_window_application_list.xml 中为它配置一个横屏方案即可。具体请自行实验。</p>
+<p><img data-fancybox="gallery" src="image-20230212114759354.png" alt="image-20230212114759354" data-caption="image-20230212114759354" loading="lazy"></p>
+<p><em>这里得夸一句安卓 11 的 MIUI 工程师，官方版适配就为 3200 余款应用适配了横屏配置，当年雷军发布会上的那句我们为 3000 款应用进行了适配也不是空话。</em></p>
+<p><em>但侧面也证明了，魔窗平行视界方案的适配简介，方便，快速，成本低，支持的配置项简单有效，功能全面，非常适合扩展平行视界生态。</em></p>
+<h2 id="3官改版的实现方法"><a class="markdownIt-Anchor" href="#3官改版的实现方法">#</a> <strong>3. 官改版的实现方法</strong></h2>
+<p>官改版的平行视界和魔窗版类似，也是由系统中的两个文件进行控制，分别应用列表 embedded_setting_config.xml，和应用横屏配置 embedded_rules_list.xml 。</p>
+<p>应用列表位置 <u>/data/system/users/0/embedded_setting_config.xml</u></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;com.yjs.android&quot;</span> <span class="attr">embeddedEnable</span>=<span class="string">&quot;true&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;com.kwai.thanos&quot;</span> <span class="attr">embeddedEnable</span>=<span class="string">&quot;true&quot;</span> /&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>不需要太多解释</p>
+<p>应用配置列表有两个，一个在 <u>/product/etc/embedded_rules_list.xml</u>，是出厂配置，安卓 12 版的 MIUI 有效；另一个是 <u>/data/system/cloudFeature_embedded_rules_list.xml</u>，安卓 13 版的 MIUI 有效。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.tencent.mm&quot;</span> <span class="attr">fullRule</span>=<span class="string">&quot;nra:cr:rcr&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.xunmeng.pinduoduo&quot;</span> <span class="attr">activityRule</span>=<span class="string">&quot;com.xunmeng.pinduoduo.login.LoginActivity,com.xunmeng.pinduoduo.activity.NewPageFoldActivity&quot;</span> <span class="attr">clearTop</span>=<span class="string">&quot;false&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;com.xunmeng.pinduoduo.ui.activity.HomeActivity:com.xunmeng.pinduoduo.activity.MagicWindowActivity&quot;</span> <span class="attr">relaunch</span>=<span class="string">&quot;true&quot;</span> <span class="attr">splitPairRule</span>=<span class="string">&quot;com.xunmeng.pinduoduo.activity.NewPageFoldActivity:*,com.xunmeng.pinduoduo.ui.activity.HomeActivity:*&quot;</span> <span class="attr">transitionRules</span>=<span class="string">&quot;com.xunmeng.pinduoduo.activity.NewPageMaskActivity,com.xunmeng.pinduoduo.login.PhoneLoginActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.baidu.searchbox&quot;</span> <span class="attr">splitPairRule</span>=<span class="string">&quot;com.baidu.searchbox.MainActivity:*&quot;</span> <span class="attr">transitionRules</span>=<span class="string">&quot;com.baidu.searchbox.SplashActivity,com.baidu.searchbox.CodeScannerActivity,com.baidu.searchbox.ugc.activity.LocalAlbumDelegateActivity,com.baidu.searchbox.permission.PermissionActivity&quot;</span> /&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>参数解析：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">name=<span class="string">&quot;&quot;</span> <span class="comment">//包名</span></span><br><span class="line">activityRule=<span class="string">&quot;&quot;</span> <span class="comment">//全屏显示的activity，配置错误会导致平行视界无效！。推荐不配置</span></span><br><span class="line">clearTop=<span class="string">&quot;false&quot;</span> <span class="comment">//布尔值，右屏幕不杀死，多实例，默认为false。推荐不配置</span></span><br><span class="line">placeholder=<span class="string">&quot;&quot;</span> <span class="comment">//占位用的activity，比如微信的右半屏。推荐不配置</span></span><br><span class="line">relaunch=<span class="string">&quot;false&quot;</span> <span class="comment">//布尔值，调整窗口时重加载。默认为false，推荐为&quot;false&quot;</span></span><br><span class="line">splitPairRule=<span class="string">&quot;:&quot;</span> <span class="comment">//左右分隔的activity，右侧可以表示成*。推荐不配置</span></span><br><span class="line">transitionRules=<span class="string">&quot;:&quot;</span> <span class="comment">//相互覆盖的activity，类似于购物模式，用逗号隔开。推荐不配置</span></span><br><span class="line">disableSensor=<span class="string">&quot;false&quot;</span> <span class="comment">//布尔值，禁用传感器。推荐不配置</span></span><br><span class="line">splitRatio=<span class="string">&quot;0.4&quot;</span> <span class="comment">//左右分屏大小比例，左边比右边。推荐为&quot;0.33&quot;，画面最好看</span></span><br><span class="line">isShowDialog=<span class="string">&quot;true&quot;</span> <span class="comment">//显示应用适配对话框。推荐为&quot;false&quot;</span></span><br><span class="line">sizecompatRatio=<span class="string">&quot;5:4&quot;</span> <span class="comment">//大小兼容比例，用于重绘activity，防止某些界面图标过大，配置错误会导致平行视界无效！推荐不配置</span></span><br><span class="line">sizecompatRule=<span class="string">&quot;*&quot;</span> <span class="comment">//哪些activity重绘大小，配置错误会导致平行视界无效！。推荐不配置</span></span><br><span class="line">finishSecondaryWithPrimary=<span class="string">&quot;0&quot;</span> <span class="comment">//true时右侧界面跟随左侧界面关闭。推荐不配置</span></span><br><span class="line">fullRule=<span class="string">&quot;nra:cr:rcr&quot;</span> <span class="comment">//竖屏时全屏而非分屏，在安卓13上不生效。&quot;*&quot;为无视方向始终开启全屏，&quot;nr&quot;大概率为仅竖屏下开启全屏。推荐不配置</span></span><br><span class="line"></span><br><span class="line">middleRule=<span class="string">&quot;*&quot;</span> <span class="comment">//开启信箱模式的方向。方向值同上，nra:cr:rcr，配置错误会导致平行视界无效！推荐不配置</span></span><br><span class="line">supportCameraPreview=<span class="string">&quot;false&quot;</span> <span class="comment">//是否拍照时全屏预览。推荐不配置</span></span><br></pre></td></tr></table></figure>
+<p>我们不难发现，官改版的配置文件比魔窗版复杂很多，可以详细配置 12L 官方的 embedding windows 中的几乎所有内容。但是这个适配工程量极大，所以就有了这个神奇的一幕：</p>
+<p><img data-fancybox="gallery" src="image-20230212115043851.png" alt="image-20230212115043851" data-caption="image-20230212115043851" loading="lazy"></p>
+<p><em>也就是说，MIUI 工程师在写了不到 73 个软件后，决定对其他软件不再手动写横屏配置了，就非常的简 (tou) 洁 (lan)。当然官方平行视界适配成本高（连购物模式都没有现成接口）也是一个原因。</em></p>
+<p>*MIUI 工程师为安卓 12 和安卓 13 版的 MIUI For Pad 共添加了约 1912 款应用，比安卓 11 的 MIUI For Pad 的 3300 余款少了接近一半。 *</p>
+<p>添加自定义的软件，以及修改已有软件的配置，依旧只需要先在 embedded_setting_config.xml 中中添加一行声明，然后再在 embedded_rules_list.xml 配置中为它配置一个横屏方案即可。但是查找每个页面的 activity 工作量巨大，所以我们也可以用简 (tou) 洁 (lan) 的写法来实现平行视界，只给它配置 splitRadio 等几个简单参数即可。</p>
+<p>比如在我的模块里，我写成这样：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- MIUI_MagicWindow+ --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.taobao.taobao&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.tencent.mtt&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.ss.android.article.news&quot;</span> <span class="attr">clearTop</span>=<span class="string">&quot;true&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.33&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.snda.wifilocating&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.taobao.idlefish&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.alibaba.android.rimet&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.33&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.tmri.app.main&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.33&quot;</span> /&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>就可以快速的添加自己想增加平行视的应用了。</p>
+<h2 id="4如何打包到rom包"><a class="markdownIt-Anchor" href="#4如何打包到rom包">#</a> <strong>4. 如何打包到 ROM 包</strong></h2>
+<p>解包文件对应分区，修改对应的文件，然后复制到原路径下覆盖原文件，重新打包分区即可。</p>
+<p>对于安卓 11 版的 MIUI For Pad，需要覆盖以下两个文件。</p>
+<p><u>/data/system/users/0/magic_window_setting_config.xml</u></p>
+<p><u>/data/system/magicWindowFeature_magic_window_application_list.xml</u></p>
+<p>对于安卓 12 / 安卓 13 版的 MIUI For Pad，需要覆盖以下三个文件。</p>
+<p><u>/data/system/users/0/embedded_setting_config.xml</u></p>
+<p><u>/product/etc/embedded_rules_list.xml</u></p>
+<p><u>/data/system/cloudFeature_embedded_rules_list.xml</u></p>
+<p>所有文件可以通过解包《完美横屏应用计划》模块获得。</p>
+<h2 id="5如何打包成模块"><a class="markdownIt-Anchor" href="#5如何打包成模块">#</a> <strong>5. 如何打包成模块</strong></h2>
+<p>由于这些文件都不在 system 分区，所以传统模块的文件替换法并不会生效。这里我们采用 post-fs-data.sh 来实现这个功能。</p>
+<p>在 post-fs-data.sh 中，只需要用简单的复制命令即可实现对文件的替换。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> For Android 11</span></span><br><span class="line">mv $MODDIR/common/system/users/0/magic_window_setting_config.xml /data/system/users/0/magic_window_setting_config.xml</span><br><span class="line">mv $MODDIR/common/system/magicWindowFeature_magic_window_application_list.xml /data/system/magicWindowFeature_magic_window_application_list.xml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> For Android 12/Android13</span></span><br><span class="line">mv $MODDIR/common/product/etc/embedded_rules_list.xml /product/etc/embedded_rules_list.xml</span><br><span class="line">mv $MODDIR/common/product/etc/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list.xml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> For Android 12</span></span><br><span class="line">mv $MODDIR/common/system/users/0/embedded_setting_config.xml /data/system/users/0/embedded_setting_config.xml</span><br></pre></td></tr></table></figure>
+<p>以上文件会被 MIUI 服务器云控，所以我们需要一些方法来干掉云控。这里我用的是最简单的权限法，给这些文件的权限限制为 440，使 system 不再对它有修改的权限，即可从一定程度上解决云控的问题。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Disable Cloud Feature</span></span><br><span class="line">chmod 440 /product/etc/embedded_rules_list.xml</span><br><span class="line">chown system /product/etc/embedded_rules_list.xml</span><br><span class="line">chmod 440 /data/system/cloudFeature_embedded_rules_list.xml</span><br><span class="line">chown system /data/system/cloudFeature_embedded_rules_list.xml</span><br><span class="line">chmod 440 /data/system/users/0/embedded_setting_config.xml</span><br><span class="line">chown system /data/system/users/0/embedded_setting_config.xml</span><br></pre></td></tr></table></figure>
+<p>当然，这样替换的文件不会在模块卸载时被替换回去，<a target="_blank" rel="noopener" href="http://xn--uninstall-u75nook6evc429b2o8dpvau254c301b.sh">所以我们需要写一个 uninstall.sh</a>，并在其中加入文件替换回去的命令，以及还原文件读者权限的命令（魔窗配置文件会在删除后重启自动生成，直接删除就行）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Remove Files</span></span><br><span class="line">rm /data/system/users/0/magic_window_setting_config.xml</span><br><span class="line">rm /data/system/magicWindowFeature_magic_window_application_list.xml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Move Back Files</span></span><br><span class="line">mv $MODDIR/common/product/etc/embedded_rules_list_bak /product/etc/embedded_rules_list.xml</span><br><span class="line">mv $MODDIR/common/product/etc/embedded_rules_list_bak /data/system/cloudFeature_embedded_rules_list.xml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Enable Cloud Feature</span></span><br><span class="line">chmod 660 /product/etc/embedded_rules_list.xml</span><br><span class="line">chown system /product/etc/embedded_rules_list.xml</span><br><span class="line">chmod 660 /data/system/cloudFeature_embedded_rules_list.xml</span><br><span class="line">chown system /data/system/cloudFeature_embedded_rules_list.xml</span><br><span class="line">chmod 660 /data/system/users/0/embedded_setting_config.xml</span><br><span class="line">chown system /data/system/users/0/embedded_setting_config.xml</span><br></pre></td></tr></table></figure>
+<p>至此，一个模块就写好了。</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/" title="https:&#x2F;&#x2F;ybcq.github.io&#x2F;2023&#x2F;02&#x2F;12&#x2F;%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;ybcq.github.io&#x2F;2023&#x2F;02&#x2F;12&#x2F;%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B/">原创教程</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/MIUI/" rel="tag">MIUI</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1676174392459"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
