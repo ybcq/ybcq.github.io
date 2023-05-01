@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    
+    <title>【原创软件】完美横屏应用计划-正式版 V1.00.0 - 御坂初琴软件屋</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/img/Head.png" type="image/png" />
+    <meta name="description" content="经过16个小版本的迭代，完美横屏应用计划终于迎来了第一个正式版。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【原创软件】完美横屏应用计划-正式版 V1.00.0">
+<meta property="og:url" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/index.html">
+<meta property="og:site_name" content="御坂初琴软件屋">
+<meta property="og:description" content="经过16个小版本的迭代，完美横屏应用计划终于迎来了第一个正式版。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_87780ec9_4667_897_484@1280x720.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_32db976b_4667_8974_154@960x600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_8d1b0f9b_4667_898_291@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_6dd60ab9_4667_899_948@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_5bf5fa33_4667_8997_291@2560x1600.jpeg.m.jpg">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_8e249245_4667_9_412@1280x800.gif">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_326255ab_4667_9003_127@768x480.gif">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_87d3425b_4667_9006_857@768x480.gif">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_4923640b_4667_9016_319@768x480.gif">
+<meta property="og:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_b62cf094_4671_3882_778@1038x779.jpeg.m.jpg">
+<meta property="article:published_time" content="2023-05-01T10:00:07.000Z">
+<meta property="article:modified_time" content="2023-05-01T10:02:28.426Z">
+<meta property="article:author" content="御坂初琴">
+<meta property="article:tag" content="小米平板">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/20814897_87780ec9_4667_897_484@1280x720.jpeg.m.jpg">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
+    />
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1682935368388">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1682935368388">
+    <link rel="stylesheet" href="/css/style.css?v=1682935368388">
+     
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="御坂初琴" class="mdui-btn mdui-btn-icon"><img src="/img/Head.png" alt="御坂初琴"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="御坂初琴">
+            <img src="/img/Head.png" alt="御坂初琴" alt="御坂初琴">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>129</div>
+        <div><span>Tags</span>48</div>
+        <div><span>Categories</span>16</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://gzming.ysepan.com/" title="平板软件">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                平板软件
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://space.bilibili.com/353184068" title="哔哩哔哩">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                哔哩哔哩
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="http://www.coolapk.com/u/7399818" title="酷安博客">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                酷安博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:ybcq.github.io" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=kVN01Wkg" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/353184068" target="_blank" mdui-tooltip="{content: 'BiliBili'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="http://ybcqsoft.lofter.com/" target="_blank" mdui-tooltip="{content: '老福特'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Categories</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/不科学理观/">不科学理观</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验图文/">体验图文</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/体验报告/">体验报告</a>
+          <span class="category-list-count">17</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/免费软件/">免费软件</a>
+          <span class="category-list-count">11</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创教程/">原创教程</a>
+          <span class="category-list-count">33</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/原创软件/">原创软件</a>
+          <span class="category-list-count">12</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/数据统计/">数据统计</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日记/">日记</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/炉石瞎想/">炉石瞎想</a>
+          <span class="category-list-count">6</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/独家修改/">独家修改</a>
+          <span class="category-list-count">20</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站公告/">网站公告</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/网站声明/">网站声明</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/脑洞笔记/">脑洞笔记</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/资源分享/">资源分享</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/转载/">转载</a>
+          <span class="category-list-count">7</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/HearthSV/" style="font-size: 10px;">HearthSV</a> <a href="/tags/Hosts/" style="font-size: 10px;">Hosts</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/MIUI/" style="font-size: 12.5px;">MIUI</a> <a href="/tags/Office/" style="font-size: 10px;">Office</a> <a href="/tags/Python/" style="font-size: 11.25px;">Python</a> <a href="/tags/UOS/" style="font-size: 10px;">UOS</a> <a href="/tags/Windows/" style="font-size: 17.5px;">Windows</a> <a href="/tags/aardio/" style="font-size: 10px;">aardio</a> <a href="/tags/arduino/" style="font-size: 11.25px;">arduino</a> <a href="/tags/%E4%BF%AE%E5%9B%BE/" style="font-size: 10px;">修图</a> <a href="/tags/%E5%85%8D%E8%B4%A3/" style="font-size: 10px;">免责</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 10px;">公告</a> <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">动画</a> <a href="/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/" style="font-size: 10px;">反编译</a> <a href="/tags/%E5%A1%9E%E7%8F%AD/" style="font-size: 10px;">塞班</a> <a href="/tags/%E5%A4%96%E8%AE%BE/" style="font-size: 10px;">外设</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 20px;">安卓</a> <a href="/tags/%E5%AE%89%E5%8D%93%E5%B9%B3%E6%9D%BF/" style="font-size: 10px;">安卓平板</a> <a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 18.75px;">小米</a> <a href="/tags/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF/" style="font-size: 12.5px;">小米平板</a> <a href="/tags/%E5%B9%B3%E6%9D%BF/" style="font-size: 15px;">平板</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 13.75px;">手机</a> <a href="/tags/%E6%89%8B%E8%A1%A8/" style="font-size: 10px;">手表</a> <a href="/tags/%E6%8E%8C%E6%9C%BA/" style="font-size: 10px;">掌机</a> <a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 13.75px;">日记</a> <a href="/tags/%E6%97%B6%E5%BA%8F/" style="font-size: 10px;">时序</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px;">杂谈</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15px;">浏览器</a> <a href="/tags/%E6%B8%85%E7%90%86/" style="font-size: 10px;">清理</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 13.75px;">游戏</a> <a href="/tags/%E7%82%89%E7%9F%B3/" style="font-size: 16.25px;">炉石</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">生活技巧</a> <a href="/tags/%E7%94%B5%E8%84%91/" style="font-size: 10px;">电脑</a> <a href="/tags/%E7%94%B5%E8%B7%AF/" style="font-size: 10px;">电路</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/" style="font-size: 10px;">百度网盘</a> <a href="/tags/%E7%A9%BA%E9%97%B4/" style="font-size: 12.5px;">空间</a> <a href="/tags/%E7%B1%BB%E5%8E%9F%E7%94%9F/" style="font-size: 10px;">类原生</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 13.75px;">联想</a> <a href="/tags/%E8%87%AA%E7%A0%94%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">自研系统</a> <a href="/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/" style="font-size: 12.5px;">解压缩</a> <a href="/tags/%E8%B7%91%E5%88%86/" style="font-size: 10px;">跑分</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 17.5px;">转载</a> <a href="/tags/%E9%97%AA%E7%94%B5%E8%BD%AF%E4%BB%B6%E5%9B%AD/" style="font-size: 10px;">闪电软件园</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 13.75px;">音乐</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 10px;">音乐制作</a> <a href="/tags/%E9%B8%BF%E8%92%99/" style="font-size: 10px;">鸿蒙</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2023 御坂初琴
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 24.305555555555554%;"> 
+              <img data-fancybox="gallery" src="https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg" alt="【原创软件】完美横屏应用计划-正式版 V1.00.0" loading="lazy">
+              <h1>【原创软件】完美横屏应用计划-正式版 V1.00.0</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2023年05月01日</a>
+</div>
+
+      <p>经过 16 个小版本的迭代，完美横屏应用计划终于迎来了第一个正式版。<br>
+背景介绍：<a target="_blank" rel="noopener" href="https://www.coolapk.com/feed/41289121?shareKey=N2U0NmE3Njk4M2QyNjQ0M2FjZGI~&amp;shareUid=20814897&amp;shareFrom=com.coolapk.market_13.0-beta4">查看链接</a></p>
+<h3 id="️简介"><a class="markdownIt-Anchor" href="#️简介">#</a> ❤️简介</h3>
+<p>完美横屏应用计划是一个旨在提升小米平板适配数量和适配效果的模块。其主要有以下 3 个内容：</p>
+<h4 id="️扩展平行视界的支持范围"><a class="markdownIt-Anchor" href="#️扩展平行视界的支持范围">#</a> ☝🏻️扩展平行视界的支持范围：</h4>
+<p>对于基于安卓 11 的 MIUI For Pad，已扩展 130 余款应用，优化 50 余款应用的横屏体验。<br>
+对于基于安卓 12 和安卓 13 的 MIUI For Pad，已尽可能和安卓 11 版的 MIUI 的列表对齐，增加了安卓 11 版支持但安卓 12 和 13 不支持的官方适配软件 1300 余款，扩展适配 100 余款应用。</p>
+<p><img data-fancybox="gallery" src="20814897_87780ec9_4667_897_484@1280x720.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>数量对比表</p>
+<h4 id="️优化应用适配效果安卓11"><a class="markdownIt-Anchor" href="#️优化应用适配效果安卓11">#</a> ✌🏻️优化应用适配效果 (安卓 11)</h4>
+<p>主要为：<br>
+优化应用的平行视界适配体验，修复部分已知 BUG<br>
+ 解锁所有应用的左右横屏调节 (仅开发版模块支持)</p>
+<p><img data-fancybox="gallery" src="20814897_32db976b_4667_8974_154@960x600.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>解锁左右调节</p>
+<p><img data-fancybox="gallery" src="20814897_8d1b0f9b_4667_898_291@2560x1600.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>解锁左右调节</p>
+<p>移除软件厂商已适配横屏的 APP</p>
+<h4 id="优化应用适配效果安卓12安卓13"><a class="markdownIt-Anchor" href="#优化应用适配效果安卓12安卓13">#</a> 👌🏻优化应用适配效果 (安卓 12 / 安卓 13)</h4>
+<p>主要为：<br>
+优化应用的平行视界适配比例</p>
+<p><img data-fancybox="gallery" src="20814897_6dd60ab9_4667_899_948@2560x1600.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>左右 1:2</p>
+<p><img data-fancybox="gallery" src="20814897_5bf5fa33_4667_8997_291@2560x1600.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>同上</p>
+<p>为很多应用开启首页全屏适配，达到原生级体验</p>
+<p><img data-fancybox="gallery" src="20814897_8e249245_4667_9_412@1280x800.gif" alt="img" data-caption="img" loading="lazy"></p>
+<p>示例：支付宝</p>
+<p><img data-fancybox="gallery" src="20814897_326255ab_4667_9003_127@768x480.gif" alt="img" data-caption="img" loading="lazy"></p>
+<p>示例：知乎</p>
+<p><img data-fancybox="gallery" src="20814897_87d3425b_4667_9006_857@768x480.gif" alt="img" data-caption="img" loading="lazy"></p>
+<p>示例：虎扑</p>
+<p><img data-fancybox="gallery" src="20814897_4923640b_4667_9016_319@768x480.gif" alt="img" data-caption="img" loading="lazy"></p>
+<p>示例：斗鱼</p>
+<p>移除软件厂商已适配横屏的 APP</p>
+<h3 id="️适配应用清单"><a class="markdownIt-Anchor" href="#️适配应用清单">#</a> ❤️适配应用清单</h3>
+<p><a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DRU1URHZqb1FCU0lI?tab=BB08J2">查看链接</a></p>
+<h3 id="️模块效果视频演示"><a class="markdownIt-Anchor" href="#️模块效果视频演示">#</a> ❤️模块效果视频演示</h3>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17T411h7xh/">查看链接</a> 求点赞求关注求收藏求三连，爱你们呦！</p>
+<h3 id="️安装说明"><a class="markdownIt-Anchor" href="#️安装说明">#</a> ❤️安装说明</h3>
+<p>完美横屏应用计划不是一个简单的面具模块，它有非常复杂的使用方法，建议使用前阅读常见问题合集：<br>
+<a href="https://ybcq.github.io/2023/03/20/%E3%80%90%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92/">查看链接</a></p>
+<h3 id="️自己动手改模块"><a class="markdownIt-Anchor" href="#️自己动手改模块">#</a> ❤️自己动手改模块</h3>
+<p>完美横屏应用计划提供了自己动手适配横屏应用的方法，并且配备了一个相当简单的修改工具：</p>
+<p><img data-fancybox="gallery" src="20814897_b62cf094_4671_3882_778@1038x779.jpeg.m.jpg" alt="img" data-caption="img" loading="lazy"></p>
+<p>工具</p>
+<p>教程参考这个链接：<a href="https://ybcq.github.io/2023/04/22/%E3%80%90%E6%A8%A1%E5%9D%97%E6%95%99%E7%A8%8B%E3%80%91%E6%A8%AA%E5%B1%8F%E6%A8%A1%E5%9D%97%E4%BF%AE%E6%94%B9%E5%99%A8/">查看链接</a></p>
+<h3 id="️1000更新内容"><a class="markdownIt-Anchor" href="#️1000更新内容">#</a> ❤️1.00.0 更新内容</h3>
+<p>1. 修改了淘宝、天猫、一淘、转转、淘特、京东、阿里巴巴、以及超多游戏商店的逻辑，使其支持左侧搜索列表，右侧商品详情 By：<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/%E5%BE%A1%E5%9D%82%E5%88%9D%E7%90%B4">@御坂初琴</a><br>
+ 2. 精适配了小萌 GIF、汽水音乐 By：<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/Steefu">@Steefu</a><br>
+3. 优化了雨课堂、智博在线、美图秀秀、123 云盘、蒲公英管理、同花顺、百度网盘、京东特价版、酷我畅听、酷狗概念版、酷狗音乐 (不再需要特殊版本)、酷我音乐 (不再需要特殊版本)、哔哩哔哩漫画、东方财富、最右、天翼云盘、室内设计联盟、统信 UOS 助手、时光相册、影视猫 Plus、UC 浏览器、无他相机、大师兄影视、花瓣剪辑的横屏体验 By：<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/%E5%BE%A1%E5%9D%82%E5%88%9D%E7%90%B4">@御坂初琴</a><br>
+ 4. 修复了王者营地右侧无法全屏播放的问题 By：<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/%E5%BE%A1%E5%9D%82%E5%88%9D%E7%90%B4">@御坂初琴</a><br>
+ 5. 修改了酷安的适配方案，可以支持各种版本的酷安了 (看问题合集) By：<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/%E5%BE%A1%E5%9D%82%E5%88%9D%E7%90%B4">@御坂初琴</a><br>
+ 6. 修改了网易云音乐的适配方案，可以支持各种版本的网易云音乐了 (看问题合集) By：<a target="_blank" rel="noopener" href="https://www.coolapk.com/u/%E5%BE%A1%E5%9D%82%E5%88%9D%E7%90%B4">@御坂初琴</a></p>
+<h3 id="️bug反馈"><a class="markdownIt-Anchor" href="#️bug反馈">#</a> ❤️BUG 反馈</h3>
+<p>在已经阅读问题合集的情况下，在这个评论区下直接回复即可。也可以在该话题下进行回复，我看到后会尽快解决。</p>
+<h3 id="️技术文档"><a class="markdownIt-Anchor" href="#️技术文档">#</a> ❤️技术文档</h3>
+<p>此处包含了实现的原理，以及如何把该特性打包到官改 ROM 里，还有对小米的一些吐槽。欢迎各位做官改的小伙伴来看看。右转我的博客：<a href="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/">查看链接</a></p>
+<h3 id="️开发者名单"><a class="markdownIt-Anchor" href="#️开发者名单">#</a> ❤️开发者名单</h3>
+<p>ASC8384<br>
+ 空白之处<br>
+苏仁书<br>
+孑孓而行<br>
+泡芙老师<br>
+一只无言菌<br>
+ Steefu<br>
+ 醋腌老编<br>
+ ANHYPNIA<br>
+ 晊恦 N<br>
+ivoct<br>
+zHBHz<br>
+ 白色衬衣的少年<br>
+小茶远</p>
+<h3 id="️下载地址"><a class="markdownIt-Anchor" href="#️下载地址">#</a> ❤️下载地址</h3>
+<p><a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-EVQWA.html">查看链接</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.coolapk.com/t/%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92?type=12">#完美横屏应用计划#</a> <a target="_blank" rel="noopener" href="https://www.coolapk.com/t/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF5?type=12">#小米平板 5#</a> <a target="_blank" rel="noopener" href="https://www.coolapk.com/t/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF5Pro?type=12">#小米平板 5Pro#</a></p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>御坂初琴<br>
+        <strong>Link：</strong><a href="https://ybcq.github.io/2023/05/01/%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0/" title="https:&#x2F;&#x2F;ybcq.github.io&#x2F;2023&#x2F;05&#x2F;01&#x2F;%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;ybcq.github.io&#x2F;2023&#x2F;05&#x2F;01&#x2F;%E3%80%90%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6%E3%80%91%E5%AE%8C%E7%BE%8E%E6%A8%AA%E5%B1%8F%E5%BA%94%E7%94%A8%E8%AE%A1%E5%88%92-%E6%AD%A3%E5%BC%8F%E7%89%88%20V1.00.0&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%8E%9F%E5%88%9B%E8%BD%AF%E4%BB%B6/">原创软件</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF/" rel="tag">小米平板</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1682935368392"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
