@@ -23,7 +23,7 @@
 <meta property="og:image" content="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/image-20230212114759354.png">
 <meta property="og:image" content="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/image-20230212115043851.png">
 <meta property="article:published_time" content="2023-02-12T03:45:07.000Z">
-<meta property="article:modified_time" content="2023-05-05T10:49:45.637Z">
+<meta property="article:modified_time" content="2023-05-05T14:46:38.497Z">
 <meta property="article:author" content="御坂初琴">
 <meta property="article:tag" content="MIUI">
 <meta name="twitter:card" content="summary">
@@ -37,9 +37,9 @@
         href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
     />
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1683296066154">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1683296066154">
-    <link rel="stylesheet" href="/css/style.css?v=1683296066154">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1683462675960">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1683462675960">
+    <link rel="stylesheet" href="/css/style.css?v=1683462675960">
      
     
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -331,20 +331,22 @@
 <p>比如在我的模块里，我写成这样：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- MIUI_MagicWindow+ --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.taobao.taobao&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.tencent.mtt&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.ss.android.article.news&quot;</span> <span class="attr">clearTop</span>=<span class="string">&quot;true&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.33&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.snda.wifilocating&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.taobao.idlefish&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.alibaba.android.rimet&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.33&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.tmri.app.main&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.33&quot;</span> /&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 <p>就可以快速的添加自己想增加平行视的应用了。</p>
-<p>以下技术分享来自 @一只无言菌：</p>
+<h5 id="以下技术分享来自-一只无言菌"><a class="markdownIt-Anchor" href="#以下技术分享来自-一只无言菌">#</a> 以下技术分享来自 @一只无言菌：</h5>
 <p>如果我们有时间也可以对一个软件进行精修，比如像这样：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;tv.danmaku.bili&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.42&quot;</span> <span class="attr">activityRule</span>=<span class="string">&quot;tv.danmaku.bili.MainActivityV2&quot;</span> <span class="attr">transitionRules</span>=<span class="string">&quot;tv.danmaku.bili.MainActivityV2&quot;</span> <span class="attr">splitPairRule</span>=<span class="string">&quot;tv.danmaku.bili.MainActivityV2:*,com.bilibili.search.main.BiliMainSearchActivity:*,com.bilibili.bplus.followinglist.quick.consume.QuickConsumeActivity:*,tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity:*,com.bilibili.lib.ui.GeneralActivity:*,tv.danmaku.bili.ui.favorite.FavoriteBoxActivity:*,tv.danmaku.bili.ui.main2.WatchLaterActivity:*,com.bilibili.lib.ui.GeneralActivity:*,com.bilibili.app.preferences.BiliPreferencesActivity:*,com.mall.ui.page.search.SearchFragmentLoadActivity:*&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这里有一个奇技淫巧：</p>
+<h5 id="这里有一个奇技淫巧"><a class="markdownIt-Anchor" href="#这里有一个奇技淫巧">#</a> 这里有一个奇技淫巧：</h5>
 <p>如果应用不支持 activityRule=&quot;&quot;，则可以考虑把首页和它能跳转到的下一个 activity 加入到 transitionRules 就可以实现类似 activityRule=&quot;&quot; 的功能。以知乎 APP 为例：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.zhihu.android&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.33&quot;</span> <span class="attr">activityRule</span>=<span class="string">&quot;com.zhihu.android.app.ebook.activity.EBookHostActivity,com.zhihu.android.app.ui.activity.MainActivity,com.zhihu.android.app.ui.activity.LauncherActivity&quot;</span> <span class="attr">splitPairRule</span>=<span class="string">&quot;com.zhihu.android.app.ui.activity.MainActivity:*,com.zhihu.android.app.SearchActivity:*&quot;</span> <span class="attr">transitionRules</span>=<span class="string">&quot;com.zhihu.android.app.ebook.activity.EBookHostActivity,com.zhihu.android.app.ui.activity.LaunchAdActivity,com.zhihu.android.app.ui.activity.TransActivity,com.zhihu.android.app.ui.activity.LauncherActivity,com.zhihu.android.panel.ui.attach.PanelAttachActivity,com.zhihu.android.app.ui.activity.SocialOauthActivity,com.zhihu.android.app.ui.activity.DealLoginActivity,com.zhihu.android.app.SearchActivity,com.zhihu.android.app.ui.activity.MainActivity,com.coolapk.market.view.contact.FriendListActivity:*&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这里给出几个比较常见的模板供大家参考</p>
+<p>注意，只有将全屏的 Activity 放到 activityRule 和 transitionRules 里，才能保证该 Activity 基本不出现突然半屏显示的情况。</p>
+<h5 id="这里给出几个比较常见的模板供大家参考"><a class="markdownIt-Anchor" href="#这里给出几个比较常见的模板供大家参考">#</a> 这里给出几个比较常见的模板供大家参考：</h5>
 <p>只有一个 Activity 怎么适配？</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;应用包名&quot;</span> <span class="attr">activityRule</span>=<span class="string">&quot;仅有的一个Activity&quot;</span> <span class="attr">transitionRules</span>=<span class="string">&quot;仅有的一个Activity&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.42&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<p>首页全屏，但是有的界面分屏怎么适配？</p>
+<p>首页以及部分页面全屏，但是有的界面分屏怎么适配？</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;应用包名&quot;</span> <span class="attr">activityRule</span>=<span class="string">&quot;全屏的Activity&quot;</span> <span class="attr">transitionRules</span>=<span class="string">&quot;全屏的Activity&quot;</span> <span class="attr">splitPairRule</span>=<span class="string">&quot;全屏的Activirty:*&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.42&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>首页以及部分页面全屏，但是想要递进关系，怎么适配？</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;应用包名&quot;</span> <span class="attr">activityRule</span>=<span class="string">&quot;全屏的Activity&quot;</span> <span class="attr">transitionRules</span>=<span class="string">&quot;全屏的Activity&quot;</span> <span class="attr">splitPairRule</span>=<span class="string">&quot;首页的Activirty:界面1的Activirty,界面1的Activirty:界面2的Activirty,界面2的Activirty:界面3的Activirty&quot;</span> <span class="attr">splitRatio</span>=<span class="string">&quot;0.42&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>强制整个应用横屏怎么适配？</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;应用包名&quot;</span> <span class="attr">scaleMode</span>=<span class="string">&quot;1&quot;</span> <span class="attr">fullRule</span>=<span class="string">&quot;nra:cr:rcr&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<p>注意，只有将全屏的 Activity 放到 activityRule 和 transitionRules 里，才能保证该 Activity 基本不出现突然半屏显示的情况。</p>
 <h2 id="4如何打包到rom包"><a class="markdownIt-Anchor" href="#4如何打包到rom包">#</a> <strong>4. 如何打包到 ROM 包</strong></h2>
 <p>解包文件对应分区，修改对应的文件，然后复制到原路径下覆盖原文件，重新打包分区即可。</p>
 <p>对于安卓 11 版的 MIUI For Pad，需要覆盖以下两个文件。</p>
@@ -446,7 +448,7 @@
 
  
 
-<script async src="/js/app.js?v=1683296066155"></script>
+<script async src="/js/app.js?v=1683462675965"></script>
 
 
 
