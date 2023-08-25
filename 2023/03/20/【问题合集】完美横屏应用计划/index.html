@@ -20,7 +20,7 @@
 <meta property="og:description" content="问题合集">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-20T11:31:00.000Z">
-<meta property="article:modified_time" content="2023-08-16T14:08:17.869Z">
+<meta property="article:modified_time" content="2023-08-25T12:42:48.852Z">
 <meta property="article:author" content="御坂初琴">
 <meta property="article:tag" content="平板">
 <meta name="twitter:card" content="summary">
@@ -33,9 +33,9 @@
         href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
     />
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1692196634850">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1692196634850">
-    <link rel="stylesheet" href="/css/style.css?v=1692196634850">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1692967594683">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1692967594683">
+    <link rel="stylesheet" href="/css/style.css?v=1692967594683">
      
     
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -304,14 +304,20 @@
 <h6 id="关于百度网盘："><a href="#关于百度网盘：" class="headerlink" title="关于百度网盘："></a>关于百度网盘：</h6><p>如果界面缺少按钮，则右上角高级设置里把默认进入全屏播放打开。感谢 @mikasaaaan 提供方案。</p>
 <h6 id="关于闲鱼："><a href="#关于闲鱼：" class="headerlink" title="关于闲鱼："></a>关于闲鱼：</h6><p>闲鱼的逻辑不合理，这个我清楚，但是没办法。因为如果写成和淘宝一样的逻辑，就会导致左半屏幕卡死。所以我想出了用收藏页左右横跳实现刷新的办法，不合理，但是至少不会卡死</p>
 <h6 id="关于知乎："><a href="#关于知乎：" class="headerlink" title="关于知乎："></a>关于知乎：</h6><p>和知了模块有界面冲突，无解</p>
-<h6 id="关于CCTalk："><a href="#关于CCTalk：" class="headerlink" title="关于CCTalk："></a>关于CCTalk：</h6><p>CCTalk自己抽风，不要问我为什么不能适配了</p>
+<h6 id="关于CCTalk："><a href="#关于CCTalk：" class="headerlink" title="关于CCTalk："></a>关于CCTalk：</h6><p>CCtalk更新后，模块失效，要使模块生效，需删除apk中AndroidManifest.xml里的&lt;meta-data android:name=”embedded”; android:value=”true”/&gt;参数后，重新打包apk安装，请不要自动签名</p>
 <h6 id="关于QQ浏览器："><a href="#关于QQ浏览器：" class="headerlink" title="关于QQ浏览器："></a>关于QQ浏览器：</h6><p>QQ浏览器任务栏重叠是它自己的问题，没有解决方法</p>
 <h6 id="关于喜马拉雅FM："><a href="#关于喜马拉雅FM：" class="headerlink" title="关于喜马拉雅FM："></a>关于喜马拉雅FM：</h6><p>官方适配太烂了，开发版里我移除了</p>
 <h6 id="其他额外的适配："><a href="#其他额外的适配：" class="headerlink" title="其他额外的适配："></a>其他额外的适配：</h6><p>开发版额外适配了百词斩、白描、番茄免费小说、皮皮虾、小红书</p>
 </blockquote>
 <p>   部分应用有首次安装后闪退的问题，**<u>建议先关闭平行视界，登录，然后再开启平行视界，即可正常</u>**。如果不正常，则可以临时删除该应用的配置，参考Q7。</p>
 <p>   安卓11下几乎所有应用支持左右大小调节，但会引起部分应用变形。</p>
-<p>3.折叠屏版/红米版：折叠屏和红米平板专用，支持安卓11-安卓13的所有版本的MIUI For Fold。</p>
+<p>3.折叠屏版/红米版/6Max移植包专用版：折叠屏和红米平板专用，支持安卓11-安卓13的所有版本的MIUI For Fold。</p>
+<blockquote>
+<p>6Max移植包专用版用于支持6Max在5和5P上的移植包开启平行视界左右可调特性。使用方法： </p>
+<p>1.本模块仅限6Max对于5和5P的移植包可用，其他版本都不可用 </p>
+<p>2.本模块仅在我自己的平板上通过了，不知道会不会卡米，稳妥起见，可以先删除system_ext/framework/miui-embedding-window.jar文件，再重启，再刷入，就会稳很多。但是同时这也意味着如果想恢复官方的版本，你只能重新线刷6Max的移植包。 </p>
+<p>如果接收上两点，那就体验新版模块的快乐吧！</p>
+</blockquote>
 <p>4.原生版：去除所有MIUI自己适配的代码，仅保留原生安卓13的适配。用于某些对系统有洁癖的玩家使用。</p>
 <p>5.卸载模块：用于卸载该模块。使用方法见Q6。</p>
 <p>版本之间可直接覆盖安装，无需先卸载再安装。</p>
@@ -423,7 +429,7 @@
 
  
 
-<script async src="/js/app.js?v=1692196634852"></script>
+<script async src="/js/app.js?v=1692967594684"></script>
 
 
 
