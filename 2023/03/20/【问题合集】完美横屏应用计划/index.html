@@ -20,7 +20,7 @@
 <meta property="og:description" content="问题合集">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-20T11:31:00.000Z">
-<meta property="article:modified_time" content="2023-11-06T12:57:48.913Z">
+<meta property="article:modified_time" content="2023-11-14T12:34:43.359Z">
 <meta property="article:author" content="御坂初琴">
 <meta property="article:tag" content="平板">
 <meta name="twitter:card" content="summary">
@@ -33,9 +33,9 @@
         href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
     />
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1699275702107">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1699275702107">
-    <link rel="stylesheet" href="/css/style.css?v=1699275702107">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1699965296943">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1699965296943">
+    <link rel="stylesheet" href="/css/style.css?v=1699965296943">
      
     
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -287,18 +287,15 @@
 </div>
 
       <h2 id="Q0-模块怎么安装？"><a href="#Q0-模块怎么安装？" class="headerlink" title="Q0:模块怎么安装？"></a>Q0:模块怎么安装？</h2><p>A0：本模块需要一定的动手能力，所以推荐先学会正常的Magisk模块安装方法后，再来尝试本模块。</p>
-<blockquote>
-<h6 id="关于KernelSU："><a href="#关于KernelSU：" class="headerlink" title="关于KernelSU："></a>关于KernelSU：</h6><p>下载链接里放了替换文件，自行替换到模块里的同名文件即可（1.04.0以后已经不需要了）</p>
-</blockquote>
 <h2 id="Q1-我应该安装哪个版本？"><a href="#Q1-我应该安装哪个版本？" class="headerlink" title="Q1:我应该安装哪个版本？"></a>Q1:我应该安装哪个版本？</h2><p>A1：一共分为两个分支，每个分支有5个版本：</p>
 <p>**[正式分支]**：合并了经过验证后确实可用的临时版本代码的分支，更稳定，适合大部分人使用。</p>
 <p>**[临时版本]**：仅供反馈群内人员测试，更新频率非常高，说不准哪天更，但是BUG也非常多。</p>
 <p>每个版本下的5个版本分别为：</p>
-<p>1.稳定+红米版(推荐)：去除所有引起不稳定因素的适配。</p>
+<p>1.稳定/红米版(推荐)：去除所有引起不稳定因素的适配。</p>
 <p>   安卓11下所有应用支持左右大小调节。</p>
+<p>   红米平板由于和小米平板比例不同，所以很多在小米上使用0.42比例就能正常工作的应用，在红米平板上不能正常使用。因此很多应用被调整成了1:1，纯属无奈之举。</p>
 <p>   BUG反馈请到这个群里反馈：205924955。目前已知问题如下：</p>
 <blockquote>
-<h6 id="关于酷安："><a href="#关于酷安：" class="headerlink" title="关于酷安："></a>关于酷安：</h6><p>仅支持高于13.0.0版本的APP，且不支持左右大小调节</p>
 <h6 id="关于微博-微博移动版："><a href="#关于微博-微博移动版：" class="headerlink" title="关于微博/微博移动版："></a>关于微博/微博移动版：</h6><p>仅支持高于12.12.0版本的APP</p>
 <h6 id="关于百度网盘："><a href="#关于百度网盘：" class="headerlink" title="关于百度网盘："></a>关于百度网盘：</h6><p>如果界面缺少按钮，则右上角高级设置里把默认进入全屏播放打开。感谢 @mikasaaaan 提供方案</p>
 <h6 id="关于知乎："><a href="#关于知乎：" class="headerlink" title="关于知乎："></a>关于知乎：</h6><p>和知了模块有界面冲突，无解</p>
@@ -312,7 +309,6 @@
 <p>​       自用版包含了6Max移植包特有属性，如果需要在非6Max移植包的机器上刷，请移除模块中的system文件夹下的所有文件。</p>
 <p>​       包含所有对应用已经做了的适配，原则上**<u>不接受BUG反馈</u>**。具体原因不想说了。目前额外调整如下：</p>
 <blockquote>
-<h6 id="关于酷安：-1"><a href="#关于酷安：-1" class="headerlink" title="关于酷安："></a>关于酷安：</h6><p>自用版最高支持酷安12.0.5，更高版本可以参考Q5进行解锁。只有自用版配合旧版酷安修复了竖屏分屏的问题</p>
 <h6 id="关于TIM："><a href="#关于TIM：" class="headerlink" title="关于TIM："></a>关于TIM：</h6><p>自用版在一定程度上仿照QQ的样式支持了平行视界，但是效果不好</p>
 <h6 id="关于网易云音乐："><a href="#关于网易云音乐：" class="headerlink" title="关于网易云音乐："></a>关于网易云音乐：</h6><p>自用版仅支持最新版的网易云音乐，是平行视界样式</p>
 <h6 id="关于微博："><a href="#关于微博：" class="headerlink" title="关于微博："></a>关于微博：</h6><p>自用版最高支持12.12.3，再往上就是微博自己适配的12L接口了，可以参考Q5进行解锁</p>
@@ -365,11 +361,8 @@
 <h2 id="Q10-为什么从任务栏点进去的消息不能全屏？"><a href="#Q10-为什么从任务栏点进去的消息不能全屏？" class="headerlink" title="Q10:为什么从任务栏点进去的消息不能全屏？"></a>Q10:为什么从任务栏点进去的消息不能全屏？</h2><p>A10：官方不支持，我也没办法 + 1。</p>
 <h2 id="Q11-我在哪里提交新的软件适配需求-提交我写的适配代码？"><a href="#Q11-我在哪里提交新的软件适配需求-提交我写的适配代码？" class="headerlink" title="Q11:我在哪里提交新的软件适配需求/提交我写的适配代码？"></a>Q11:我在哪里提交新的软件适配需求/提交我写的适配代码？</h2><p>A11：在确定你的应用不在不可适配的范围内的情况下，可以在这个酷安的 #完美横屏应用计划# 话题下进行提交。或者加群183114301进行反馈。</p>
 <h2 id="Q12-为何模块有时会失效？"><a href="#Q12-为何模块有时会失效？" class="headerlink" title="Q12:为何模块有时会失效？"></a>Q12:为何模块有时会失效？</h2><p>A12：因为有时模块会被小米官方云控。重启即可恢复。但是也有办法永久干掉云控 （方案感谢@Andrower）。</p>
-<p>进入模块文件，在post-fs-data.sh下面加入如下代码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># chattr +i /data/system/cloudFeature_embedded_rules_list.xml</span></span><br><span class="line"><span class="comment"># chattr +i /product/etc/embedded_rules_list.xml</span></span><br><span class="line"><span class="comment"># chattr +i /data/system/users/0/embedded_setting_config.xml</span></span><br></pre></td></tr></table></figure>
-
-<p>即可使该文件不接受任何修改，从而实现彻底屏蔽云控的效果。</p>
-<p>但是该方法同时会导致该模块无法覆盖更新，只能先刷入卸载模块然后再更新。所以请小心使用！</p>
+<p>首先，下载下载链接中的屏蔽云控文件夹中的post-fs-data.sh，替换到模块中的同名文件，然后刷入修改后的文件，即可使该模块所写的配置不接受任何修改，从而实现彻底屏蔽云控的效果。</p>
+<p>但是该方法同时会导致该模块无法直接覆盖更新，只能先刷入卸载模块，重启，然后再更新。所以请小心使用！</p>
 
   </article>
 
@@ -447,7 +440,7 @@
 
  
 
-<script async src="/js/app.js?v=1699275702109"></script>
+<script async src="/js/app.js?v=1699965296944"></script>
 
 
 
