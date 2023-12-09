@@ -20,7 +20,7 @@
 <meta property="og:description" content="问题合集">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-20T11:31:00.000Z">
-<meta property="article:modified_time" content="2023-11-14T12:34:43.359Z">
+<meta property="article:modified_time" content="2023-12-09T09:12:50.818Z">
 <meta property="article:author" content="御坂初琴">
 <meta property="article:tag" content="平板">
 <meta name="twitter:card" content="summary">
@@ -33,9 +33,9 @@
         href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"
     />
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1699965296943">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1699965296943">
-    <link rel="stylesheet" href="/css/style.css?v=1699965296943">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1702113495815">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1702113495815">
+    <link rel="stylesheet" href="/css/style.css?v=1702113495815">
      
     
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -286,82 +286,117 @@
     <a><i class="nexmoefont icon-calendar-fill"></i>2023年03月20日</a>
 </div>
 
-      <h2 id="Q0-模块怎么安装？"><a href="#Q0-模块怎么安装？" class="headerlink" title="Q0:模块怎么安装？"></a>Q0:模块怎么安装？</h2><p>A0：本模块需要一定的动手能力，所以推荐先学会正常的Magisk模块安装方法后，再来尝试本模块。</p>
-<h2 id="Q1-我应该安装哪个版本？"><a href="#Q1-我应该安装哪个版本？" class="headerlink" title="Q1:我应该安装哪个版本？"></a>Q1:我应该安装哪个版本？</h2><p>A1：一共分为两个分支，每个分支有5个版本：</p>
-<p>**[正式分支]**：合并了经过验证后确实可用的临时版本代码的分支，更稳定，适合大部分人使用。</p>
-<p>**[临时版本]**：仅供反馈群内人员测试，更新频率非常高，说不准哪天更，但是BUG也非常多。</p>
-<p>每个版本下的5个版本分别为：</p>
-<p>1.稳定/红米版(推荐)：去除所有引起不稳定因素的适配。</p>
-<p>   安卓11下所有应用支持左右大小调节。</p>
-<p>   红米平板由于和小米平板比例不同，所以很多在小米上使用0.42比例就能正常工作的应用，在红米平板上不能正常使用。因此很多应用被调整成了1:1，纯属无奈之举。</p>
-<p>   BUG反馈请到这个群里反馈：205924955。目前已知问题如下：</p>
+      <h2 id="q0模块怎么安装"><a class="markdownIt-Anchor" href="#q0模块怎么安装">#</a> Q0: 模块怎么安装？</h2>
+<p>A0：本模块需要一定的动手能力，所以推荐先学会正常的 Magisk 模块安装方法后，再来尝试本模块。</p>
+<p><strong>关于澎湃 OS：</strong></p>
+<p>如果在刷澎湃之前，已经使用了 6Max 移植版模块和自用版模块，请先把模块按照 Q6 卸载了，或者直接替换成稳定版 / 澎湃专用版模块，否则会卡米<br>
+如果已经刷完澎湃，还想继续用 6Max 移植版模块或者自用版模块的，可以把里的 system\system_ext\framework\miui-embedding-window.jar 删掉再刷，就不会卡米了</p>
+<h2 id="q1我应该安装哪个版本"><a class="markdownIt-Anchor" href="#q1我应该安装哪个版本">#</a> Q1: 我应该安装哪个版本？</h2>
+<p>A1：一共分为两个分支，每个分支有 5 个版本：</p>
+<p><strong>[正式分支]</strong>：合并了经过验证后确实可用的临时版本代码的分支，更稳定，适合大部分人使用。</p>
+<p><strong>[临时版本]</strong>：仅供反馈群内人员测试，更新频率非常高，说不准哪天更，但是 BUG 也非常多。</p>
+<p>每个版本下的 5 个版本分别为：</p>
+<p>1. 稳定 / 红米版 (推荐)：去除所有引起不稳定因素的适配。</p>
+<p>安卓 11 下所有应用支持左右大小调节。</p>
+<p>红米平板由于和小米平板比例不同，所以很多在小米上使用 0.42 比例就能正常工作的应用，在红米平板上不能正常使用。因此很多应用被调整成了 1:1，纯属无奈之举。</p>
+<p>BUG 反馈请到这个群里反馈：205924955。目前已知问题如下：</p>
 <blockquote>
-<h6 id="关于微博-微博移动版："><a href="#关于微博-微博移动版：" class="headerlink" title="关于微博/微博移动版："></a>关于微博/微博移动版：</h6><p>仅支持高于12.12.0版本的APP</p>
-<h6 id="关于百度网盘："><a href="#关于百度网盘：" class="headerlink" title="关于百度网盘："></a>关于百度网盘：</h6><p>如果界面缺少按钮，则右上角高级设置里把默认进入全屏播放打开。感谢 @mikasaaaan 提供方案</p>
-<h6 id="关于知乎："><a href="#关于知乎：" class="headerlink" title="关于知乎："></a>关于知乎：</h6><p>和知了模块有界面冲突，无解</p>
-<h6 id="关于QQ浏览器："><a href="#关于QQ浏览器：" class="headerlink" title="关于QQ浏览器："></a>关于QQ浏览器：</h6><p>QQ浏览器任务栏重叠是它自己的问题，没有解决方法</p>
-<h6 id="关于墨墨背单词："><a href="#关于墨墨背单词：" class="headerlink" title="关于墨墨背单词："></a>关于墨墨背单词：</h6><p>最高支持5.0.20。再高的版本参考Q5</p>
-<h6 id="关于淘宝："><a href="#关于淘宝：" class="headerlink" title="关于淘宝："></a>关于淘宝：</h6><p>如果不能触发平行视界，需要清除应用数据然后重启应用，登录后再重启应用就好</p>
-<h6 id="关于QQ音乐："><a href="#关于QQ音乐：" class="headerlink" title="关于QQ音乐："></a>关于QQ音乐：</h6><p>右半界面不支持拉伸，现在布局已经是屏幕利用率最高的版本了</p>
+<h6 id="关于微博微博移动版"><a class="markdownIt-Anchor" href="#关于微博微博移动版">#</a> 关于微博 / 微博移动版：</h6>
+<p>仅支持高于 12.12.0 版本的 APP</p>
+<h6 id="关于百度网盘"><a class="markdownIt-Anchor" href="#关于百度网盘">#</a> 关于百度网盘：</h6>
+<p>如果界面缺少按钮，则右上角高级设置里把默认进入全屏播放打开。感谢 @mikasaaaan 提供方案</p>
+<h6 id="关于知乎"><a class="markdownIt-Anchor" href="#关于知乎">#</a> 关于知乎：</h6>
+<p>和知了模块有界面冲突，无解</p>
+<h6 id="关于qq浏览器"><a class="markdownIt-Anchor" href="#关于qq浏览器">#</a> 关于 QQ 浏览器：</h6>
+<p>QQ 浏览器任务栏重叠是它自己的问题，没有解决方法</p>
+<h6 id="关于墨墨背单词"><a class="markdownIt-Anchor" href="#关于墨墨背单词">#</a> 关于墨墨背单词：</h6>
+<p>最高支持 5.0.20。再高的版本参考 Q5</p>
+<h6 id="关于淘宝"><a class="markdownIt-Anchor" href="#关于淘宝">#</a> 关于淘宝：</h6>
+<p>如果不能触发平行视界，需要清除应用数据然后重启应用，登录后再重启应用就好</p>
+<h6 id="关于qq音乐"><a class="markdownIt-Anchor" href="#关于qq音乐">#</a> 关于 QQ 音乐：</h6>
+<p>右半界面不支持拉伸，现在布局已经是屏幕利用率最高的版本了</p>
 </blockquote>
-<p>部分应用有首次安装后闪退的问题，**<u>建议先关闭平行视界，登录，然后再开启平行视界，即可正常</u>**。如果不正常，则可以临时删除该应用的配置，参考Q7。</p>
-<p>X.自用版：为作者自己用的版本，不保证在其他设备上的有效性。</p>
-<p>​       自用版包含了6Max移植包特有属性，如果需要在非6Max移植包的机器上刷，请移除模块中的system文件夹下的所有文件。</p>
-<p>​       包含所有对应用已经做了的适配，原则上**<u>不接受BUG反馈</u>**。具体原因不想说了。目前额外调整如下：</p>
+<p>部分应用有首次安装后闪退的问题，<strong><u>建议先关闭平行视界，登录，然后再开启平行视界，即可正常</u></strong>。如果不正常，则可以临时删除该应用的配置，参考 Q7。</p>
+<p>X. 自用版：为作者自己用的版本，不保证在其他设备上的有效性。</p>
+<p>​       自用版包含了 6Max 移植包特有属性，如果需要在非 6Max 移植包的机器上刷，请移除模块中的 system 文件夹下的所有文件。</p>
+<p>​       包含所有对应用已经做了的适配，原则上 **<u>不接受 BUG 反馈</u>**。具体原因不想说了。目前额外调整如下：</p>
 <blockquote>
-<h6 id="关于TIM："><a href="#关于TIM：" class="headerlink" title="关于TIM："></a>关于TIM：</h6><p>自用版在一定程度上仿照QQ的样式支持了平行视界，但是效果不好</p>
-<h6 id="关于网易云音乐："><a href="#关于网易云音乐：" class="headerlink" title="关于网易云音乐："></a>关于网易云音乐：</h6><p>自用版仅支持最新版的网易云音乐，是平行视界样式</p>
-<h6 id="关于微博："><a href="#关于微博：" class="headerlink" title="关于微博："></a>关于微博：</h6><p>自用版最高支持12.12.3，再往上就是微博自己适配的12L接口了，可以参考Q5进行解锁</p>
-<h6 id="关于微博移动版："><a href="#关于微博移动版：" class="headerlink" title="关于微博移动版："></a>关于微博移动版：</h6><p>自用版最高支持12.8.0，再往上就是微博自己适配的12L接口了，可以参考Q5进行解锁</p>
-<h6 id="关于闲鱼："><a href="#关于闲鱼：" class="headerlink" title="关于闲鱼："></a>关于闲鱼：</h6><p>闲鱼的逻辑不合理，这个我清楚，但是没办法。因为如果写成和淘宝一样的逻辑，就会导致左半屏幕卡死。所以我想出了用收藏页左右横跳实现刷新的办法，不合理，但是至少不会卡死</p>
-<h6 id="关于CCTalk："><a href="#关于CCTalk：" class="headerlink" title="关于CCTalk："></a>关于CCTalk：</h6><p>CCtalk更新后，模块失效，要使模块生效，需删除apk中AndroidManifest.xml里的&lt;meta-data android:name=”embedded”; android:value=”true”/&gt;参数后，重新打包apk安装，请不要自动签名。或者参考Q6进行解锁</p>
-<h6 id="关于喜马拉雅FM："><a href="#关于喜马拉雅FM：" class="headerlink" title="关于喜马拉雅FM："></a>关于喜马拉雅FM：</h6><p>官方适配太烂了，自用版里我移除了</p>
-<h6 id="其他额外的适配："><a href="#其他额外的适配：" class="headerlink" title="其他额外的适配："></a>其他额外的适配：</h6><p>自用版额外适配了百词斩、白描、番茄免费小说、皮皮虾、小红书</p>
+<h6 id="关于tim"><a class="markdownIt-Anchor" href="#关于tim">#</a> 关于 TIM：</h6>
+<p>自用版在一定程度上仿照 QQ 的样式支持了平行视界，但是效果不好</p>
+<h6 id="关于网易云音乐"><a class="markdownIt-Anchor" href="#关于网易云音乐">#</a> 关于网易云音乐：</h6>
+<p>自用版仅支持最新版的网易云音乐，是平行视界样式</p>
+<h6 id="关于微博"><a class="markdownIt-Anchor" href="#关于微博">#</a> 关于微博：</h6>
+<p>自用版最高支持 12.12.3，再往上就是微博自己适配的 12L 接口了，可以参考 Q5 进行解锁</p>
+<h6 id="关于微博移动版"><a class="markdownIt-Anchor" href="#关于微博移动版">#</a> 关于微博移动版：</h6>
+<p>自用版最高支持 12.8.0，再往上就是微博自己适配的 12L 接口了，可以参考 Q5 进行解锁</p>
+<h6 id="关于闲鱼"><a class="markdownIt-Anchor" href="#关于闲鱼">#</a> 关于闲鱼：</h6>
+<p>闲鱼的逻辑不合理，这个我清楚，但是没办法。因为如果写成和淘宝一样的逻辑，就会导致左半屏幕卡死。所以我想出了用收藏页左右横跳实现刷新的办法，不合理，但是至少不会卡死</p>
+<h6 id="关于cctalk"><a class="markdownIt-Anchor" href="#关于cctalk">#</a> 关于 CCTalk：</h6>
+<p>CCtalk 更新后，模块失效，要使模块生效，需删除 apk 中 AndroidManifest.xml 里的 &lt;meta-data android:name=“embedded”; android:value=“true”/&gt; 参数后，重新打包 apk 安装，请不要自动签名。或者参考 Q6 进行解锁</p>
+<h6 id="关于喜马拉雅fm"><a class="markdownIt-Anchor" href="#关于喜马拉雅fm">#</a> 关于喜马拉雅 FM：</h6>
+<p>官方适配太烂了，自用版里我移除了</p>
+<h6 id="其他额外的适配"><a class="markdownIt-Anchor" href="#其他额外的适配">#</a> 其他额外的适配：</h6>
+<p>自用版额外适配了百词斩、白描、番茄免费小说、皮皮虾、小红书</p>
 </blockquote>
-<p>   安卓11下所有应用不支持左右大小调节，非常整洁（强迫症）。</p>
-<p>2.折叠屏版</p>
+<p>安卓 11 下所有应用不支持左右大小调节，非常整洁（强迫症）。</p>
+<p>2. 折叠屏版</p>
 <blockquote>
-<p>折叠屏支持安卓11-安卓13的所有版本的MIUI For Fold</p>
+<p>折叠屏支持安卓 11 - 安卓 13 的所有版本的 MIUI For Fold</p>
 </blockquote>
-<p>3.6Max移植包专用版</p>
+<p>3.6Max 移植包专用版</p>
 <blockquote>
-<p>6Max移植包专用版用于支持6Max在各种机型上的移植包开启平行视界左右可调特性</p>
-<p>分为5系版和6系版，仅限6Max移植包可用，其他版本都不可用！刷了会卡米！</p>
+<p>6Max 移植包专用版用于支持 6Max 在各种机型上的 MIUI14 移植包开启平行视界左右可调特性</p>
+<p>分为 5 系版和 6 系版，仅限 6Max 的 MIUI14 移植包可用，其他版本都不可用！刷了会卡米！</p>
 </blockquote>
-<p>4.原生版：去除所有MIUI自己适配的代码，仅保留原生安卓13的适配。用于某些对系统有洁癖的玩家使用。</p>
-<p>5.卸载模块：用于卸载该模块。使用方法见Q6。</p>
+<p>4. 原生版：去除所有 MIUI 自己适配的代码，仅保留原生安卓 13 的适配。用于某些对系统有洁癖的玩家使用。</p>
+<p>5. 卸载模块：用于卸载该模块。使用方法见 Q6。</p>
 <p>版本之间可直接覆盖安装，无需先卸载再安装。</p>
-<h2 id="Q2-哪些应用支持强制平行视界？"><a href="#Q2-哪些应用支持强制平行视界？" class="headerlink" title="Q2:哪些应用支持强制平行视界？"></a>Q2:哪些应用支持强制平行视界？</h2><p>A2：可以查看<a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DRU1URHZqb1FCU0lI?tab=BB08J2">更新日志</a></p>
-<h2 id="Q3-哪些应用不支持强制平行视界？"><a href="#Q3-哪些应用不支持强制平行视界？" class="headerlink" title="Q3:哪些应用不支持强制平行视界？"></a>Q3:哪些应用不支持强制平行视界？</h2><p>A3：可以查看<a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DRU1URHZqb1FCU0lI?tab=BB08J2">更新日志</a>，其中标记为 <strong><u>[移除]</u></strong> 的，为官方已经适配或完全无法适配的应用。不支持强制平行视界的应用，以上应用可以通过Q5方法强制横屏。</p>
-<h2 id="Q4-哪些应用有更好的替代版本？"><a href="#Q4-哪些应用有更好的替代版本？" class="headerlink" title="Q4:哪些应用有更好的替代版本？"></a>Q4:哪些应用有更好的替代版本？</h2><p>A4：大部分影音应用都有TV版，音箱版和车机版，请尽可能去下载这些版本，它们都完美适配了大屏设备。例如：</p>
+<h2 id="q2哪些应用支持强制平行视界"><a class="markdownIt-Anchor" href="#q2哪些应用支持强制平行视界">#</a> Q2: 哪些应用支持强制平行视界？</h2>
+<p>A2：可以查看<a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DRU1URHZqb1FCU0lI?tab=BB08J2">更新日志</a></p>
+<h2 id="q3哪些应用不支持强制平行视界"><a class="markdownIt-Anchor" href="#q3哪些应用不支持强制平行视界">#</a> Q3: 哪些应用不支持强制平行视界？</h2>
+<p>A3：可以查看<a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DRU1URHZqb1FCU0lI?tab=BB08J2">更新日志</a>，其中标记为 <strong><u>[移除]</u></strong> 的，为官方已经适配或完全无法适配的应用。不支持强制平行视界的应用，以上应用可以通过 Q5 方法强制横屏。</p>
+<h2 id="q4哪些应用有更好的替代版本"><a class="markdownIt-Anchor" href="#q4哪些应用有更好的替代版本">#</a> Q4: 哪些应用有更好的替代版本？</h2>
+<p>A4：大部分影音应用都有 TV 版，音箱版和车机版，请尽可能去下载这些版本，它们都完美适配了大屏设备。例如：</p>
 <blockquote>
-<p>芒果TV：推荐使用音箱版，<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-PlQWA.html">下载链接</a></p>
-<p>网易云音乐：如果害怕修改版有风险，建议使用车机版，<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-9VQWA.html">下载链接</a> </p>
+<p>芒果 TV：推荐使用音箱版，<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-PlQWA.html">下载链接</a></p>
+<p>网易云音乐：如果害怕修改版有风险，建议使用车机版，<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-9VQWA.html">下载链接</a></p>
 <p>微博：推荐使用微博移动版，界面和功能都一样</p>
 </blockquote>
-<h2 id="Q5-本模块不支持的应用有没有办法强制横屏？"><a href="#Q5-本模块不支持的应用有没有办法强制横屏？" class="headerlink" title="Q5:本模块不支持的应用有没有办法强制横屏？"></a>Q5:本模块不支持的应用有没有办法强制横屏？</h2><p>A5：去酷安论坛搜索一个叫 [<strong>MaxMiPad</strong>] 的LSPosed模块，解锁竖屏限制，然后使用  [<strong>自由屏幕旋转</strong>] 模块进行旋转。</p>
-<p>​    <strong><u>以上两个模块和本模块冲突，请勿同时对同一个应用使用。</u></strong></p>
-<h2 id="Q6-如何卸载模块？"><a href="#Q6-如何卸载模块？" class="headerlink" title="Q6:如何卸载模块？"></a>Q6:如何卸载模块？</h2><p>A6：<em>求求了，卸载模块前，先在酷安#完美横屏应用计划# 话题下留下卸载原因，要不我都不知道到底哪里做的不合各位心意了</em>。</p>
-<p>​    <strong>本模块需要使用卸载模块卸载</strong>，卸载模块<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-hVQWA.html">下载地址</a>。</p>
-<p>​    Step1：先刷入卸载模块，重启；</p>
-<p>​    Step2：卸载卸载模块，重启；</p>
-<p>​    Step3：一般到这里就完全恢复了，但是有少数用户并不会恢复。需要等待MIUI下发一次云控。通常需要1周左右的时间。</p>
-<h2 id="Q7-如何解决部分应用闪退-如何彻底关闭一个APP的适配？"><a href="#Q7-如何解决部分应用闪退-如何彻底关闭一个APP的适配？" class="headerlink" title="Q7:如何解决部分应用闪退/如何彻底关闭一个APP的适配？"></a>Q7:如何解决部分应用闪退/如何彻底关闭一个APP的适配？</h2><p>A7：<em>如果发现应用闪退，或者应用适配后效果还不如不适配，先在酷安#完美横屏应用计划# 话题下发帖告诉我包名，我会在以后的版本中移除该应用</em>。</p>
-<p>​    当应用闪退时，首先尝试关闭该应用的系统设置中的横屏模式开关，然后再打开登录。</p>
-<p>​    如果能正常登录，则可以尝试再开启横屏模式开关，一般就能正常使用了。如果开启横屏模式开关后依旧会闪退或工作不正常，则需要删除该应用在模块中的配置。</p>
-<h3 id="方法1-推荐，需要PC"><a href="#方法1-推荐，需要PC" class="headerlink" title="方法1(推荐，需要PC)"></a>方法1(推荐，需要PC)</h3><p>​    使用PC版模块修改器直接修改模块，移除对应应用的适配。</p>
-<p>​    模块修改器：<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-3VQWA.html">下载地址</a></p>
-<p>​    模块修改器教程：在本博客下或者在我的哔哩哔哩空间内搜索教程视频。</p>
-<h3 id="方法2-手动删除，仅需要平板"><a href="#方法2-手动删除，仅需要平板" class="headerlink" title="方法2(手动删除，仅需要平板)"></a>方法2(手动删除，仅需要平板)</h3><h4 id="安卓12-安卓13"><a href="#安卓12-安卓13" class="headerlink" title="安卓12/安卓13"></a>安卓12/安卓13</h4><p>​    使用MT管理器打开/data/adb/modules/MIUI_MagicWindow+/common/product/etc/embedded_rules_list.xml。</p>
-<p>​    搜索要删除的应用的包名，定为到行，删除整行内容。保存文件，重启平板即可。</p>
-<h4 id="安卓11"><a href="#安卓11" class="headerlink" title="安卓11"></a>安卓11</h4><p>​    使用MT管理器打开/data/adb/modules/MIUI_MagicWindow+/common/system/users/0/magic_window_setting_config.xml。</p>
-<p>​    搜索要删除的应用的包名，定为到行，删除整行内容。保存文件，重启平板即可。</p>
-<h2 id="Q8-为什么重启后平行视界开关会自动打开？"><a href="#Q8-为什么重启后平行视界开关会自动打开？" class="headerlink" title="Q8:为什么重启后平行视界开关会自动打开？"></a>Q8:为什么重启后平行视界开关会自动打开？</h2><p>A8：干掉云控的后遗症，解决方法参考Q7。</p>
-<h2 id="Q9-为什么任务栏和小白条无法沉浸？"><a href="#Q9-为什么任务栏和小白条无法沉浸？" class="headerlink" title="Q9:为什么任务栏和小白条无法沉浸？"></a>Q9:为什么任务栏和小白条无法沉浸？</h2><p>A9：官方不支持，我也没办法。</p>
-<h2 id="Q10-为什么从任务栏点进去的消息不能全屏？"><a href="#Q10-为什么从任务栏点进去的消息不能全屏？" class="headerlink" title="Q10:为什么从任务栏点进去的消息不能全屏？"></a>Q10:为什么从任务栏点进去的消息不能全屏？</h2><p>A10：官方不支持，我也没办法 + 1。</p>
-<h2 id="Q11-我在哪里提交新的软件适配需求-提交我写的适配代码？"><a href="#Q11-我在哪里提交新的软件适配需求-提交我写的适配代码？" class="headerlink" title="Q11:我在哪里提交新的软件适配需求/提交我写的适配代码？"></a>Q11:我在哪里提交新的软件适配需求/提交我写的适配代码？</h2><p>A11：在确定你的应用不在不可适配的范围内的情况下，可以在这个酷安的 #完美横屏应用计划# 话题下进行提交。或者加群183114301进行反馈。</p>
-<h2 id="Q12-为何模块有时会失效？"><a href="#Q12-为何模块有时会失效？" class="headerlink" title="Q12:为何模块有时会失效？"></a>Q12:为何模块有时会失效？</h2><p>A12：因为有时模块会被小米官方云控。重启即可恢复。但是也有办法永久干掉云控 （方案感谢@Andrower）。</p>
-<p>首先，下载下载链接中的屏蔽云控文件夹中的post-fs-data.sh，替换到模块中的同名文件，然后刷入修改后的文件，即可使该模块所写的配置不接受任何修改，从而实现彻底屏蔽云控的效果。</p>
+<h2 id="q5本模块不支持的应用有没有办法强制横屏"><a class="markdownIt-Anchor" href="#q5本模块不支持的应用有没有办法强制横屏">#</a> Q5: 本模块不支持的应用有没有办法强制横屏？</h2>
+<p>A5：去酷安论坛搜索一个叫 [<strong>MaxMiPad</strong>] 的 LSPosed 模块，解锁竖屏限制，然后使用  [<strong>自由屏幕旋转</strong>] 模块进行旋转。</p>
+<p>​	<strong><u>以上两个模块和本模块冲突，请勿同时对同一个应用使用。</u></strong></p>
+<h2 id="q6如何卸载模块"><a class="markdownIt-Anchor" href="#q6如何卸载模块">#</a> Q6: 如何卸载模块？</h2>
+<p>A6：<em>求求了，卸载模块前，先在酷安 #完美横屏应用计划# 话题下留下卸载原因，要不我都不知道到底哪里做的不合各位心意了</em>。</p>
+<p>​	<strong>本模块需要使用卸载模块卸载</strong>，卸载模块<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-hVQWA.html">下载地址</a>。</p>
+<p>​	Step1：先刷入卸载模块，重启；</p>
+<p>​	Step2：卸载卸载模块，重启；</p>
+<p>​	Step3：一般到这里就完全恢复了，但是有少数用户并不会恢复。需要等待 MIUI 下发一次云控。通常需要 1 周左右的时间。</p>
+<h2 id="q7如何解决部分应用闪退如何彻底关闭一个app的适配"><a class="markdownIt-Anchor" href="#q7如何解决部分应用闪退如何彻底关闭一个app的适配">#</a> Q7: 如何解决部分应用闪退 / 如何彻底关闭一个 APP 的适配？</h2>
+<p>A7：<em>如果发现应用闪退，或者应用适配后效果还不如不适配，先在酷安 #完美横屏应用计划# 话题下发帖告诉我包名，我会在以后的版本中移除该应用</em>。</p>
+<p>​	当应用闪退时，首先尝试关闭该应用的系统设置中的横屏模式开关，然后再打开登录。</p>
+<p>​	如果能正常登录，则可以尝试再开启横屏模式开关，一般就能正常使用了。如果开启横屏模式开关后依旧会闪退或工作不正常，则需要删除该应用在模块中的配置。</p>
+<h3 id="方法1推荐需要pc"><a class="markdownIt-Anchor" href="#方法1推荐需要pc">#</a> 方法 1 (推荐，需要 PC)</h3>
+<p>​	使用 PC 版模块修改器直接修改模块，移除对应应用的适配。</p>
+<p>​	模块修改器：<a target="_blank" rel="noopener" href="https://www.123pan.com/s/9NkDVv-3VQWA.html">下载地址</a></p>
+<p>​	模块修改器教程：在本博客下或者在我的哔哩哔哩空间内搜索教程视频。</p>
+<h3 id="方法2手动删除仅需要平板"><a class="markdownIt-Anchor" href="#方法2手动删除仅需要平板">#</a> 方法 2 (手动删除，仅需要平板)</h3>
+<h4 id="安卓12安卓13"><a class="markdownIt-Anchor" href="#安卓12安卓13">#</a> 安卓 12 / 安卓 13</h4>
+<p>​	使用 MT 管理器打开 /data/adb/modules/MIUI_MagicWindow+/common/product/etc/embedded_rules_list.xml。</p>
+<p>​	搜索要删除的应用的包名，定为到行，删除整行内容。保存文件，重启平板即可。</p>
+<h4 id="安卓11"><a class="markdownIt-Anchor" href="#安卓11">#</a> 安卓 11</h4>
+<p>​	使用 MT 管理器打开 /data/adb/modules/MIUI_MagicWindow+/common/system/users/0/magic_window_setting_config.xml。</p>
+<p>​	搜索要删除的应用的包名，定为到行，删除整行内容。保存文件，重启平板即可。</p>
+<h2 id="q8为什么重启后平行视界开关会自动打开"><a class="markdownIt-Anchor" href="#q8为什么重启后平行视界开关会自动打开">#</a> Q8: 为什么重启后平行视界开关会自动打开？</h2>
+<p>A8：干掉云控的后遗症，解决方法参考 Q7。</p>
+<h2 id="q9为什么任务栏和小白条无法沉浸"><a class="markdownIt-Anchor" href="#q9为什么任务栏和小白条无法沉浸">#</a> Q9: 为什么任务栏和小白条无法沉浸？</h2>
+<p>A9：官方不支持，我也没办法。</p>
+<h2 id="q10为什么从任务栏点进去的消息不能全屏"><a class="markdownIt-Anchor" href="#q10为什么从任务栏点进去的消息不能全屏">#</a> Q10: 为什么从任务栏点进去的消息不能全屏？</h2>
+<p>A10：官方不支持，我也没办法 + 1。</p>
+<h2 id="q11我在哪里提交新的软件适配需求提交我写的适配代码"><a class="markdownIt-Anchor" href="#q11我在哪里提交新的软件适配需求提交我写的适配代码">#</a> Q11: 我在哪里提交新的软件适配需求 / 提交我写的适配代码？</h2>
+<p>A11：在确定你的应用不在不可适配的范围内的情况下，可以在这个酷安的 #完美横屏应用计划# 话题下进行提交。或者加群 183114301 进行反馈。</p>
+<h2 id="q12为何模块有时会失效"><a class="markdownIt-Anchor" href="#q12为何模块有时会失效">#</a> Q12: 为何模块有时会失效？</h2>
+<p>A12：因为有时模块会被小米官方云控。重启即可恢复。但是也有办法永久干掉云控 （方案感谢 @Andrower）。</p>
+<p>首先，<a target="_blank" rel="noopener" href="http://xn--post-fs-data-ix4sa42ca31o7xcd04hm5m0k0bmba316fcy6hha1019gc3vcba5791b.sh">下载下载链接中的屏蔽云控文件夹中的 post-fs-data.sh</a>，替换到模块中的同名文件，然后刷入修改后的文件，即可使该模块所写的配置不接受任何修改，从而实现彻底屏蔽云控的效果。</p>
 <p>但是该方法同时会导致该模块无法直接覆盖更新，只能先刷入卸载模块，重启，然后再更新。所以请小心使用！</p>
 
   </article>
@@ -440,7 +475,7 @@
 
  
 
-<script async src="/js/app.js?v=1699965296944"></script>
+<script async src="/js/app.js?v=1702113495816"></script>
 
 
 
